@@ -1,0 +1,43 @@
+hw3: 7 points
+    
+Copy index.html from hw2 into hw3. 
+Copy the following images from "Assets" to the hw3 folder:
+        bg2.gif
+	boreas-t.jpg
+	circe-t.jpg
+	lady-t.jpg
+	ophelia.jpg
+	ophelia-t.jpg
+	spring-t.jpg
+
+In style sheet of index.html, add the following to the body selector...
+
+	background-image: url(bg2.gif);
+	background-repeat: repeat-x;
+	margin-left: 8px;
+	margin-top: 48px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+
+	
+Make a copy of index.html and name it ophelia.html...
+
+	Erase everything below the navigation line, but keep the last line (Return to Top).
+	Add a heading 3: Ophelia.
+	Insert the large image ophelia.jpg on the next line.
+	Add the title attribute for the image...
+		title="Ophelia (by the pond), 1894"
+        Add an alt.
+	Below the image add a paragraph...
+		Ophelia (by the pond), 1894
+	
+In index.html immediately below Vitals there is a list of
+five thumbnails. Replace each word with its image and add
+a space between each image...
+
+	boreas-t.jpg
+	circe-t.jpg
+	lady-t.jpg
+	ophelia-t.jpg
+	spring-t.jpg
+	

@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Web Page Construction</title>
+<link href="../mystyles.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<div id="container">
+<h1>Web Page Construction</h1>
+<div id="wrap">
+	<ul class="navbar">
+		<li><a href="../index.html">Home</a></li>
+        <li><a href="../info/infocontact.html">Contact</a>   		</li>
+		<li><a href="#">HTML/CSS</a>
+			<ul>
+				<li><a href="1.html">Lesson 1</a></li>
+				<li><a href="2.html">Lesson 2</a></li>
+				<li><a href="3.html">Lesson 3</a></li>
+                <li><a href="4.html">Lesson 4</a></li>
+				<li><a href="5.html">Lesson 5</a></li>
+				<li><a href="6.html">Lesson 6</a></li>
+                <li><a href="7.html">Lesson 7</a></li>
+                <li><a href="8.html">Lesson 8</a></li>
+
+			</ul>         
+		</li>
+		<li><a href="#">Dreamweaver</a>
+			<ul>
+				<li><a href="d1.html">Lesson 1</a></li>
+				<li><a href="d2.html">Lesson 2</a></li>
+				<li><a href="d6.html">Lesson 3</a></li>
+                <li><a href="d4.html">Lesson 4</a></li>
+				<li><a href="d5.html">Lesson 5</a></li>
+				<li><a href="d3.html">Lesson 6</a></li>  
+			</ul>         
+		</li>
+
+        <li><a href="#">Other</a>
+			<ul>
+				<li><a href="../info/infolinks.html">Useful Links</a></li>
+				<li><a href="../info/infofaq.html">FAQ</a></li>
+                <li><a href="../info/infoassets.html">Assets</a></li>
+				<li><a href="../info/infodocs.html">Documents</a></li>
+                <li><a href="../info/infohomework.html">Homework</a></li>
+			</ul>         
+		</li>
+	</ul>
+</div>
+<!--<iframe id="if1" name="if1" frameborder="0" height="1000" width="750" scrolling="auto" src="info/infohome.html"></iframe> -->
+<h2>HTML/CSS Lesson 4 - Links and Link Colors</h2>
+<p>
+<a href="#links">Links</a>&nbsp;| 
+<a href="#linkcolors">Link&nbsp;Colors</a>&nbsp;| <a href="#named">named&nbsp;anchors</a>&nbsp;|</p>
+<hr>
+
+
+
+<h3 id="links">Links</h3>
+<p>What separates HTML publishing from traditional publishing is the feature called hyperlink, or web link, or simply link. A link uses the hyperlink tag &#60;a&#62;. The corresponding closing hyperlink tag is &#60;/a&#62;. There are three parts to a link: the destination, a label, and a target. </p>
+<p>The href (hyperlink reference) attribute of the hyperlink tag specifies the destination, which may be any web resource such as an image, a video clip, a sound bite, or another HTML document. These resources may be on another website, another HTML document within the same website or somewhere within the same document.</p>
+<p>Between the opening and closing hyperlink tag is the label, which may be text or an image. The label is what you click on to activate the link or retrieve another web resource.</p>
+<p>The target specifies what window or frame is used to display the destination. The default target is itself, i.e., the same window or frame.</p>
+<p><strong>Example 1</strong> - Link to another website using text as a label and another window for the target: </p>
+<pre>&lt;a href=&quot;http://www.google.com&quot; target=&quot;_blank&quot;&gt;Google&lt;/a&gt;</pre>
+<p>The URL value for this href is an <em>absolute</em> URL. Add the &lt;!doctype html&gt;, &lt;head&gt;, and &lt;body&gt; sections and save as links.html in lesson4 folder.</p>
+<p><strong>Example 2</strong> - Link to another website using an image as a label and the default target, which is _self:<br />
+</p>
+<pre>&lt;a href=&quot;http://www.fitnyc.edu/&quot;&gt;
+&lt;img src=&quot;fitlogo.jpg&quot; width=&quot;96&quot; height=&quot;96&quot; alt=&quot;FIT&quot; title=&quot;FIT&quot; /&gt;
+&lt;/a&gt;</pre>
+<p>The URL value for this href is an <em>absolute</em> URL. Add this line to the links.html document. Separate the two links with a line break &lt;br&gt; and save it again.</p>
+<p><strong>Example 3</strong> - Link to another document in the same website:</p>
+<pre>
+&lt;a href=&quot;links.html&quot;&gt;My Sample Links&lt;/a&gt;
+</pre>
+<p>The URL value for this href is a <em>relative</em> URL. Save this as index.html in lesson4 folder. Test it out to see if all 3 examples work. Notice that the default link color is blue and underlined, the visited link color is purple and underlined.</p>
+
+<!--
+<p>The following document contains five links:</p> 
+<ol>
+        <li>A link to an image where the label is an image and the target is a new window</li>	
+	<li>A link to an image where the label is text and the target is a new window</li>
+	<li>A link to a sound bite playing in a media player on your computer and the target is a new window</li>
+	<li>A link to another web page in the same site and the target is the same window (default)</li>
+	<li>A link to another website and the target is the same window (default)</li>
+</ol>
+
+<pre id="demolinks">
+&lt;html&gt;&lt;head&gt;&lt;title&gt;Link Demo&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+  &lt;p style=&quot;font-family:verdana;&quot;&gt;
+      &lt;a href=&quot;ispiderwebT.jpg&quot; target=&quot;_blank&quot;&gt;
+	   &lt;img src=&quot;ispiderwebT.jpg&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;br /&gt;          
+      &lt;a href=&quot;ispiderwebT.jpg&quot; target=&quot;_blank&quot;&gt;an image&lt;/a&gt;&lt;br /&gt;
+      &lt;a href=&quot;gong.wav&quot; target=&quot;_blank&quot;&gt;a sound bite&lt;/a&gt;&lt;br /&gt;
+      &lt;a href=&quot;demolinks2.html&quot;&gt;another web page&lt;/a&gt;&lt;br /&gt;
+      &lt;a href=&quot;http://www.google.com&quot;&gt;another web site&lt;/a&gt;&lt;br /&gt;
+  &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>By clicking on these links, users may visit these resources. Note that the href attribute in each link specifies the destination with a URL or address. The URL must be the complete URL, especially in the last example. If you leave out the &quot;http://&quot; the link would not work. Create a new folder in classwork/lesson4 and name it links. Save the above document as <a href="demolinks.html">demolinks.html</a> in the links folder. To make your demolinks.html work, you need to add the following <a href="assets.html">resources</a> (assets) to your links folder: </p>
+<ul>
+	<li>&quot;ispiderwebT.jpg&quot; (#2)</li>
+	<li>&quot;gong.wav&quot;  (#3)      </li>
+	<li>&quot;demolinks2.html&quot; (#5) </li>
+</ul>
+-->
+  
+  <a href="#top">↑Top</a>
+  
+<h3 id="linkcolors">Link Colors</h3>
+<p>Notice that the default link color is blue and underlined, the default visited link color is purple and underlined, and the default active link color is red and underlined. Default link colors can be changed by specifying the state (pseudo-classes) of the hyperlink selector. The specification format is:</p>
+<pre>
+a:<em>state</em> { property: value; }  </pre>
+<p>where <em>state</em> is the pseudo-class.</p>
+<p>CSS Code:</p>
+<pre>
+a:link {color:blue;}
+a:visited {color:magenta;}
+a:hover{color:red;}
+a:active{color:lime;}
+</pre>
+<p>The order of the specification must be: link first, then visited, then hover, and then active.</p>
+<p>Try this HTML code:</p>
+<pre>
+&lt;a href=&quot;http://www.google.com&quot; target=&quot;_blank&quot;&gt;Google&lt;/a&gt;
+</pre>
+<p>The default decoration is underline. To change the default, specify in each of the 4 states which underline style you want.</p>
+<pre>
+&lt;style type=&quot;text/css&quot;&gt;
+a:link {color:blue; text-decoration: none;}
+a:visited {color:magenta; text-decoration: none;}
+a:hover{color:red; text-decoration: underline;}
+a:active{color:lime; text-decoration: none;}
+&lt;/style&gt;
+</pre>
+  
+  <a href="#top">↑Top</a>
+  
+<!--
+<h3 id="mailtolink">mailto Links</h3>
+<p>A mailto link is used to send e-mail. You could include the subject of the e-mail by entering ?subject=... and also include the body of the e-mail by entering &amp;body=... See example below:</p>
+<p>
+&#60;a href=&quot;mailto:gene_chin@fitnyc.edu?subject=Grade&amp;body=Congratulations! You've received a grade of A in this course.&quot;&#62;Your final grade&#60;/a&#62;</p>
+
+  <a href="#top">Top</a>
+  
+-->
+
+
+
+<h3 id="named">Named Anchors or Anchor URL</h3>
+<p>
+The next excerpt is an example of a link <strong>within the same document</strong> using a named anchor (in other words, the  URL value for this href is an <em>anchor</em> URL). An example of an anchor URL is href=&quot;#top&quot;,   where top is the value of an <em>id</em>attribute for any element where an <em>id</em> attribute is valid. </p>
+<p>
+Create a new folder in classwork/lesson4 and name it bible. Save the following excerpt as <a href="../classwork/cw4/bible.html"><strong>bible.html</strong></a> in the bible folder. Add a link at the end to go back to the top. Change the default link colors to some other colors. Also change the text color to navy or teal.</p>
+<pre>
+&lt;!doctype html&gt;
+&#60;html&#62;&#60;head&#62;&#60;title&#62;Bible&#60;/title&#62;
+&lt;meta charset=&quot;utf-8&quot;&gt;  
+&lt;style type=&quot;text/css&quot;&gt;
+body {background-color:gray; color:beige;}
+a:link {color:blue; text-decoration: none;}
+a:visited {color:magenta; text-decoration: none;}
+a:hover{color:red; text-decoration: underline;}
+a:active{color:lime; text-decoration: none;}
+&lt;/style&gt;
+&#60;/head&#62;
+&lt;body&gt;<br />   &lt;blockquote id=&quot;top&quot;&gt;
+   &#60;h3&#62;The Five Books of Moses&#60;/h3&#62;
+	&#60;p&#62;&#60;a href=&quot;#Genesis&quot;&#62;Genesis&#60;/a&#62;&#60;br /&#62;
+	&#60;a href=&quot;#Exodus&quot;&#62;Exodus&#60;/a&#62;&#60;br /&#62;
+	&#60;a href=&quot;#Leviticus&quot;&#62;Leviticus&#60;/a&#62;&#60;br /&#62;
+	&#60;a href=&quot;#Numbers&quot;&#62;Numbers&#60;/a&#62;&#60;br&#62;
+	&#60;a href=&quot;#Deuteronomy&quot;&#62;Deuteronomy&#60;/a&#62;&#60;br /&#62;&#60;/p&#62;
+   &lt;h4 id=&quot;Genesis&quot;&gt;Genesis&lt;/a&gt;&lt;/h4&gt;
+&#60;p&#62;In the beginning God created the heaven and the earth.
+And the earth was without form, and void; and darkness was upon the 
+face of the deep. And the Spirit of God moved upon the face of the 
+waters. And God said, Let there be light: and there was light. 
+And God saw the light, that it was good: and God divided the light from 
+the darkness. And God called the light Day, and the darkness he called Night. 
+And the evening and the morning were the first day.
+&#60;/p&#62;
+&#60;a href=&quot;#top&quot;&#62;Return to top&#60;/a&#62;
+
+&lt;h4 id=&quot;Exodus&quot;&gt;Exodus&lt;/a&gt;&lt;/h4&gt;
+&#60;p&#62;Now these are the names of the children of Israel, which 
+came into Egypt; every man and his household came with Jacob. 
+Reuben, Simeon, Levi, and Judah, Issachar, Zebulun, 
+and Benjamin, Dan, and Naphtali, Gad, and Asher.
+&#60;/p&#62;
+&#60;a href=&quot;#top&quot;&#62;Return to top&#60;/a&#62;
+
+&lt;h4 id=&quot;Leviticus&quot;&gt;Leviticus&lt;/a&gt;&lt;/h4&gt;
+&#60;p&#62;And the Lord called unto Moses, and spake unto him out 
+of the tabernacle of the congregation, saying, 
+Speak unto the chldren of Israel, and say unto them, 
+If any man of you bring an offering unto the Lord, 
+ye shall bring your offering of the cattle, 
+even of the herd, and of the flock.
+&#60;/p&#62;
+&#60;a href=&quot;#top&quot;&#62;Return to top&#60;/a&#62;
+
+&lt;h4 id=&quot;Numbers&quot;&gt;Numbers&lt;/a&gt;&lt;/h4&gt;
+&#60;p&#62;And the Lord spake unto Moses in the wilderness of Sinai, 
+in the tabernacle of the congregation, on the first day of 
+the second month, in the second year after they were come 
+out of the land of Egypt, saying, Take ye the sum of all the 
+congregation of the children of Israel, after their families, 
+by the house of their fathers, with the number of their names, 
+every male by their polls; From twenty years old and upward, 
+all that are able to go forth to war in Israel: thou and 
+Aaron shall number them by their armies.
+&#60;/p&#62;
+&#60;a href=&quot;#top&quot;&#62;Return to top&#60;/a&#62;
+
+&lt;h4 id=&quot;Deuteronomy&quot;&gt;Deuteronomy&lt;/a&gt;&lt;/h4&gt;
+&#60;p&#62;These be the words which Moses spake unto all Israel on 
+this side of the Jordan in the wilderness, in the plain 
+over against the Red sea, between Paran and Tophel, 
+and Laban, and Hazeroth, and Dizahab.
+&#60;/p&#62;
+&#60;a href=&quot;#top&quot;&#62;Return to top&#60;/a&#62;
+&#60;/blockquote&#62;
+&#60;/body&#62;
+&#60;/html&#62;
+</pre>
+
+<a href="#top">↑Top</a>
+
+<hr>
+
+</div>
+</body>
+</html>

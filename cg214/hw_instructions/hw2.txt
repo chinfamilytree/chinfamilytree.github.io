@@ -1,0 +1,32 @@
+hw2: 7 points
+
+copy index.html from hw1 to hw2.
+
+add to bottom of style sheet...
+
+ol.ur {list-style-type:upper-roman;}
+ol.ua {list-style-type:upper-alpha;}
+ol.de {list-style-type:decimal;}
+ol.la {list-style-type:lower-alpha;}
+ol.lr {list-style-type:lower-roman;}
+ul.d {list-style-type:disc;}
+ul.c {list-style-type:circle;}
+ul.s {list-style-type:square;}
+
+On the index.html page...
+	make Biography, Gallery and Vitals Upper Alpha.
+	make the rest Decimal.
+	
+	
+Below Vitals...
+
+	Create an unordered list of three items from:
+		Click on Boreas to learn more.
+		Click here to hear the wind blowing on Boreas.
+		Click here to hear Ulysses' men whom Circe turned into pigs.
+	
+	Make a definition list containing three definition terms: 
+	Pre-Raphaelites, Greek Mythology, and King Arthur. Make these bold.
+	Use the paragraphs following each term as definition descriptions.
+
+		

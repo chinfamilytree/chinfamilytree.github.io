@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<title>Tell Me Your Name</title>
+</head>
+<body>
+<h3>Who are you?</h3>
+<form method="post" action="http://users.fitnyc.edu/cgi-bin/post-query">
+	<p>Enter your name:
+		<input type="text" name="theName" size="35"></p>
+	<p>Enter your zip code:
+		<input type="text" name="theZip" size="10"></p>
+	<p>Student:
+		<input type="radio" name="theStudent" value="student_yes">Yes
+		<input type="radio" name="theStudent" value="student_no">No</p>
+	<p>Enter your email address:
+		<input type="text" name="theEmail" size="27"></p>
+	<p>Enter your comments or questions:<br>
+		<textarea name="theComments" rows="3" cols="40" wrap="soft"></textarea></p>
+	<p><input type="submit" value="Send Now"><input type="reset" value="Reset"></p>
+</form>
+</body>
+</html>

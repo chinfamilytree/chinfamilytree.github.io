@@ -1,0 +1,96 @@
+hw4: 7 pts
+
+Copy everything from hw3 to hw4 folder.
+
+
+Copy from the Transport ("T" drive) ffs/CG214/hw4...
+	final-project-sheet.doc 
+	checklist.html
+
+	
+Add the following styles to index.html and ophelia.html...
+
+img{border: none;}
+a:link {color:blue; text-decoration: none;}
+a:visited {color:blue; text-decoration: none;}
+a:hover{color:red; text-decoration: none;}
+a:active{color:blue; text-decoration: none;}
+
+
+In index.html set the proper links for...
+	Checklist (checklist.html)
+	Worksheet (final-project-sheet.doc)
+	Class Site (http://sites.fitnyc.edu/users/gene_chin/c2/)
+	   
+In ophelia.html set the proper links for...
+	Home (index.html) 
+	Checklist (checklist.html)
+	Final Project Worksheet (final-project-sheet.doc)
+	Class Site (http://sites.fitnyc.edu/users/gene_chin/c2/)
+	The image "ophelia.jpg" (http://en.wikipedia.org/wiki/Ophelia)
+	
+	
+Add id="top" to the index.html...
+	<h1 id="top">John William Waterhouse</h1>
+	
+Set all Return to Top...
+	<a href="#top">Return to Top</a>
+
+Add id the heading 2 and heading 3 lines in index.html...
+	<h2 id="biography">Biography</h2>
+	<h2 id="gallery">Gallery</h2>
+	<h2 id="vitals">Vitals</h2>
+	<h3 id="earlylife">Early Life</h3>
+	<h3 id="earlycareer">Early Career</h3>
+	<h3 id="latercareer">Later Career</h3>
+	<h4 id="1870s">1870s</h4>
+	<h4 id="1880s">1880s</h4>	
+	<h4 id="1890s">1890s</h4>	
+	<h3 id="1900s">1900s</h3>	
+	<h3 id="1910s">1910s</h3>	
+	  
+Set the links (in the ordered list) for 
+	Biography 	
+		<a href="#biography">Biography</a>
+		
+	Gallery
+		<a href="#gallery">Gallery</a>
+	
+	Vitals
+	        <a href="#vitals">Vitals</a>
+
+	Early Life
+		<a href="#earlylife">Early Life</a>
+	
+	Early Career
+		<a href="#earlycareer">Early Career</a>
+		
+	Later Career
+		<a href="#latercareer">Later Career</a>
+		
+	1870s
+		<a href="#1870s">1870s</a>
+	
+	1880s
+		<a href="#1880s">1880s</a>
+	
+	1890s
+		<a href="#1890s">1890s</a>
+	
+	1900s
+		<a href="#1900s">1900s</a>
+	
+	1910s
+		<a href="#1910s">1910s</a>		
+
+
+To test these links, insert a dummy image (such as 
+ophelia.jpg in each decade to put some space in between.
+
+
+Set the link for the boreas-t.img image to...
+	http://en.wikipedia.org/wiki/Boreas_(painting)
+
+
+	
+	

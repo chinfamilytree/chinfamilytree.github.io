@@ -1,0 +1,43 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>John William Waterhouse</title>
+<link rel="stylesheet" type="text/css" href="css1.css" />
+<style type="text/css">
+body {
+background-color: #C3FFE7;
+background-image: url(bg1.gif);
+background-repeat: repeat-x;
+}
+a:link {
+color: #060;
+}
+a:visited {
+color: #060;
+}
+a:hover {
+color: white;
+background-color:black;
+font-size:14px;
+}
+a:active {
+color: #060;
+}
+</style>
+</head>
+
+<body>
+<h1>Hierarchy of Styles</h1>
+<p> Let's use the h2 tag in this document to illustrate the hierarchy of styles from lowest to highest: browser default, external style sheet, internal style sheet, and (the highest) inline styles. Both Ophelia's used h2.</p>
+<h2 style="font-family:'Times New Roman', Times, serif">Ophelia (could not be simulated)</h2>
+<p>First, the word Ophelia was times new roman, the size of a heading 2 (may be slightly different for different browsers) with black color.</p>
+<h2 style="font-family:'Times New Roman', Times, serif; font-size:24px;">Ophelia (possibly a slight change here)</h2>
+<p>Second, the css1.css external style sheet sets the size to exactly 24px, retaining the black color and time new roman.</p>
+<h2 style="font-family:'Times New Roman', Times, serif; font-size:24px;">Ophelia (no change here, inherited or cascading effect)</h2>
+<p>The internal style sheet could next change it, but since it was not specified, heading 2 would inherit the change that was made in the external style sheet. It has the cascading effect, from the first word of css (cascading style sheet).</p>
+<h2 style="font-family:'Comic Sans MS', cursive; font-size:29px; color:#88B2A2">Ophelia (definitely changed here)</h2>
+<p>The final effect was made in the inline style which changed the font to Comic Sans MS (if this font is not found on a user's computer, then a cursive font would be used). The size was changed to 29 pixels and the font color was changed to #88B2A2 (quite a bit of green, a fear amount of blue, and less red).</p>
+</body>
+</html>
+

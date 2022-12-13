@@ -1,0 +1,366 @@
+﻿hw5: 7 points
+
+Copy all files from hw4 to hw5 folder.
+
+In index.html remove all 5 dummy images inserted in the decades 
+for testing purposes. We will put tables in these places.
+
+Put the following styles into the internal stylesheet of index.html...
+
+.table1 {
+	background-image:url(bg2.gif);
+	border:solid navy 2px;
+	border-collapse:collapse;
+}
+.table2 {
+	background-color:#FFE6CC;
+	border:solid navy 2px;
+	border-collapse:collapse;
+}
+.table3 {
+	background-color:#FFEBD6;
+	border:solid navy 2px;
+	border-collapse:collapse;
+}
+.table4 {
+	background-color:#FFF0E0;
+	border:solid navy 2px;
+	border-collapse:collapse;
+}
+.table5 {
+	background-color:#FFF5EB;
+	border:solid navy 2px;
+	border-collapse:collapse;
+}
+td,th {
+	border:solid teal 1px;
+}
+th {
+	height:30px; vertical-align:middle;
+}
+td {
+	padding:8px;
+}
+
+`-`-`-`-`-`-`-`-`-`-`
+Put the following table for 1870s...
+
+<table class="table1">
+	  <tr>
+	    <th scope="col">Year</th>
+	    <th scope="col">Name</th>
+      </tr>
+	  <tr>
+	    <td>1872</td>
+	    <td><em><a href="http://en.wikipedia.org/wiki/Undine" title="Undine">Undine</a></em></td>
+      </tr>
+	  <tr>
+	    <td>1873</td>
+	    <td><em>Gone, But Not Forgotten</em></td>
+      </tr>
+	  <tr>
+	    <td>1873</td>
+	    <td><em><a href="http://en.wikipedia.org/wiki/The_Unwelcome_Companion--A_Street_Scene_in_Cairo" title="The Unwelcome Companion--A Street Scene in Cairo">The Unwelcome Companion--A Street Scene in Cairo</a></em></td>
+      </tr>
+	  <tr>
+	    <td>1874</td>
+	    <td><em>La Fileuse</em></td>
+      </tr>
+	  <tr>
+	    <td>1874</td>
+	    <td><em>In the Peristyle</em></td>
+      </tr>
+	  <tr>
+	    <td>1875</td>
+	    <td><em>Miranda</em></td>
+      </tr>
+	  <tr>
+	    <td>1877</td>
+	    <td><em>A Sick Child brought into the Temple of Aesculapius</em></td>
+      </tr>
+	  <tr>
+	    <td>1878</td>
+	    <td><em>The Remorse of the Emperor Nero after the Murder of his Mother</em></td>
+      </tr>
+</table>
+
+`-`-`-`-`-`-`-`-`-`-`
+Put the following table for 1880s...
+
+<table class="table2">
+	  <tr>
+	    <th scope="col">Year</th>
+	    <th scope="col">Name</th>
+      </tr>
+	  <tr>
+	    <td>1880</td>
+	    <td><em>Dolce far Niente</em></td>
+      </tr>
+	  <tr>
+	    <td>1882</td>
+	    <td><em><a href="http://en.wikipedia.org/wiki/Diogenes_of_Sinope" title="Diogenes of Sinope">Diogenes</a></em></td>
+      </tr>
+	  <tr>
+	    <td>1883</td>
+	    <td><em><a href="http://en.wikipedia.org/wiki/The_Favourites_of_the_Emperor_Honorius" title="The Favourites of the Emperor Honorius">The Favourites of the Emperor Honorius</a></em></td>
+      </tr>
+	  <tr>
+	    <td>1884</td>
+	    <td><em><a href="http://en.wikipedia.org/wiki/Consulting_the_Oracle" title="Consulting the Oracle">Consulting the Oracle</a></em></td>
+      </tr>
+	  <tr>
+	    <td>1885</td>
+	    <td><em><a href="http://en.wikipedia.org/wiki/Saint_Eulalia_(Waterhouse_painting)" title="Saint Eulalia (Waterhouse painting)">Saint Eulalia</a></em></td>
+      </tr>
+	  <tr>
+	    <td>1886</td>
+	    <td><em><a href="http://en.wikipedia.org/wiki/The_Magic_Circle_(Waterhouse_painting)" title="The Magic Circle (Waterhouse painting)">Magic Circle</a></em></td>
+      </tr>
+	  <tr>
+	    <td>1886</td>
+	    <td><em><a href="http://en.wikipedia.org/wiki/The_Lady_of_Shalott_(painting)" title="The Lady of Shalott (painting)">The Lady of Shalott</a></em></td>
+      </tr>
+	  <tr>
+	    <td>1888</td>
+	    <td><em><a href="http://en.wikipedia.org/wiki/Cleopatra" title="Cleopatra">Cleopatra</a></em></td>
+      </tr>
+	  <tr>
+	    <td>1889</td>
+	    <td><em>Ophelia</em></td>
+      </tr>
+</table>
+
+`-`-`-`-`-`-`-`-`-`-`
+Put the following table for 1890s...
+
+<table class="table3">
+	  <tr>
+	    <th>Year</th>
+	    <th>Name</th>
+      </tr>
+	  <tr>
+	    <td>1890</td>
+	    <td><em>A Roman Offering</em></td>
+      </tr>
+	  <tr>
+	    <td>1891</td>
+	    <td><p><a href="http://en.wikipedia.org/wiki/Circe_Offering_the_Cup_to_Ulysses"><img src="../homework/hw5/circe-t.jpg" width="80" height="120" alt="Circe"></a></p>
+        <p><em><a href="http://en.wikipedia.org/wiki/Circe_Offering_the_Cup_to_Ulysses" title="Circe Offering the Cup to Ulysses">Circe Offering the Cup to Ulysses</a></em></p></td>
+      </tr>
+	  <tr>
+	    <td>1891</td>
+	    <td><em><a href="http://en.wikipedia.org/wiki/Odysseus" title="Odysseus">Ulysses</a> and the Sirens</em></td>
+      </tr>
+	  <tr>
+	    <td>1892</td>
+	    <td><em><a href="http://en.wikipedia.org/wiki/Dana%C3%AB" title="Danaë">Danaë</a></em></td>
+      </tr>
+	  <tr>
+	    <td>1892</td>
+	    <td><em><a href="http://en.wikipedia.org/wiki/Circe_Invidiosa" title="Circe Invidiosa">Circe Invidiosa</a></em></td>
+      </tr>
+	  <tr>
+	    <td>1893</td>
+	    <td><strong>A <a href="http://en.wikipedia.org/wiki/Naiad" title="Naiad">Naiad</a></strong> or <em><a href="http://en.wikipedia.org/wiki/Hylas" title="Hylas">Hylas</a> with a Nymph</em></td>
+      </tr>
+	  <tr>
+	    <td>1893</td>
+	    <td><em>La Belle Dame sans Merci</em></td>
+      </tr>
+	  <tr>
+	    <td>1894</td>
+	    <td><em>A Female Study</em></td>
+      </tr>
+	  <tr>
+	    <td>1894</td>
+	    <td><p><em><a href="http://www.jwwaterhouse.com/view.cfm?recordid=27" title="Lancelot"><img src="../homework/hw5/lady-t.jpg" width="80" height="120" alt="Lady 1894"></a></em></p>
+        <p><em>The <a href="http://en.wikipedia.org/wiki/Lady_of_Shalott" title="Lady of Shalott">Lady of Shalott</a> Looking at<a href="http://en.wikipedia.org/wiki/Lancelot" title="Lancelot"> Lancelot </a></em></p></td>
+      </tr>
+	  <tr>
+	    <td>1894</td>
+	    <td><p><a href="http://www.jwwaterhouse.com/view.cfm?recordid=23"><img src="../homework/hw5/ophelia-t.jpg" width="80" height="120" alt="Ophelia"></a></p>
+        <p><em><a href="http://en.wikipedia.org/wiki/Ophelia" title="Ophelia">Ophelia</a></em></p></td>
+      </tr>
+	  <tr>
+	    <td>1895</td>
+	    <td><em>The Shrine</em></td>
+      </tr>
+	  <tr>
+	    <td>1895</td>
+	    <td><em><a href="http://en.wikipedia.org/wiki/Saint_Cecilia" title="Saint Cecilia">Saint Cecilia</a></em></td>
+      </tr>
+	  <tr>
+	    <td>1896</td>
+	    <td><em><a href="http://en.wikipedia.org/wiki/Pandora" title="Pandora">Pandora</a></em></td>
+      </tr>
+	  <tr>
+	    <td>1896</td>
+	    <td><em><a href="http://en.wikipedia.org/wiki/Hylas" title="Hylas">Hylas</a> and the <a href="http://en.wikipedia.org/wiki/Nymph" title="Nymph">Nymphs</a></em></td>
+      </tr>
+	  <tr>
+	    <td>1898</td>
+	    <td><em><a href="http://en.wikipedia.org/wiki/Juliet" title="Juliet">Juliet</a></em></td>
+      </tr>
+</table>
+
+`-`-`-`-`-`-`-`-`-`-`
+Put the following table for 1900s...
+
+<table class="table4">
+	  <tr>
+	    <th scope="col">Year</th>
+	    <th scope="col">Name</th>
+      </tr>
+	  <tr>
+	    <td>c.1900</td>
+	    <td><em>The Siren</em></td>
+      </tr>
+	  <tr>
+	    <td>1900</td>
+	    <td><em>Destiny</em></td>
+      </tr>
+	  <tr>
+	    <td>1900</td>
+	    <td><em>The Lady Clare</em></td>
+      </tr>
+	  <tr>
+	    <td>1900</td>
+	    <td><em>Nymphs Finding the Head of Orpheus</em></td>
+      </tr>
+	  <tr>
+	    <td>1900</td>
+	    <td><em>The Mermaid</em></td>
+      </tr>
+	  <tr>
+	    <td>1902</td>
+	    <td><a href="http://en.wikipedia.org/wiki/The_Crystal_Ball_(painting)" title="The Crystal Ball (painting)"><em>The Crystal Ball</em></a></td>
+      </tr>
+	  <tr>
+	    <td>1902</td>
+	    <td><em>The Missal</em></td>
+      </tr>
+	  <tr>
+	    <td>1902</td>
+	    <td><em>Windflowers</em></td>
+      </tr>
+	  <tr>
+	    <td>1903</td>
+	    <td><p><a href="http://en.wikipedia.org/wiki/Boreas_(painting)"><img src="../homework/hw5/boreas-t.jpg" width="80" height="120" alt="Boreas"></a></p>
+        <p><em>
+        <a href="http://en.wikipedia.org/wiki/Boreas_(Waterhouse_painting)" title="Boreas (Waterhouse painting)">Boreas</a></em></p></td>
+      </tr>
+	  <tr>
+	    <td>1903</td>
+	    <td><em><a href="http://en.wikipedia.org/wiki/Echo_and_Narcissus_(Waterhouse_painting)" title="Echo and Narcissus (Waterhouse painting)">Echo and Narcissus</a></em></td>
+      </tr>
+	  <tr>
+	    <td>1903</td>
+	    <td><em>Psyche Opening the Golden Box</em></td>
+      </tr>
+	  <tr>
+	    <td>1904</td>
+	    <td><em>Psyche Opening the Door into Cupid's Garden</em></td>
+      </tr>
+	  <tr>
+	    <td>1905</td>
+	    <td><em><a href="http://en.wikipedia.org/wiki/Lamia" title="Lamia">Lamia</a></em>        (version 1)</td>
+      </tr>
+	  <tr>
+	    <td>1907</td>
+	    <td><em>Jason and Medea</em></td>
+      </tr>
+	  <tr>
+	    <td>1908</td>
+	    <td><em>The Bouquet</em>        (a study)</td>
+      </tr>
+	  <tr>
+	    <td>c. 1908</td>
+	    <td><em>Gather Ye Rosebuds</em> or <em>Ophelia</em> (a study)</td>
+      </tr>
+	  <tr>
+	    <td>1908</td>
+	    <td><em>Gather Ye Rosebuds While Ye May...</em></td>
+      </tr>
+	  <tr>
+	    <td>1908</td>
+	    <td><em>The Soul of the Rose</em> or<em>My Sweet Rose</em></td>
+      </tr>
+	  <tr>
+	    <td>1909</td>
+	    <td><em>Gather Ye Rosebuds While Ye May</em></td>
+      </tr>
+	  <tr>
+	    <td>1909</td>
+	    <td><em>Lamia</em>        (version 2)</td>
+      </tr>
+	  <tr>
+	    <td>1909</td>
+	    <td><em>Thisbe</em></td>
+      </tr>
+</table>
+
+`-`-`-`-`-`-`-`-`-`-`
+Put the following table for 1910s...
+
+<table class="table5">
+	  <tr>
+	    <th scope="col">Year</th>
+	    <th scope="col">Name</th>
+      </tr>
+	  <tr>
+	    <td>1910</td>
+	    <td><em>Ophelia</em></td>
+      </tr>
+	  <tr>
+	    <td>1910</td>
+	    <td>
+		<p>
+		<a href="http://www.johnwilliamwaterhouse.com/pictures/spring-spreads-one-green-lap-flowers-1910/">
+		<img src="../homework/hw5/spring-t.jpg" width="80" height="120" alt="Spring"></a>
+		</p>
+        <p><em>Spring Spreads One Green Lap of Flowers</em></p>
+		</td>
+      </tr>
+	  <tr>
+	    <td>1911</td>
+	    <td><em>The Charmer</em></td>
+      </tr>
+	  <tr>
+	    <td>1912</td>
+	    <td><em>Penelope and the Suitors</em></td>
+      </tr>
+	  <tr>
+	    <td>1914</td>
+	    <td><em>The Annunciation</em></td>
+      </tr>
+	  <tr>
+	    <td>c. 1915</td>
+	    <td><em>Beatrice</em></td>
+      </tr>
+	  <tr>
+	    <td>1915</td>
+	    <td><em>Dante and Beatrice</em></td>
+      </tr>
+	  <tr>
+	    <td>1916</td>
+	    <td><em>I am half-sick of shadows, said the Lady of Shalott</em></td>
+      </tr>
+	  <tr>
+	    <td>1916</td>
+	    <td><em>A Tale from the Decameron</em></td>
+      </tr>
+	  <tr>
+	    <td>1916</td>
+	    <td><em>Miranda -- The Tempest</em></td>
+      </tr>
+	  <tr>
+	    <td>1916</td>
+	    <td><em>Tristan and Isolde</em></td>
+      </tr>
+</table>
+
+`-`-`-`-`-`-`-`-`-`-`
+Put a horizontal rule  <hr> to separate each decade.
+
+
+

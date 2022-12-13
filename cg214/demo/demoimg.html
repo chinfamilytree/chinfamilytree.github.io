@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Web Page Construction</title>
+<link href="../mystyles.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+img.border1{border:gray 1px solid;}
+img.border2{border:gray 2px solid;
+vertical-align:middle;
+}
+img.border4{border:gray 4px solid;
+vertical-align:top;
+}
+img.right-aligned{
+	display: block;
+	float: right;
+}
+
+.hrcenter4 {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 4px;
+	background-color: #FF0000;
+	border: 1px solid #FF0000;
+}
+.hrleft25 {
+	width: 25%;
+	float: left;
+}
+.hrright25ht8 {
+	width: 25%;
+	height: 8px;
+	margin-left: auto;
+	background-color: #000000;
+	float: right;
+}
+</style>
+</head>
+<body>
+
+<a href="javascript:history.back()"><img src="../images/left.gif" alt="Go back" width="16" height="16">Go Back</a>
+<h2>Using Images and Rules in HTML
+&nbsp;
+<span style="font-size:12px;font-weight:normal;">
+(<img src="../images/right.gif" width="16" height="16" alt=""/><a href="../index.html" target="_top">Home</a>)</span>
+</h2>
+
+
+   <h4>On this page are examples of images and rules in HTML.</h4>
+   <p>Here is an image of a Ophelia at the end of a line.<img src="../images/ophelia-t.jpg" width="80" height="120" alt=""/></p>
+   <p>Here Ophelia is <img src="../images/ophelia-t.jpg" width="80" height="120" alt=""/> in the middle of the line.</p>
+   <p>Image bottom aligned with a 1-pixel border.<img src="../images/ophelia-t.jpg" width="80" height="120" alt="" class="border1"/></p>
+   <p>Image middle aligned with a 2-pixel border.<img src="../images/ophelia-t.jpg" width="80" height="120" alt="" class="border2"/></p>
+   <p>Image top aligned with a 4-pixel border.<img src="../images/ophelia-t.jpg" width="80" height="120" alt="" class="border4"/></p>
+   <p><img src="../images/ophelia-t.jpg" width="80" height="120" alt=""/>
+	Image left aligned with no border. </p><br /><br />
+   <p><img src="../images/ophelia-t.jpg" width="80" height="120" alt="" class="right-aligned"/>
+	Image right aligned.</p><br /><br /><br />
+   <p>Below is a horizontal rule with all the defaults.</p> <hr>
+   <p>Below is a horizontal rule half length centered and height set to 4 pixels and color red..</p> <hr class="hrcenter4">
+   <p>Below is a solid horizontal rule 1/4 length aligned on the left 
+      with default height.</p>  <hr class="hrleft25"><br>
+      
+   <p>Below is a solid horizontal rule 1/4 length aligned on the right 
+      and height set to 8 pixels. </p>
+   <hr class="hrright25ht8">
+
+</body>
+</html>
+

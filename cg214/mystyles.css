@@ -1,0 +1,126 @@
+@charset "utf-8";
+body,td,th {
+	font-family: "Segoe UI", Verdana, Arial;
+	font-size: 14px;
+}
+body {
+	background-color: #FFFFE3;
+}
+a {
+	font-size: 14px;
+	color: #00F;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration: none;
+	color: #FFF;
+}
+h1,h2,h3,h4,h5,h6{color:darkgreen;}
+h1 {
+	font-size: 36px; text-align:center;
+}
+h2 {
+	font-size: 24px;
+}
+h3 {
+	font-size: 18px;
+}
+h4 {
+	font-size: 16px;
+}
+h5 {
+	font-size: 14px;
+}
+h6 {
+	font-size: 12px;
+}
+table, th, td {
+    border: 1px solid green;
+    border-collapse: collapse;
+}
+th,td {
+    padding: 15px;
+}
+ol.a {list-style-type:upper-roman;}
+ol.b {list-style-type:upper-alpha;}
+ol.c {list-style-type:decimal;}
+ol.d {list-style-type:lower-alpha;}
+ol.e {list-style-type:lower-roman;}
+ul.f {list-style-type:disc;}
+ul.g {list-style-type:circle;}
+ul.h {list-style-type:square;}
+ul.n {list-style-type:none;}
+	
+#container {
+	width:751px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#FFFFE3
+}
+#wrap	{
+	width: 751px; /* Spans the width of the page */
+	height: 50px; 
+	margin-left: auto;
+	margin-right:auto;
+	z-index: 99;
+	position: relative; 
+	background-color: forestgreen;
+	}
+.navbar	{
+	height: 50px;
+        padding: 0;
+	margin: 0;
+	position: absolute; /* Ensures that the menu doesn’t affect other elements */
+	border-right: 1px solid #54879d; 
+	}
+.navbar li 	{
+	height: auto;
+	width: 150px;  /* Each menu item is 150px wide */
+	float: left;  /* This lines up the menu items horizontally */
+	text-align: center;  /* All text is placed in the center of the box */
+	list-style: none;  /* Removes the default styling (bullets) for the list */
+	font:16px/1.2em "Segoe UI", Arial, Verdana, Helvetica;  
+	padding: 0;
+	margin: 0;
+	background-color: forestgreen;
+    }
+.navbar a	{							
+	padding: 18px 0;  /* Adds a padding on the top and bottom so the text appears centered vertically */
+	border-left: 1px solid #54879d; /* Creates a border in a slightly lighter shade of blue than the background.  Combined with the right border, this creates a nice effect. */
+	border-right: 1px solid #1f5065; /* Creates a border in a slightly darker shade of blue than the background.  Combined with the left border, this creates a nice effect. */
+	text-decoration: none;  /* Removes the default hyperlink styling. */
+	color: white; /* Text color is white */
+	display: block;
+	}
+.navbar li:hover, a:hover {
+	background-color: teal;
+	text-align: center;
+}
+.navbar li ul 	{
+	display: none;  /* Hides the drop-down menu */
+	height: auto;									
+	margin: 0; /* Aligns drop-down box underneath the menu item */
+	padding: 0; /* Aligns drop-down box underneath the menu item */			
+	}				
+.navbar li:hover ul 	{
+	display: block; /* Displays the drop-down box when the menu item is hovered over */
+	}
+.navbar li ul li {background-color: teal;}
+.navbar li ul li a 	{
+	border-left: 1px solid #1f5065; 
+	border-right: 1px solid #1f5065; 
+	border-top: 1px solid #74a3b7; 
+	border-bottom: 1px solid #1f5065; 
+	}		
+.navbar li ul li a:hover	{background-color: forestgreen;}
+.smallcaps {
+	font-variant: small-caps;
+}
+.thinborder {
+	border: 1px solid #000000;
+}
+.table01 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

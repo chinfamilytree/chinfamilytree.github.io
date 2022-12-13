@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Web Page Construction</title>
+<link href="../mystyles.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<div id="container">
+<h1>Web Page Construction</h1>
+<div id="wrap">
+	<ul class="navbar">
+		<li><a href="../index.html">Home</a></li>
+        <li><a href="../info/infocontact.html">Contact</a>   		</li>
+		<li><a href="#">HTML/CSS</a>
+			<ul>
+				<li><a href="1.html">Lesson 1</a></li>
+				<li><a href="2.html">Lesson 2</a></li>
+				<li><a href="3.html">Lesson 3</a></li>
+                <li><a href="4.html">Lesson 4</a></li>
+				<li><a href="5.html">Lesson 5</a></li>
+				<li><a href="6.html">Lesson 6</a></li>
+                <li><a href="7.html">Lesson 7</a></li>
+                <li><a href="8.html">Lesson 8</a></li>
+
+			</ul>         
+		</li>
+		<li><a href="#">Dreamweaver</a>
+			<ul>
+				<li><a href="d1.html">Lesson 1</a></li>
+				<li><a href="d2.html">Lesson 2</a></li>
+				<li><a href="d6.html">Lesson 3</a></li>
+                <li><a href="d4.html">Lesson 4</a></li>
+				<li><a href="d5.html">Lesson 5</a></li>
+				<li><a href="d3.html">Lesson 6</a></li>  
+			</ul>         
+		</li>
+
+        <li><a href="#">Other</a>
+			<ul>
+				<li><a href="../info/infolinks.html">Useful Links</a></li>
+				<li><a href="../info/infofaq.html">FAQ</a></li>
+                <li><a href="../info/infoassets.html">Assets</a></li>
+				<li><a href="../info/infodocs.html">Documents</a></li>
+                <li><a href="../info/infohomework.html">Homework</a></li>
+			</ul>         
+		</li>
+	</ul>
+</div>
+<!--<iframe id="if1" name="if1" frameborder="0" height="1000" width="750" scrolling="auto" src="info/infohome.html"></iframe> -->
+<h2>HTML/CSS Lesson 7 - Rollover, Image Map, Forms, Special Characters,  and Meta Tags</h2>
+
+<p>
+
+<a href="#rollover">Rollover</a> | 
+<a href="#imagemap">Image Map</a> |
+<a href="#forms">Forms</a> |  
+<a href="#special">Special Characters</a> | 
+<a href="#meta">Meta tags</a> |</p>
+<hr>
+
+<h3 id="rollover">Rollover</h3>
+<p>You can make an image change when you point to it. This is called a rollover. You need two images, preferably with the same dimensions. One is the original image shown on the page and the other is the image that appears when you point to the original image. When you move your pointer away the original image will appear again. Suppose we have an image called &quot;boreas-t.jpg&quot; and a second image called &quot;boreas-r.jpg&quot;.  If you click on the image you will link to  &quot;http://en.wikipedia.org/wiki/Boreas_(painting)&quot;. The name associated with the image and rollovers is &quot;bore&quot;. Save the four lines below in the file as <a href="../classwork/cw7/demoroll.html"><strong>demoroll.html</strong></a>.</p>
+<pre>
+&#60;a href=&quot;http://en.wikipedia.org/wiki/Boreas_(painting)&quot; 
+onmouseover=&quot;document.bore.src='boreas-r.jpg'&quot; 
+onmouseout= &quot;document.bore.src='boreas-t.jpg'&quot;&#62;
+&#60;img src=&quot;boreas-t.jpg&quot; name=&quot;bore&quot; alt=&quot;boreas&quot; title=&quot;Boreas&quot;&#62; &#60;/a&#62;
+</pre>
+<p>If you have another example on the same page, you <em>cannot</em> use the same name. See next example where the name is "circ". Put these 4 lines also in demoroll.html. <strong>Note:</strong> If you put this through Dreamweaver, it will not understand it and make it not work. </p>
+<pre>
+&#60;a href=&quot;http://en.wikipedia.org/wiki/Circe_Offering_the_Cup_to_Ulysses&quot; 
+onmouseover=&quot;document.circ.src='circe-r.jpg'&quot; 
+onmouseout= &quot;document.circ.src='circe-t.jpg'&quot;&#62;
+&#60;img src=&quot;circe-t.jpg&quot; name=&quot;circ&quot; alt=&quot;Circe&quot; &#62; &#60;/a&#62;
+</pre>
+<a href="#top">↑Top</a>
+
+<h3 id="imagemap">Image Map</h3>
+<p>An image may be divided into areas called hotspots. Hotspots are links to another document that appears when you click on the hotspot. Hotspots may have the shape of a rectangle, polygon, or circle (as shown in the example below). The coordinates of a rectangle are specified by coords=&quot;x1, y1, x2, y2&quot; where x1, y1 are the coordinates of the upper left corner of the rectangle, and x2, y2 and the coordinates of the lower right corner of the rectangle. The coordinates of a polygon are specified in a similar manner with each pair of coordinates being a vertex of the polygon. The coordinates of a circle are specified by coords=&quot;x, y, r&quot; where x,y are the coordinates for the center of the circle and r is the radius. The map starts with the &#60;map&#62; tag, which has a name and id attribute, both of which specifies the name of the map. The &#60;area&#62; tag has a title attribute that displays when you move your pointer over the map, a shape attribute (<strong>rect</strong> for rectangle, <strong>poly</strong> for polygon, or <strong>circle</strong> for circle), and a href attribute that displays the specified document if you click on the hotspot. You can have as many hotspots in an image as you like. All area tags for an image are placed within the opening &#60;map&#62; and closing &#60;/map&#62; tags. You can use Photoshop and click on Windows &gt; Show Info or F8 to find the coordinates of the point you want to use. Just make sure you click on the arrow on the bottom right corner of the crosshair and set the units to pixels (not inches).</p>
+<p>Copy the following lines of code and save it as <a href="../classwork/cw7/demomap.html"><strong>demomap.html</strong></a>. </p>
+<p>&lt;!doctype html&gt;<br>
+  &lt;html&gt;<br>
+  &lt;head&gt;<br>
+  &lt;meta charset=&quot;utf-8&quot;&gt;<br>
+  &lt;title&gt;Image Map&lt;/title&gt;<br>
+  &lt;style type=&quot;text/css&quot;&gt;<br>
+  body,td,th {<br>
+font-family: Verdana, Geneva, sans-serif;<br>
+font-size: 14px;<br>
+}<br>
+body {<br>
+background-color: #FFC;<br>
+}<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;h2&gt;Image Map&lt;/h2&gt;<br>
+&lt;img src=&quot;bichon.jpg&quot; usemap=&quot;#Map&quot; title=&quot;Patty&quot;&gt;<br>
+&lt;map name=&quot;Map&quot;&gt;<br>
+&lt;area shape=&quot;circle&quot; coords=&quot;83,57,12&quot; href=&quot;circe.html&quot; title=&quot;Left Eye&quot;&gt;<br>
+&lt;area shape=&quot;rect&quot; coords=&quot;12,41,35,96&quot; href=&quot;bark.wav&quot; title=&quot;Right Ear&quot;&gt;<br>
+&lt;area shape=&quot;poly&quot; coords=&quot;131,51,144,75,135,105,120,111,111,92,117,69,131,52&quot; href=&quot;harp.wav&quot; title=&quot;Left Ear&quot;&gt;<br>
+&lt;/map&gt;<br>
+&lt;p&gt;This is Patty.&lt;/p&gt;<br>
+&lt;ul&gt;<br>
+&lt;li&gt;Click on his right ear to hear Marshmallow bark.&lt;/li&gt;<br>
+&lt;li&gt;Click on his left eye to see Circe who was almost successful in keeping Odysseus from seeing his faithful dog again.&lt;/li&gt;<br>
+&lt;li&gt;Click on his left ear to hear some harp music.&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;</p>
+
+
+<p>In the image tag &#60;img&#62; you must set the usemap attribute  to the name specified by the name attribute of the &#60;map&#62; tag prefixed with the # sign. bichon.jpg is the image with the desired hotspots.</p>
+<p><a href="#top">↑ Top</a></p>
+<h3 id="forms">Forms</h3>
+<p>A form allows your users to send information to you (the programmer or script-writer who analyzes the information submitted). HTML merely creates the appearance of a form. In order for the form to work properly, you must create a script that runs on the server.</p>
+<p>Create a folder called formsample inside the classwork/day7 folder. Save the following as <a href="../classwork/cw7/demoform.html"><strong>demoform.html</strong></a> inside the formsample folder. </p>
+<pre>&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Tell Me Your Name&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h3&gt;Who are you?&lt;/h3&gt;
+&lt;form method=&quot;post&quot; action=&quot;http://users.fitnyc.edu/cgi-bin/post-query&quot;&gt;
+	&lt;p&gt;Enter your name:
+		&lt;input type=&quot;text&quot; name=&quot;theName&quot; size=&quot;35&quot;&gt;&lt;/p&gt;
+	&lt;p&gt;Enter your zip code:
+		&lt;input type=&quot;text&quot; name=&quot;theZip&quot; size=&quot;10&quot;&gt;&lt;/p&gt;
+	&lt;p&gt;Student:
+		&lt;input type=&quot;radio&quot; name=&quot;theStudent&quot; value=&quot;student_yes&quot;&gt;Yes
+		&lt;input type=&quot;radio&quot; name=&quot;theStudent&quot; value=&quot;student_no&quot;&gt;No&lt;/p&gt;
+	&lt;p&gt;Enter your email address:
+		&lt;input type=&quot;text&quot; name=&quot;theEmail&quot; size=&quot;27&quot;&gt;&lt;/p&gt;
+	&lt;p&gt;Enter your comments or questions:&lt;br&gt;
+		&lt;textarea name=&quot;theComments&quot; rows=&quot;3&quot; cols=&quot;40&quot; wrap=&quot;soft&quot;&gt;&lt;/textarea&gt;&lt;/p&gt;
+	&lt;p&gt;&lt;input type=&quot;submit&quot; value=&quot;Send Now&quot;&gt;&lt;input type=&quot;reset&quot; value=&quot;Reset&quot;&gt;&lt;/p&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<p>The opening tag <strong>&lt;form&gt;</strong> and the closing tag <strong>&lt;/form&gt;</strong> enclose the form. The method attribute  indicates how the form input is given to the script that processes the form. Possible values are <strong>get</strong> and <strong>post</strong>. The <strong>action</strong> attribute indicates the CGI script used to process the form input. The prompt in &quot;Enter your name&quot; tells the user to enter information into the text box in the next line  using the input tag. When the <strong>type</strong> attribute is &quot;text&quot;, it can be omitted. The <strong>name</strong> attribute together with the value in the text box are sent to the CGI script as a pair. The <strong>size</strong> attribute is the width of the text box in number of characters. The default size is 20 characters. The next two lines show another example of a text box for input. The prompt &quot;Student&quot; shows an example where radio buttons are used. When the user chooses one radio button, the other(s) are automatically turned off. The next two lines show another example of using a text box for input. The next two lines show the use of a <strong>textarea</strong> tag. The <strong>textarea</strong> tag allows more than one line of text to be entered while the text box is only one line of input. The <strong>textarea</strong> is set with the number of rows and columns indicated by the <strong>rows</strong> and <strong>cols</strong> attributes respectively. <strong>wrap=&quot;soft&quot;</strong> means that word wrap is turned on but is sent to the CGI script as one contiguous line of information. <strong>wrap=&quot;hard&quot;</strong> also means that word wrap is turned on but information sent to the CGI script includes carriage returns and line feed characters where words were wrapped. The last line shows how a submit and a reset button are created.</p>
+<a href="#top">↑Top</a>
+
+
+<h3 id="special">Special Characters</h3>
+<p>Since angle brackets are used as delimiters in HTML, how do you show an actual &lt; or a &gt;? The following table shows some  characters together with their numeric encoding or character encoding. Read <a href="http://www.zytrax.com/tech/web/entities.html">more</a>. </p>
+
+<table class="table01">
+<tr>
+	<td>Character | </td>
+	<td>Numeric Encoding | </td>
+	<td>Character Encoding | </td>
+	<td>Description</td>
+</tr>
+<tr>
+	<td>&amp;   </td>
+	<td>&amp;#38;   </td>
+	<td>&amp;amp;   </td>
+	<td>Ampersand</td>
+</tr>
+<tr>
+	<td>&lt;   </td> 
+	<td>&amp;#60;	</td>
+	<td>&amp;lt;	</td>
+	<td>Less than</td>
+</tr>
+<tr>
+	<td>&gt;    </td>
+	<td>&amp;#62;	</td>
+	<td>&amp;gt;	</td>
+	<td>Greater than</td>
+</tr>
+<tr>
+	<td>&nbsp;  </td>
+	<td>&amp;#160;</td>	
+	<td>&amp;nbsp;	</td>
+	<td>Non-breaking space</td>
+</tr>
+<tr>
+	<td>&mdash;    </td>
+	<td>&amp;#8212;	</td>
+	<td>&amp;mdash;	</td>
+	<td>em dash</td>
+</tr>
+<tr>
+	<td>&sect;  </td>
+	<td>&amp;#167;	</td>
+	<td>&amp;sect;	</td>
+	<td>Section sign</td>
+</tr>
+<tr>
+	<td>&copy;	</td>
+	<td>&amp;#169;	</td>
+	<td>&amp;copy;	</td>
+	<td>Copyright</td>
+</tr>
+<tr>
+	<td>&reg;	</td>
+	<td>&amp;#174;	</td>
+	<td>&amp;reg;	</td>
+	<td>Registered trademark</td>
+</tr>
+<tr>
+	<td>&#x220E;	</td>
+	<td>&amp;#x220E; or &amp;#8718;<br></td>
+	<td>none</td>
+	<td><p>End of Proof, q.e.d.</p></td>
+</tr>
+<tr>
+	<td>&#x25ae;	</td>
+	<td>&amp;#x25ae; or &amp;#9646;<br></td>
+	<td>none</td>
+	<td><p>Black Vertical Rectangle</p></td>
+</tr>
+<tr>
+	<td>&#9980;</td>
+	<td>&amp;#x26FC; or &amp;#9980;</td>
+	<td>none</td>
+	<td><p>	  headstone graveyard
+	</p></td>
+</tr>
+
+<tr>
+  <td>&hearts;</td>
+  <td>&amp;#x2665; or &amp;#9829;</td>
+  <td>&amp;hearts;</td>
+  <td>black heart suit</td>
+</tr>
+<tr>
+  <td>&pound;</td>
+  <td>&amp;#163;</td>
+  <td>&amp;pound;</td>
+  <td>pound</td>
+</tr>
+<tr>
+  <td>&euro;</td>
+  <td>&amp;#8364;</td>
+  <td>&amp;euro;</td>
+  <td>euro</td>
+</tr>
+<tr>
+  <td style="font-family:'Segoe UI Symbol'; font-size:18px;">&#x2672;</td>
+  <td>&amp;#x2672;</td>
+  <td>none</td>
+  <td>universal recycling symbol</td>
+</tr>
+</table>
+
+<p><a href="#top">↑Top</a>
+
+<p>Here is a coding example for <a href="../classwork/cw7/entities.html"><strong>special characters</strong></a>:</p>
+
+<pre>
+&lt;!doctype html&gt;<br>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Special Characters&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h3&gt;Special Characters&lt;/h3&gt;
+&lt;p&gt;copyright symbol: &amp;copy;&lt;/p&gt;<br>&lt;p&gt;code: &lt;/p&gt;
+&lt;pre&gt;<br>&amp;lt;p&amp;gt;copyright symbol: &amp;amp;copy;&amp;lt;/p&amp;gt;
+&lt;/pre&gt;
+&lt;hr&gt;
+&lt;p&gt;a red heart: &lt;span style=&quot;color:red;&quot;&gt;&amp;hearts;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;code:&lt;/p&gt;<br>&lt;pre&gt;&amp;lt;p&amp;gt;a red heart: &amp;lt;span style=&amp;quot;color:red;&amp;quot;&amp;gt;&amp;amp;hearts;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&lt;/pre&gt;
+&lt;p&gt;You can also write the code like this:&lt;/p&gt;
+&lt;pre&gt;&amp;lt;p&amp;gt;a heart: ♥&amp;lt;/p&amp;gt;&lt;/pre&gt;
+&lt;p&gt;but it won't be red.&lt;/p&gt;
+&lt;hr&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;
+</pre>
+
+
+
+<p><a href="#top">↑Top</a>
+</p>
+<h3 id="meta">Meta Tag</h3>
+<p>Meta tags are placed inside the &#60;head&#62; tag.</p>
+<ul class="f">
+  <li><pre>Keywords
+&#60;meta name=&quot;keywords&quot; content=&quot;Web construction, Web, HTML, sounds,
+ images, frameset, frames, tables&quot; /&#62; 
+</pre>  
+  </li>
+  
+  <li><pre>Description
+&#60;meta name=&quot;description&quot; content=&quot;An example website for first level
+ students taking a course in HTML and an editor such as Dreamweaver.&quot; /&#62;  
+</pre>
+  </li>
+  
+  <li><pre>Author
+&#60;meta name=&quot;author&quot; content=&quot;Gene Chin e-mail:&quot; /&#62;  
+</pre>
+  </li>
+  
+  <li><pre>Expiration Date
+&#60;meta name=&quot;expires&quot; content=&quot;Mon, 31 December 2007 05:00:00 GMT&quot; /&#62;  
+</pre>
+  </li>
+  
+  <li><pre>Robots: Allow search engines to read page and follow all links
+&#60;meta name=&quot;robots&quot; content=&quot;all, follow&quot; /&#62;  
+</pre>
+  </li>
+  
+  <li><pre>Robots: Allow search engines to read page but don't follow links
+&#60;meta name=&quot;robots&quot; content=&quot;all, nofollow&quot; /&#62;  
+</pre>
+  </li>
+  
+  <li>
+    <pre>Robots: Prevent search engines from reading your personal pages
+&#60;meta name=&quot;robots&quot; content=&quot;noindex, nofollow&quot; /&#62; 
+</pre>
+  </li>
+  
+  <li><pre>Robots: Keep search engines from archiving your pages
+&#60;meta name=&quot;robots&quot; content=&quot;noarchive&quot; /&#62;  
+</pre>
+  </li>
+  
+  <li><pre>Refreshing Page Content every 7 seconds
+&#60;meta http-equiv=&quot;refresh&quot; content=&quot;7&quot; /&#62;  
+</pre>
+  </li>
+  
+  <li><pre>Refreshing Page Content and load another document after 7 seconds
+&#60;meta http-equiv=&quot;refresh&quot; content=&quot;7;url=http://www.w3c.org&quot; /&#62;  
+</pre>
+  </li>
+  <li>
+    <pre>Character encoding  
+pre-HTML5: &#60;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&#62;
+HTML5:     &lt;meta charset=&quot;utf-8&quot;&gt;
+</pre>
+  </li>
+</ul>
+<a href="#top">↑Top</a>
+<hr>
+</div>
+</body>
+</html>

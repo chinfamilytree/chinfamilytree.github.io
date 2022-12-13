@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Web Page Construction</title>
+<link href="../mystyles.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<div id="container">
+<h1>Web Page Construction</h1>
+<div id="wrap">
+	<ul class="navbar">
+		<li><a href="../index.html">Home</a></li>
+        <li><a href="../info/infocontact.html">Contact</a>   		</li>
+		<li><a href="#">HTML/CSS</a>
+			<ul>
+				<li><a href="1.html">Lesson 1</a></li>
+				<li><a href="2.html">Lesson 2</a></li>
+				<li><a href="3.html">Lesson 3</a></li>
+                <li><a href="4.html">Lesson 4</a></li>
+				<li><a href="5.html">Lesson 5</a></li>
+				<li><a href="6.html">Lesson 6</a></li>
+                <li><a href="7.html">Lesson 7</a></li>
+                <li><a href="8.html">Lesson 8</a></li>
+
+			</ul>         
+		</li>
+		<li><a href="#">Dreamweaver</a>
+			<ul>
+				<li><a href="d1.html">Lesson 1</a></li>
+				<li><a href="d2.html">Lesson 2</a></li>
+				<li><a href="d3.html">Lesson 3</a></li>
+                <li><a href="d4.html">Lesson 4</a></li>
+				<li><a href="d5.html">Lesson 5</a></li>
+				<li><a href="d6.html">Lesson 6</a></li>  
+			</ul>         
+		</li>
+
+        <li><a href="#">Other</a>
+			<ul>
+				<li><a href="../info/infolinks.html">Useful Links</a></li>
+				<li><a href="../info/infofaq.html">FAQ</a></li>
+                <li><a href="../info/infoassets.html">Assets</a></li>
+				<li><a href="../info/infodocs.html">Documents</a></li>
+                <li><a href="../info/infohomework.html">Homework</a></li>
+			</ul>         
+		</li>
+	</ul>
+</div>
+<!--<iframe id="if1" name="if1" frameborder="0" height="1000" width="750" scrolling="auto" src="info/infohome.html"></iframe> -->
+<h2>Dreamweaver Lesson 6 - Tables, IFrame</h2>
+
+<p>
+<a href="#table">To Create a Table</a> | <a href="#if1">Using IFrames</a><br />
+</p>
+<hr>
+
+
+<h3 id=table>To Create a Table </h3>
+<p>Perform the following steps and save the file as ex11.html in the classwork/day11 folder.</p>
+<ol>
+  <li>Launch Dreamweaver.</li>
+  <li>Define your site. See Dreamweaver Lesson 1.</li>
+  <li>File &gt; New &gt; New Document &gt;  HTML &gt; None &gt; Create.</li>
+  <li> Click on the Insert panel &gt; HTML category.</li>
+  <li> Click on  Table.</li>
+  <li>In the dialog box, enter information for Rows, Columns, Table width, Border thickness, Cell padding, and Cell spacing.</li>
+  <li>Choose the type of Header you want: None, Left, Top, or Both (left and top).</li>
+  <li>Enter a Caption.</li>
+  <li>Choose an alignment for the Caption in relation to the table: default (top), top, bottom, left, or right.</li>
+  <li>Summary is a description of the table and does not appear in the user's browser. It is used by screen readers.</li>
+  <li>Click OK.</li>
+  <li>To fill a table with content you can type directly into the table or paste text into cells. Use the Tab key to move forward to the next cell. Doing this in the table's last cell will automatically add another row. Use Shift+Tab to move to a previous cell. You can also use Arrow keys to move within cells and between cells.</li>
+  <li>Select the cells you want to merge (span). In the Property inspector, click on the &quot;Merge selected cells using spans&quot; button in the lower left corner.</li>
+  <li>Select the cells you wish to be Headers by dragging across them. In the Property inspector, click on the check box for Header.</li>
+  <li>Select the cell(s) you want to change the alignment. In the Property inspector, click on any of 4 alignment icons: Left, Center, Right, or Justify.</li>
+  <li>Add an image to a table by clicking in the cell where you want the image and then choose Insert &gt; Image. Select the image you want and click OK.</li>
+  <li>You can create a whole table inside a table's cell. This is called nesting tables. Click the cell where you want the new table to appear. Then choose Insert &gt; Table.</li>
+  <li>You may also use a preset design for a table. Select the table and then click choose Commands &gt; Format Table. Choose a design scheme from the list on the left.</li>
+  <li>You can sort a table by column. You cannot sort tables that contain merged cells (colspan or rowspan attributes).
+  	<ol type="a">
+    	<li>Select the table and choose Commands &gt; Sort Table.</li>
+    	<li>Select the columns in the Sort By option. Select alphabetically or numerically in the Order option.</li>
+    	<li>Do a secondary sort by specifying the sorts under Then By.</li>
+    	<li>Be default, the first row is not included in a sort because it is usually a header row. To include the first row in a sort check Sort Includes First Row.</li>
+	</ol>
+  </li>
+  <li>Besides changing the size of a table or cells in the Property inspector you can also click and drag the handles on a table. Leave the W field blank to let the browser and Dreamweaver determine the width based on the contents of the cells. You can also clear the width and height by choosing Modify &gt; Table and then Clear Cell Widths or Clear Cell Heights. There are also icons in the lower left corner of the Property inspector to perform the same functions.</li>
+  <li>Use Modify &gt; Table to add or delete rows and columns. To add or delete from the bottom and right of a table, first select the entire table by clicking the table's upper left corner or choosing Modify &gt; Table &gt; Select Table. Make adjustments in the Property inspector.</li>
+  <li>You can copy and paste multiple cells at a time preserving the formatting (Edit &gt; Copy or Cut and then Edit &gt; Paste). Remove just the cell content by selecting one or more cells and pressing the Delete key or choose Edit &gt; Clear. You can also paste copied cells outside the table to create a new table.</li>
+  <li>Save the file as ex11.html in the classroom/day11 folder. </li>
+  <li>Preview in a browser.</li>
+</ol>
+
+<p><a href="#top">↑Top</a>
+  
+  >
+</p>
+<h3 id="if1">Using IFrames</h3>
+<p>The iframe tag creates an inline frame to contain another HTML document. To create an iframe:</p>
+<ol>
+  <li>Launch Dreamweaver.</li>
+  <li>Define your site. See Dreamweaver Lesson 1.</li>
+  <li>File &gt; New &gt; New Document &gt;  HTML &gt; None &gt; Create</li>
+  <li>Insert &gt; HTML &gt; IFrame.</li>
+  <li>Click on Code or Split View. You will see &lt;iframe&gt;&lt;/iframe&gt;. This is all Dreamweaver gives you.</li>
+  <li>In the beginning iframe tag click between &quot;e&quot; and &quot;&gt;&quot;. Hit the spacebar. Dreamweaver prompts you to select attributes. Double click on the attribute you want (such as &quot;id&quot;) and enter the value for that attribute.</li>
+  <li>Hit the spacebar again and Dreamweaver prompts you for another attribute. Double click on the attribute you want and enter the value for that attribute, etc. Some attributes to consider besides id are name, width, height, and src.</li>
+</ol>
+<a href="#top">↑Top</a>
+<hr>
+</div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Web Page Construction</title>
+<link href="../mystyles.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<div id="container">
+<h1>Web Page Construction</h1>
+<div id="wrap">
+	<ul class="navbar">
+		<li><a href="../index.html">Home</a></li>
+        <li><a href="../info/infocontact.html">Contact</a>   		</li>
+		<li><a href="#">HTML/CSS</a>
+			<ul>
+				<li><a href="1.html">Lesson 1</a></li>
+				<li><a href="2.html">Lesson 2</a></li>
+				<li><a href="3.html">Lesson 3</a></li>
+                <li><a href="4.html">Lesson 4</a></li>
+				<li><a href="5.html">Lesson 5</a></li>
+				<li><a href="6.html">Lesson 6</a></li>
+                <li><a href="7.html">Lesson 7</a></li>
+                <li><a href="8.html">Lesson 8</a></li>
+
+			</ul>         
+		</li>
+		<li><a href="#">Dreamweaver</a>
+			<ul>
+				<li><a href="d1.html">Lesson 1</a></li>
+				<li><a href="d2.html">Lesson 2</a></li>
+				<li><a href="d3.html">Lesson 3</a></li>
+                <li><a href="d4.html">Lesson 4</a></li>
+				<li><a href="d5.html">Lesson 5</a></li>
+				<li><a href="d6.html">Lesson 6</a></li>  
+			</ul>         
+		</li>
+
+        <li><a href="#">Other</a>
+			<ul>
+				<li><a href="../info/infolinks.html">Useful Links</a></li>
+				<li><a href="../info/infofaq.html">FAQ</a></li>
+                <li><a href="../info/infoassets.html">Assets</a></li>
+				<li><a href="../info/infodocs.html">Documents</a></li>
+                <li><a href="../info/infohomework.html">Homework</a></li>
+			</ul>         
+		</li>
+	</ul>
+</div>
+<!--<iframe id="if1" name="if1" frameborder="0" height="1000" width="750" scrolling="auto" src="info/infohome.html"></iframe> -->
+<h2>DW Lesson 1 - Introduction</h2>
+
+<p>
+<a href="#site">To Define a Site</a> | <br />
+<a href="#filespanel">To add Folders and Files in the Files Panel</a> | <br />
+<a href="#homepage">To Create Your Default Home Page</a> | <br />
+<a href="#pageprop">To Set Page Property</a> | <br />
+<a href="#insertbar">To Use the Insert Panel</a> | <br />
+<a href="#second">To Create a Second Page</a> | <br />
+<a href="#another">To Link to Another Page</a> | <br />
+</p>
+
+<hr>
+
+<p>Save all your files in the classwork/day9 folder.</p>
+<h3 id="site">To Define a Site</h3>
+<ol>
+<li>Launch Dreamweaver.</li>
+	<li>Choose Site &gt; New Site. The Site Setup For Unnamed Site 1 dialog box appears. </li>
+	<li>In the Site Name text box, enter the name of your new site.</li>
+	<li>For the Local Site Folder text box, click the folder icon to browse for the folder where your files are located. Double click the folder that contains your files. Click Select.</li>
+	<li>Click Save. Your files now appear in the Files panel on the right side of the screen.</li>
+</ol>
+
+<a href="#top">↑Top</a>
+
+<h3 id="filespanel">To Add Folders and Files in the Files Panel</h3>
+<p>Files are saved automatically when you create them using the Files panel. Files are not saved automatically if you create them using the File &gt; New or the Start window menu.</p>
+<ol>
+	<li>Activate the Files panel by clicking on its name in the panel area. </li>
+	<li>Right-click a folder in which you want to add a file or folder. </li>
+	<li>Select New Folder or New File. Type in the new folder or file name and press Enter.</li>
+	<li>If you want to delete a file or folder, right-click the name, select Edit &gt; Delete, and click on Yes to confirm the deletion.</li>
+	<li>If you want to rename a file or folder, right-click the name, select Edit &gt; Rename, type the new name and press Enter.</li>
+</ol>
+
+<a href="#top">↑Top</a>
+
+<h3 id="homepage">To Create Your Default Home Page</h3> 
+<ol>
+	<li>Use the above procedure to create a new file.</li>
+	<li>Type index.html as its name. This file is your default home page.</li>
+
+</ol>
+
+<a href="#top">↑Top</a>
+
+<h3 id="pageprop">To Set Page Properties</h3>
+<p>Page Properties adds embedded styles and only affects the current page. If you have more than a few pages, it is better to use external style sheets (see Dreamweaver Lesson 2).</p>
+<ol>
+	<li>Double click on index.html if it is not already open.</li>
+	<li>In the Properties Inspector, change the Title from Untitled Document to Dreamweaver Lesson 1.</li>
+	<li>Select Modify &gt; Page Properties.</li>
+	<li>In the Appearance (CSS) category, select a Page Font, Size try to use em), Text Color, Background Color, and Background image, if any. Enter 0 or some small number for the four Margin settings.</li>
+	<li>In the Links (CSS) category, select the link colors.</li>
+	<li>In the Headings (CSS) category, set the font size (such as 2.25em, 1.5em, 1.125em, 1em) and color for each heading.</li>
+	<li>In the Title/Encoding category, type the Title for your document if you have not done this in Step 2 above, choose the Document Type (DTD) as HTML5. Enter the Encoding method (use Unicode UTF-8) for all languages.</li>
+	<li>Click OK.</li>
+	<li>File &gt; Save.</li>
+</ol>
+<p>This file now contains an embedded or internal style sheet. If these styles apply only to this page, keep this as is. If you want to apply these styles to other pages, see next lesson to convert to an external style sheet.</p>
+
+<a href="#top">↑Top</a>
+
+<h3 id="insertbar">To Use the Insert Panel</h3>
+<p>The Insert Panel is divided into categories: HTML, Form, Templates, Bootsctrap Components, jQuery Module, jQuery UI, Favorites, and Hide Labels. The HTML category may be used to insert Div, Image, Paragraph, Heading H1...H6, Table, etc. </p>
+<ol>
+	<li>Create Heading Text
+	  <ol type="a">
+	    <li>In the Insert panel, choose the HTML category.</li>
+	    <li>Click on Heading:H1</li>
+	    <li>Type &quot;My Home Page&quot; as the heading.</li>
+	    <li>Save the file.</li>
+	    <li>In the Properties Inspector, click on CSS and click on the Align Center icon.</li>
+	    <li>Click on Show Code View in the Document toolbar and switch back to Show Design View. Do this often.</li>
+	    <li>Click at the end of the line and hit the Enter key to go to the second line. Type your name.</li>
+	    <li>In the Insert panel, choose the HTML category and click on Heading:H3.</li>
+      </ol>
+	</li>
+	<li>Create a Link and Preview It in a Browser
+	  <ol type="a">
+	    <li>Highlight your name.</li> 
+	    <li>In the Property inspector, click on HTML and type &quot;http://sites.fitnyc.edu/users/gene_chin&quot; in the Link box. This is an example of an absolute address. What happened to the H3 heading? It is no longer black and large. It is now an anchor tag (a) and has the attributes of a.</li>
+	    <li>Save the page.</li>
+	    <li>Click on the Preview/Debug in Browser button (in bottom right corner) and choose a browser or hit F12.</li>
+      </ol>
+	</li>
+
+    <li>Insert an Image
+		<ol type="a">
+	    	<li>Hit Enter key to go to the next line.</li>
+	    	<li>In the Insert panel, click on HTML category.</li>
+	    	<li>Click  on Image.</li>
+	    	<li>Choose an image from your assets.</li>
+	    	<li>Switch to Live view and make sure the image is selected (the heads up display should have img. the DOM should have img highlighted, and the tags above the Properties Inspector should img highlighted.</li>
+	    	<li>Click on CSS Designer panel. Drag the left edge of the CSS Designer panel until 2 columns appear.</li>
+	    	<li>Click on + to add a new selector. It appears as the default &quot;body p img&quot;. Change it to &quot;img&quot;</li>
+	    	<li>Uncheck the Show Set button.</li>
+	    	<li>Click on the Border property and set the width  to 0.    </li>
+		</ol>
+    </li>
+</ol>
+
+<a href="#top">↑Top</a>
+
+<h3 id="second">To Create a Second Page</h3>
+<ol>
+  <li>Open index.html (if it is not already open) as a model to create the second page. </li>
+  <li>Change the word &quot;Home&quot; to &quot;Second&quot; to read &quot;My Second Page&quot; now.</li>
+  <li>Delete Your name and the image.</li>
+  <li>Type the word &quot;Home.&quot; after the heading.</li>
+  <li>Select the Date object in the Form category of the Insert panel.</li>
+  <li>Save this page as secondpage.html and click on the Refresh icon in the Files panel if you don't see the page here. Try out the calendar.</li>
+</ol>
+
+<p><a href="#top">↑Top</a></p>
+<h3 id="another">To Link to Another Page</h3>
+<h5>Using text</h5>
+<ol>
+  <li>Highlight the word &quot;Home&quot; on the second page.</li>
+  <li>Drag the Point to File icon to index.html.</li>
+  <li>Save the file.</li>
+  <li>Hit F12 to test it in a browser.</li>
+</ol>
+<h5>Using an  Image </h5>
+<ol type="1">
+  <li>Select the image on the Home Page by clicking on it. </li>
+  <li>In the Property inspector on the right side of the Link box drag the Point to File icon  to the file you wish to link to (in this case, the second page).</li>
+  <li>In the Alt box, type alternate text for the image. The Alternate text will appear if the image doesn't and is also used by screen readers to aid a visually-impaired person.</li>
+  <li>Save the file.</li>
+  <li>Click on the Preview button or hit F12.</li>
+  <li>Close everything for this exercise.</li>
+</ol>
+<p><a href="#top">↑Top</a></p>
+<hr>
+</div>
+</body>
+</html>

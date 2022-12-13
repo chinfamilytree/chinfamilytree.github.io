@@ -1,0 +1,43 @@
+﻿hw6: 7 points
+
+Copy all files from hw5 to hw6 folder.
+
+In the unordered list below Vitals... 
+	Use the following as the link for the word "here" in the second line...
+		boreas-gust.wav
+	Use the following as the link for the word "here" in the third line...
+		circe-pig.mp3
+	
+	
+On the next line remove the words "audio element here" and put the 
+following three lines in its place...
+	<p>
+	<audio controls>
+	<source src="prelude10-chopin.ogg" type="audio/ogg" />
+	</audio> 
+	</p>
+	  
+On the next line insert an iframe with the following attributes...
+	id="if1" 
+	name="if1" 
+	frameborder="0" 
+	height="510" 
+	width="340" 
+	scrolling="auto" 
+	src="boreas.jpg">
+
+	
+Link circe-t.jpg to circe.jpg and set the target to "if1"...
+	<a href="../homework/hw6/circe.jpg" target="if1">
+		<img src="../homework/hw6/circe-t.jpg" alt="circe-t" title="circe-t">
+	</a>
+	
+Link lady-t.jpg to lady.jpg and set the target to "if1"...
+	<a href="../homework/hw6/lady.jpg" target="if1">
+		<img src="../homework/hw6/lady-t.jpg" alt="lady-t" title="lady-t">
+	</a>
+	
+
+
+
+

@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Web Page Construction</title>
+<link href="../mystyles.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<div id="container">
+<h1>Web Page Construction</h1>
+<div id="wrap">
+	<ul class="navbar">
+		<li><a href="../index.html">Home</a></li>
+        <li><a href="../info/infocontact.html">Contact</a>   		</li>
+		<li><a href="#">HTML/CSS</a>
+			<ul>
+				<li><a href="1.html">Lesson 1</a></li>
+				<li><a href="2.html">Lesson 2</a></li>
+				<li><a href="3.html">Lesson 3</a></li>
+                <li><a href="4.html">Lesson 4</a></li>
+				<li><a href="5.html">Lesson 5</a></li>
+				<li><a href="6.html">Lesson 6</a></li>
+                <li><a href="7.html">Lesson 7</a></li>
+                <li><a href="8.html">Lesson 8</a></li>
+
+			</ul>         
+		</li>
+		<li><a href="#">Dreamweaver</a>
+			<ul>
+				<li><a href="d1.html">Lesson 1</a></li>
+				<li><a href="d2.html">Lesson 2</a></li>
+				<li><a href="d3.html">Lesson 3</a></li>
+                <li><a href="d4.html">Lesson 4</a></li>
+				<li><a href="d5.html">Lesson 5</a></li>
+				<li><a href="d6.html">Lesson 6</a></li>  
+			</ul>         
+		</li>
+
+        <li><a href="#">Other</a>
+			<ul>
+				<li><a href="../info/infolinks.html">Useful Links</a></li>
+				<li><a href="../info/infofaq.html">FAQ</a></li>
+                <li><a href="../info/infoassets.html">Assets</a></li>
+				<li><a href="../info/infodocs.html">Documents</a></li>
+                <li><a href="../info/infohomework.html">Homework</a></li>
+			</ul>         
+		</li>
+	</ul>
+</div>
+<!--<iframe id="if1" name="if1" frameborder="0" height="1000" width="750" scrolling="auto" src="info/infohome.html"></iframe> -->
+<h2>DW Lesson 3 - CSS Transitions, Behaviors</h2>
+
+<p><a href="#transitions">CSS Transitions</a> | <a href="#behavior">To Attach a Behavior</a>  | <br />
+</p>
+<hr>
+
+<h3 id="transitions">CSS Transitions</h3>
+<p>CSS transitions allow you to change property values smoothly (from one value to another), over a given duration.</p>
+<ol>
+  <li>Click on an image to have CSS Transitions done on it.</li>
+  <li>Window &gt; CSS Transitions.</li>
+  <li>Click on + to add a new transition.</li>
+  <li>In Target Rule, choose a target from the list or make a new one.</li>
+  <li>Let's make a new one, call it &quot;.smooth&quot;.</li>
+  <li>In Transition On: select Hover.</li>
+  <li>In Duration, set it to 1s (1 second). [ms is milliseconds.]</li>
+  <li>Don't set anything for Delay.</li>
+  <li>In Timing Function, select ease-in-out. [See <a href="http://css3.bradshawenterprises.com/transitions/">this</a> article for differences in all the timing functions.]</li>
+  <li>In the Property box, click on + in lower right ocrner and select &quot;transform&quot;.</li>
+  <li>In End Value, type rotate(30deg) scale(1.8). [rotate(30deg) means rotate clockwise 30 degrees; a negative value indicates counterclockwise; scale(1.8) means enlarge it by 80%; a value less than 1.0 means to decrease the size of the image.]</li>
+  <li>Click on &quot;Create Transition&quot;</li>
+  <li>If you apply a class of &quot;smooth&quot; to another image on this page, it will perform the same transition.</li>
+  <li>Click on the &quot;x&quot; in the upper right corner to the New Transitions dailog box to close it.</li>
+  <li>For more information, see <a href="https://helpx.adobe.com/dreamweaver/how-to/use-the-css-transitions-panel.html">https://helpx.adobe.com/dreamweaver/how-to/use-the-css-transitions-panel.html</a>.</li>
+</ol>
+<a href="#top">↑Top</a>
+<h3 id="behavior">To Attach a Behavior</h3>
+<p>Save all your work in the classwork/day11 folder.</p>
+<p>You can attach behaviors to the entire document, or to links, images, form elements, layers, or almost any HTML element. You can specify more than one event to trigger a behavior, and more than one action for each event. Actions occur in the order listed in the Action panel of the Behavior inspector.</p>
+<ol>
+  <li>Select an object. To attach a behavior to the entire page, click the <strong>&lt;body&gt;</strong> tag in the tag selector at the bottom left of the Document window. </li>
+  <li>Choose <strong>Window &gt; Behaviors</strong> to open the Behavior panel. The tag of the selected object appears in the title bar at the top of the panel. </li>
+  <li>Click the <strong>Events pop-up menu</strong> (+ button) and choose an event to trigger the behavior. Different events appear depending on the selected object. If the expected events don't appear, make sure that the correct object is selected. If you're attaching a behavior to an image, several events such as onMouseOver and onMouseDown appear in parentheses. These events are only available for links. When you choose one of them, Dreamweaver adds an <strong>&lt;a&gt;</strong> tag to the image to define a link. </li>
+  <li>Choose an action from the <strong>Actions pop-up menu</strong>. Actions that don't work in the current document are not available on the menu. For example, the Play Timeline action is not available if the document has no timeline. Depending on the chosen action, a dialog box appears to display parameters and instructions for the action.</li>
+  <li>Enter parameters for the action and click OK. All included actions work in 4.0 or later browsers. Some actions do not work on older browsers. </li>
+</ol>
+
+<a href="#top">↑Top</a>
+
+<h4>Sample Behavior 1: Swapping an Image</h4>
+<ol>
+<li>Make thumbnails of large images.</li>
+<li>In Dreamweaver, insert all thumbnails, giving each a unique ID in the Properties Inspector.</li>
+<li>Click on first thumbnail.</li>
+<li>Click on Window/Behaviors.</li>
+<li>Click on + to add a behavior.</li>
+<li>Click on Swap Images.</li>
+<li>Browse for the image to swap. This is the corresponding larger image to the selected thumbnail.</li>
+<li>Click on the larger image.</li>
+<li>Click on OK.</li>
+<li>Click on OK again.</li>
+<li>Go to Code view.</li>
+<li>IMPORTANT: Remove all references to Width and Height.</li>
+<li>Save the html file.</li>
+</ol>
+<p>See a <a href="../demo/demobehavior1.html">demo</a> of this behavior.</p>
+
+<a href="#top">↑Top</a>
+
+<h4>Sample Behavior 2: Combination of Rollover and Swap Image</h4>
+<ol>
+<li>Prepare your images: large, thumbnails, and rollovers. This exercise has 4 sets (12 images total).</li>
+<li>Insert thumbnails (images with "-th" at the end of the filename) into position, such as across the top. Give each thumbnail an "Alternate text" and a unique ID in the Property inspector. Set the border to 0.</li>
+<li>Insert large image in the next line. Give "Alternate text" and unique ID.</li>
+  <li><strong>Important</strong>: Go to Code view and remove references to width and height for this large image.</li>
+  <li>Go back to Design view.</li>
+  <li>Click on the first image. </li>
+  <li>Window &gt; Behaviors. (Shift+F4)</li>
+  <li>Click on first thumbnail.</li>
+<li>Click on the "+" sign in the Behavior panel and click on Swap Image.</li>
+<li>In the Swap Image dialog box, browse for the image you want to swap for the selected one, such as a rollover image. Do not click OK yet.</li>
+<li>In the same Swap Image dialog box, click on the ID for the large image, browse for the large image you want to swap for the selected one. Now click OK.</li>
+<li>Click on the next image and repeat the above three steps until you have done all the images.</li>
+<li>Click on Live View to test it. (Note: to get out of Live View click on it again.)</li>
+<li>Save your html file.</li>
+</ol>
+<p>See a <a href="../demo/demobehavior2.html">demo</a> of this behavior.</p>
+<p><a href="#top">↑Top</a></p>
+<hr>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,426 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Web Page Construction</title>
+<link href="../mystyles.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<div id="container">
+<h1>Web Page Construction</h1>
+<div id="wrap">
+	<ul class="navbar">
+		<li><a href="../index.html">Home</a></li>
+        <li><a href="infocontact.html">Contact</a>   		</li>
+		<li><a href="#">HTML/CSS</a>
+			<ul>
+				<li><a href="../html/1.html">Lesson 1</a></li>
+				<li><a href="../html/2.html">Lesson 2</a></li>
+				<li><a href="../html/3.html">Lesson 3</a></li>
+                <li><a href="../html/4.html">Lesson 4</a></li>
+				<li><a href="../html/5.html">Lesson 5</a></li>
+				<li><a href="../html/6.html">Lesson 6</a></li>
+                <li><a href="../html/7.html">Lesson 7</a></li>
+                <li><a href="../html/8.html">Lesson 8</a></li>
+
+			</ul>         
+		</li>
+		<li><a href="#">Dreamweaver</a>
+			<ul>
+				<li><a href="../html/d1.html">Lesson 1</a></li>
+				<li><a href="../html/d2.html">Lesson 2</a></li>
+				<li><a href="../html/d3.html">Lesson 3</a></li>
+                <li><a href="../html/d4.html">Lesson 4</a></li>
+				<li><a href="../html/d5.html">Lesson 5</a></li>
+				<li><a href="../html/d6.html">Lesson 6</a></li>  
+			</ul>         
+		</li>
+
+        <li><a href="#">Other</a>
+			<ul>
+				<li><a href="infolinks.html">Useful Links</a></li>
+				<li><a href="infofaq.html">FAQ</a></li>
+                <li><a href="infoassets.html">Assets</a></li>
+				<li><a href="infodocs.html">Documents</a></li>
+                <li><a href="infohomework.html">Homework</a></li>
+			</ul>         
+		</li>
+	</ul>
+</div>
+<!--<iframe id="if1" name="if1" frameborder="0" height="1000" width="750" scrolling="auto" src="info/infohome.html"></iframe> -->
+<h2>FAQ </h2>
+
+<p><a href="#Q1">Q1. What simple text processor should I use to create HTML pages?</a><br>
+
+  <a href="#Q2">Q2. How do I prevent a background image from tiling?</a><br>
+  <a href="#Q3">Q3. How do I play a sound without having the media player open its own window?</a><br>
+  <a href="#Q4">Q4. How do I change the font color and size in a link when the mouse hovers over it? </a><br>
+  <a href="#Q5">Q5. How can I indent text in HTML?</a><br>
+
+
+  <a href="#Q6">Q6. How do I create my own &quot;Go Back&quot; link?</a><br>
+
+  <a href="#Q7">Q7. How can I find the size of my web site?</a><br>
+  <a href="#Q8">Q8. Are there any free web hosting services?</a><br>
+  <a href="#Q9">Q9. How do I prevent my images from appearing in Google search results?</a><br>
+
+
+  <a href="#Q10">Q10. How can I use other symbols in an unordered list other than disc, circle, or square?</a><br>
+  <a href="#Q11">Q11. How can I make my background image stay in place while the rest of my text and images scroll over it?</a><br>
+  <a href="#Q12">Q12. How can I change the leading, kerning/tracking, and word spacing of paragraphs?</a><br>
+  <a href="#Q13">Q13. How can I put an icon on the left side of a tab or address bar?</a><br>
+  <a href="#Q14">Q14. How do I use an image instead of an &lt;hr&gt;?</a><br>
+  <a href="#Q15">Q15. How do I create a new tab instead of a new window?</a><br>
+  <a href="#Q16">Q16. How do I set Windows to show file extensions?</a><br>
+  <a href="#Q17">Q17. How do I zip a file, files, or a folder?</a><br>
+  <a href="#Q18">Q18. Where is my "T" drive?</a><br>
+  <a href="#Q19">Q19. I can't find my &quot;Y&quot; drive. Where is it?</a><br>
+</p>
+<hr>
+<p id="Q1"><b>Q1. What simple text processor should I use to create HTML pages?</b><br />
+A1. If you are running Windows, use Notepad. If you are on a Mac, use TextEdit.</p>
+<p>
+In Mac OS X start TextEdit and change the preferences in the New Document tab and the Open and Save tab as outlined below:</p>
+
+<ol>
+	<li>New Document
+		<ol type="a">
+		<li>Choose the &quot;Plain Text&quot; option button.</li>
+		<li>Check the &quot;Wrap to Page&quot; checkbox.</li>
+		<li>Change the &quot;Plain text font&quot; to a courier font such as Courier New Regular 14 pts.</li>
+		<li>In the Options area, check the &quot;Check spelling as you type&quot; checkbox. All other check boxes should be off.</li>
+		</ol>
+	</li>
+	<li>Open and Save
+		<ol type="a">
+		<li>Check the &quot;Ignore rich text commands in HTML files&quot;. Don't check the &quot;Ignore rich text commands in RTF files&quot;.</li>
+		<li>Check the &quot;Delete the Automatic backup file&quot; checkbox. Don't check &quot;Add .txt extension to plain text files&quot;.
+Click off the Add .txt Extension To Plain Text Files.</li>
+		<li>Change Document Type to &quot;XHTML 1.0 Strict&quot; for future compatibility.</li>
+		<li>Don't check the &quot;Preserve white space&quot; checkbox.</li>
+		<li>Close the Preferences dialog box.</li>
+		</ol>
+	</li>
+	<li>Close the current TextEdit Untitled document since this has the old preferences.</li>
+	<li>Start a new document (File/New). This new document has the preferences you created above. Note: Don't hide extensions when you save your documents.</li>
+</ol>
+
+<p><a href="#top">Top</a> </p>
+<hr>
+
+<p id="Q2"><b>Q2. How do I prevent a background image from tiling?</b><br />
+A2. Insert the following code snippet in the &lt;head&gt; section. This code will also center the image specified in the url.</p>
+<pre>
+	&lt;style type=&quot;text/css&quot;&gt;		&lt;!-- internal style sheet --&gt;
+		body 	{background-image: url(bkgd.jpg);
+      			 background-repeat: no-repeat;
+			 background-position: center center;
+			}
+	&lt;/style&gt; 
+
+background-position may have the following values:
+	top left
+	top center
+	top right
+	center left
+	center center
+	center right
+	bottom left
+	bottom center
+	bottom right
+	x% y%
+	xpos ypos
+</pre>
+
+<p><a href="#top">Top</a></p>
+<hr>
+
+<p id="Q3"><b>Q3. How do I play a sound without having the media player open its own window?</b><br />
+A3. Embed the sound as in the following:</p>
+<pre>		 &lt;embed src="gust.wav" width="0" height="0"&gt;
+        </pre>
+<p>Play this <a href="../html/mimicbgsound2.html">sample</a>.</p>
+
+
+
+
+<p><a href="#top">Top</a> </p>
+<hr>
+
+<p id="Q4"><b>Q4. How do I change the font color and size in a link when the mouse hovers over it?</b> <br />
+A4. In a Cascading Style Sheet (CSS) set the color of the selector anchor a to one color and set the hover anchor pseudo-class to another color. The following CSS sample sets an unvisited link color to #0099FF (light blue) and when you mouse hovers over the link it will turn #FF0000 (red). It also increases the size of the font by 20% when you hover over the link.</p>
+<p>
+CSS Sample:</p>
+<pre>
+	body {	background-color: #CCFF99; color:#009900; text-align: center;}
+
+	a {	font-family: Verdana; font-size: medium;
+		color: #0099FF;}
+
+	a:link {text-decoration: none;}
+	a:visited {text-decoration: none; color: #0099FF;}
+	a:hover {text-decoration: none; color: #FF0000;font-size: 120%;}
+	a:active {text-decoration: none; color: #00FFFF;}
+
+	p,td,th {color: #009900; font-family: Verdana; font-size: medium;}
+</pre>
+
+<p><a href="#top">Top</a> </p>
+<hr>
+
+<p id="Q5"><b>Q5. How can I indent text in HTML?</b><br />
+A5. HTML does not have an INDENT tag. However, you can trick it by using the &lt;ul&gt; tag without &lt;li&gt;.</p>
+<pre>
+    Example:	
+		&lt;ul&gt;
+		This text is indented.
+		&lt;/ul&gt;
+</pre>
+<p><a href="#top">Top</a> </p>
+<hr>
+
+<p id="Q6"><b>Q6. How do I create my own &quot;Go Back&quot; link?</b><br />
+A6. Use &lt;a href=&quot;javascript:history.back()&quot;&gt;Go Back&lt;/a&gt;. <br />
+</p>
+<p><a href="#top">Top</a> </p>
+<hr>
+
+<p id="Q7"><b>Q7. How can I find the size of my web site?</b><br />
+A7. </p>
+<ol>
+	<li>Right-click on the &quot;Start&quot; button on the left side of the Taskbar.</li>
+	<li>Click on &quot;Explore&quot;.</li>
+	<li>Expand the drive that contains you web site (by clicking on the &quot;+&quot; sign on the left side of the drive name).</li>
+	<li>Continue expanding until the folder that contains your web site appears.</li>
+	<li>Right-click on this folder.</li>
+	<li>Click on &quot;Properties&quot;. The &quot;General&quot; tab shows the size of your site.</li>
+</ol>
+<p><a href="#top">Top</a> </p>
+<hr>
+
+<p id="Q8"><b>Q8. Are there any free web hosting services?</b><br />
+A8.
+Some selected free web hosting services are in the table below (as of July 15, 2007). Criteria for selection are: (1) Features Rating is above 80 out of a possible 125; (2) User Rating is above 9.00 out of a maximum of 10.00; and (3) More than 1000 users voted. More free web hosting services can be found at http://www.free-webhosts.com/.</p>
+<table>
+<tr>
+	<th>Webhost</th>
+	<th>Features Rating <br />(max=125)</th>
+	<th>User Rating <br /> (max=10)</th>
+	<th>Total Votes</th>
+</tr>
+<tr>
+	<td><a href="http://www.100webspace.com" target="_top">100Webspace</a></td>
+	<td>98</td>
+	<td>9.06</td>
+	<td>4022</td>
+</tr>
+<tr>
+	<td><a href="http://www.50webs.com" target="_top">50Webs</a></td>
+	<td>88</td>
+	<td>9.58</td>
+	<td>1528</td>
+</tr>
+<tr>
+	<td><a href="http://www.atspace.com"  target="_top">AtSpace</a></td>
+	<td>83</td>
+	<td>9.55</td>
+	<td>1753</td>
+</tr>
+<tr>
+	<td><a href="http://www.awardspace.com" target="_top">AwardSpace</a></td>
+	<td>112</td>
+	<td>9.58</td>
+	<td>1445</td>
+</tr>
+</table>
+
+
+<p>Here's an update on the latest free top web hosting services (as of January 15, 2016):</p>
+<blockquote><a href="https://www.sitebuilder.com/">SiteBuilder</a> | <a href="https://www.websitebuilder.com/">website<span class="smallcaps"> builder</span></a></blockquote>
+<p>(Note: These sites change everyday in ranking. So check for the latest at <a href="http://www.webhostingbest10.com/">Best 10 Web Hosting</a></p>
+<p><a href="#top">Top</a> </p>
+<hr>
+
+<p id="Q9"><strong>Q9. How do I prevent my images from appearing in Google search results?</strong><br />
+  A9. Create a robots.txt file in the root directory of your site containing the following line:</p>
+<pre>user-agent:Googlebot-Image disallow: /</pre>
+<p><a href="#top">Top</a></p>
+<hr>
+
+
+
+<p id="Q10"><b>Q10. How can I use other symbols in an unordered list other than disc, circle, or square?</b><br />
+A10. To use a type other than &quot;disc&quot;, &quot;circle&quot;, or &quot;square&quot; requires a style sheet. The following list used an inline style. </p>
+<ul style="list-style-image:url(file:///C|/Users/Gene/Desktop/images/right.gif);">
+<li>apples</li>
+<li>oranges</li>
+<li>bananas</li>
+</ul>
+<p>
+The code used to achieve the above is:
+</p>
+<pre>
+     &lt;ul style=&quot;list-style-image:url(right.gif);&quot;&gt;
+     &lt;li&gt;apples&lt;/li&gt;
+     &lt;li&gt;oranges&lt;/li&gt;
+     &lt;li&gt;bananas&lt;/li&gt;
+     &lt;/ul&gt;
+</pre>
+
+<p>Click <a href="demo_list-style-image.html">here</a> to see if it works.</p>
+
+<p><a href="#top">Top</a> </p>
+<hr>
+
+<p id="Q11"><b>Q11. How can I make my background image stay in place while the rest of my text and images scroll over it?</b><br>
+A11. To make the background image fixed in one place add the following attribute to the &lt;body&gt; tag:</p>
+<pre>
+bgproperties="fixed"
+</pre>
+<p>For example:</p>
+<pre>
+		&lt;body background="bgimage1.jpg" bgproperties="fixed"&gt;
+</pre>
+
+
+<p>Another way of fixing the background image is using CSS. Insert the following line into the internal style sheet for A2 above as the fifth line:</p>
+<pre>
+		background-attachment: fixed;
+</pre>
+<table>
+  <tr>
+
+    <td colspan="2"><b>Statistics</b><br />(as of July 2009)</td>
+    <th>IE (39.4%)</th>
+    <th>Firefox (47.9%)</th>
+    <th>Chrome (6.5%)</th>
+    <th>Safari (3.3%)</th>
+    <th>Opera (2.1%)</th>
+  </tr>
+  <tr>
+    <th rowspan="2">PC</th>
+    <td>bgproperties=&quot;fixed&quot;</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>yes</td>
+    <td>not tested</td>
+    <td>yes</td>
+  </tr>
+  <tr>
+
+    <td>background-attachment:fixed;</td>
+    <td>yes</td>
+    <td>no</td>
+    <td>no</td>
+    <td>not tested</td>
+    <td>yes</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Mac</th>
+    <td>bgproperties=&quot;fixed&quot;</td>
+    <td>N/A</td>
+    <td>no</td>
+    <td>N/A</td>
+    <td>yes</td>
+    <td>yes</td>
+  </tr>
+  <tr>
+
+    <td>background-attachment:fixed;</td>
+    <td>N/A</td>
+    <td>no</td>
+    <td>N/A</td>
+    <td>no</td>
+    <td>yes</td>
+  </tr>
+</table>
+<p><a href="#top">Top</a> </p>
+<hr>
+
+<p id="Q12"><b>Q12. How can I change the leading, kerning/tracking, and word spacing of paragraphs?</b><br />
+A12. Leading, kerning/tracking, and word spacing can all be done with styles. For leading use the <strong>line-height</strong> property. For kerning/tracking use the <strong>letter-spacing</strong> property, which may be a negative value. For word spacing use the <strong>word-spacing</strong> property.</p>
+
+<table>
+<caption align="top">Sample Leading, Letter Spacing, and Word Spacing</caption>
+  <tr>
+    <th valign="top" style="font-size:14px;">Code</th>
+    <th valign="top" style="font-size:14px;">Explanation</th>
+    <th valign="top" style="font-size:14px;">Effect</th>
+  </tr>
+  <tr>
+    <td valign="top" width="200" style="font-size:14px;">style=&quot;font-size:14px;&quot;</td>
+    <td valign="top" width="200" style="font-size:14px;">Normal: <br />The paragraph to the right has a font size of 14px with default leading, word spacing, and letter spacing (kerning/tracking).</td>
+    <td valign="top" width="200" style="font-size:14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in eros in leo facilisis blandit. Nam posuere laoreet imperdiet. Nam at libero nulla.</td>
+  </tr>
+
+  <tr>
+    <td valign="top" width="200" style="font-size:14px;">style=&quot;font-size:14px; line-height:130%&quot;</td>
+    <td valign="top" width="200" style="font-size:14px;">Leading: <br />The paragraph to the right has a font size of 14px with leading increased by 30%.</td>
+    <td valign="top" width="200" style="font-size:14px;line-height:130%">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in eros in leo facilisis blandit. Nam posuere laoreet imperdiet. Nam at libero nulla.</td>
+  </tr>
+
+  <tr>
+    <td valign="top" width="200" style="font-size:14px;">style=&quot;font-size:14px; letter-spacing:1px&quot;</td>
+    <td valign="top" width="200" style="font-size:14px;">Kerning/Tracking: <br />The paragraph to the right  has a font size of 14px with letter spacing set to 1px.</td>
+    <td valign="top" width="200" style="font-size:14px;letter-spacing:1px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in eros in leo facilisis blandit. Nam posuere laoreet imperdiet. Nam at libero nulla.</td>
+  </tr>
+
+  <tr>
+    <td valign="top" width="200" style="font-size:14px;">style=&quot;font-size:14px; letter-spacing:2px;<br>
+      word-spacing:3px;&quot;</td>
+    <td valign="top" width="200" style="font-size:14px;">Word Spacing with Kerning/Tracking: <br />The paragraph to the right  has a font size of 14px with letter spacing set to 2px and word spacing set to 3px.</td>
+    <td  valign="top" width="200" style="font-size:14px;letter-spacing:2px;word-spacing:3px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in eros in leo facilisis blandit. Nam posuere laoreet imperdiet. Nam at libero nulla.</td>
+  </tr>
+</table>
+<p><a href="#top">Top</a> </p>
+<hr>
+
+<p id="Q13"><b>Q13. How can I put an icon on the left side of a tab or address bar?</b><br>
+A13.</p>
+<ol>
+<li>First you need to create your icon by using an icon maker software such as Online Icon Maker.
+The address for Online Icon Maker is <br />
+http://www.rw-designer.com/online_icon_maker.php</li>
+<li>Put the icon you created into the same folder as index.html. It must be named favicon.ico</li>
+<li>Put this line in the head section of index.html:<br />
+&lt;link rel="shortcur icon" href="favicon.ico" type=&quot;image/x-icon&quot; /&gt;</li>
+</ol>
+<p><a href="#top">Top</a> </p>
+<hr>
+<p id="Q14"><b>Q14. How do I use an image instead of an &lt;hr&gt;?</b><br>
+  A14. You could use an image, e.g., <a href="file:///C|/Users/Gene/Desktop/images/colorbar.gif">colorbar.gif</a> (#17 in assets folder) instead of an &lt;hr&gt; as follows:</p>
+<pre>
+    &lt;img src=&quot;colorbar.gif&quot; alt=&quot;colorbar&quot; title=&quot;Colorbar&quot;&gt;
+</pre>
+
+<a href="#top">Top</a> 
+<hr>
+<p id="Q15"><b>Q15. How do I create a new tab instead of a new window?</b><br />
+A15. 
+As of 8/11/2014 it appears that opening in a new tab is a functionality of the browser. Try using target=&quot;_blank&quot;.&nbsp; &nbsp;_blank defines that the new page should open in a new window but doesn't do that depending on the browser. I tried this on Chrome and Internet Explorer. In both cases the new page opened up in a new tab.</p>
+<pre>
+	     &lt;a href=&quot;http://www.google.com &quot; target=&quot;_blank&quot;&gt; Google in a New Tab<br>      or Window depending on the browser's capabilities&lt;/a&gt;</pre>
+<p><a href="#top">Top</a> </p>
+<hr>
+<p id="Q16"><b>Q16. How do I set Windows to show file extension<a href="#Q16">s?</a></b><br />
+A16. Click on the Start button &gt; Control Panel &gt; Appearance and Personalization &gt; Folder Options &gt;View tab. In the View tab dialog box uncheck Hide Extension for Known File Types. Click OK.</p>
+
+<p><a href="#top">Top</a> </p>
+<hr>
+<p id="Q17"><b>Q17. How do I zip a file, files, or a folder?</b><br />
+A17. Right click on a file, a bunch of selected files, or a folder, then click on Sent to...Compressed (zipped) folder. A new file is created with the zip extension. The zipped file is usually smaller in file size and not usually be corrupted if emailed.</p>
+<p><a href="#top">Top</a> </p>
+<hr>
+<p id="Q18"><b>Q18. Where is my "T" drive?</b><br />
+A18. The &quot;T&quot; (Transport) drive is used to share files/folders between the student and the instructor. You can access the &quot;T&quot; drive by double clicking on the Connect to Class Share icon on the desktop and then type in the instructor's first name, followed by an &quot;_&quot; and then the last name. The &quot;T&quot; drive now shows up on the desktop. Double clicking on the &quot;T&quot; drive will show two folders: Dropbox and ffs. The Dropbox is for students to drop files/folders for the instructor. &quot;ffs&quot; stands for &quot;<strong>f</strong>iles <strong>f</strong>or <strong>s</strong>tudents&quot;. This folder is used by the instructor to store files/folders to share with students. The &quot;T&quot; drive is accessible from any computer on campus. It cannot be accessed outside of campus. If you wish to share files/folders with the instructor (who is not on campus) it is best to zip the files/folders (See <a href="#Q17">Q17</a>) and email the zipped file to the instructor.</p>
+<p><a href="#top">Top</a> </p>
+<hr>
+<p id="Q19"><b>Q19. I can't find my &quot;Y&quot; drive. Where is it?</b><br />
+A19. The &quot;Y&quot; drive has been renamed &quot;N&quot; drive. The &quot;N&quot; drive is your personal storage drive, available on all computers on campus.</p>
+<p><a href="#top">Top</a> </p>
+<hr>
+</div>
+</body>
+</html>

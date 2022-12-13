@@ -1,0 +1,210 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Web Page Construction</title>
+<link href="../mystyles.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<style type="text/css">
+body{
+	background-color:#83a6e8;
+	background-image: url(../images/nice-beautiful-backgrounds.jpg);
+	background-repeat: no-repeat;
+	background-position:bottom center;
+}
+	.img0{border: none;}
+	.img1{border: dotted coral 1em;}
+	.img2{border: dashed coral 1em;}
+	.img3{border: solid brown 1em;}
+	.img4{border: double brown 1em;}
+	.img5{border: groove brown 1em;}
+	.img6{border: ridge brown 1em;}
+	.img7{border: inset brown 1em;}
+	.img8{border: outset brown 1em;}
+	.img9{border: solid brown 1em;}
+	.img10{border-style:dotted solid double dashed; border-color:#e3001b; border-width:1em;}
+	.img11{border-style:dotted solid double; border-color:#e3001b; border-width:1em;}
+	.img12{border-style:dotted solid; border-color:#e3001b; border-width:1em;}
+	.img13{border-style:dotted; border-color:#e3001b; border-width:1em;}
+hr.hr01 {
+	display: block;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	border-style: solid;
+	border-color: orange;
+	border-width: 4px;
+}
+
+hr.hr02 {
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 3em;
+	margin-left: 3em;
+	margin-right: 3em;
+	border: inset bisque 12px;
+}
+</style>
+</head>
+<body>
+
+<div id="container">
+<h1>Web Page Construction</h1>
+<div id="wrap">
+	<ul class="navbar">
+		<li><a href="../index.html">Home</a></li>
+        <li><a href="../info/infocontact.html">Contact</a>   		</li>
+		<li><a href="#">HTML/CSS</a>
+			<ul>
+				<li><a href="1.html">Lesson 1</a></li>
+				<li><a href="2.html">Lesson 2</a></li>
+				<li><a href="3.html">Lesson 3</a></li>
+                <li><a href="4.html">Lesson 4</a></li>
+				<li><a href="5.html">Lesson 5</a></li>
+				<li><a href="6.html">Lesson 6</a></li>
+                <li><a href="7.html">Lesson 7</a></li>
+                <li><a href="8.html">Lesson 8</a></li>
+
+			</ul>         
+		</li>
+		<li><a href="#">Dreamweaver</a>
+			<ul>
+				<li><a href="d1.html">Lesson 1</a></li>
+				<li><a href="d2.html">Lesson 2</a></li>
+				<li><a href="d6.html">Lesson 3</a></li>
+                <li><a href="d4.html">Lesson 4</a></li>
+				<li><a href="d5.html">Lesson 5</a></li>
+				<li><a href="d3.html">Lesson 6</a></li>  
+			</ul>         
+		</li>
+
+        <li><a href="#">Other</a>
+			<ul>
+				<li><a href="../info/infolinks.html">Useful Links</a></li>
+				<li><a href="../info/infofaq.html">FAQ</a></li>
+                <li><a href="../info/infoassets.html">Assets</a></li>
+				<li><a href="../info/infodocs.html">Documents</a></li>
+                <li><a href="../info/infohomework.html">Homework</a></li>
+			</ul>         
+		</li>
+	</ul>
+</div>
+<!--<iframe id="if1" name="if1" frameborder="0" height="1000" width="750" scrolling="auto" src="info/infohome.html"></iframe> -->
+<h2>HTML/CSS Lesson 3 - Images and Rules</h2>
+
+<p>
+<a href="#image">&#60;img&#62; tag</a> | <a href="#borderproperty">border property</a> | <a href="#hr">&#60;hr&#62; tag</a> | 
+<a href="#background">Background Image for the &lt;body&gt; </a> |</p>
+<hr />
+
+
+<h3 id="image">The &#60;img&#62; Tag</h3>
+<pre>
+&#60;img src=&quot;url&quot; alt=&quot;text&quot; title=&quot;text&quot; width=&quot;width&quot; height=&quot;height&quot;&#62;</pre>
+<p>Only the src and alt attributes are required.</p>
+<p>The img tag is used to insert an image into your Web document. It has no corresponding closing tag. The src attribute is the most important attribute. It  specifies the location of the image.  The most widely used image formats on the web are gif, jpg, and png. Attributes may be entered in any order. They do not have to be in the order  listed above.</p>
+<p>Both the alt attribute and the title attribute may be specified. The text in the alt attribute will be displayed if the browser cannot find the image. The text in the title attribute will be displayed when you hover the mouse over the image area. It does not matter whether the browser finds the image or not. The text displayed with alt or title is enclosed in a rectangle, and is called a &quot;ScreenTip&quot;. &quot;title&quot; is one of several global attributes that &lt;img&gt; supports. A few other global attributes that is supported by &lt;img&gt; are &quot;class&quot; and &quot;id&quot;.</p>
+<p> The width and height attributes give a browser the size of an image so that it may reserve space for it and continue rendering the document while waiting for the image data. The specified width and height attributes override the natural size of the image.  If the specified width and height were equal to the natural size of the image, the image would be displayed faster. If you do not specify the width and height attributes, the natural width and natural height will be used but it will be slightly slower.</p>
+<p><img src="../images/boreas-t.jpg" alt="Boreas" title="Painting of Boreas by J. W. Waterhouse"></p>
+<p>The above image was inserted using the following code:</p>
+<pre>&lt;img src=&quot;boreas-t.jpg&quot; alt=&quot;Boreas&quot; title=&quot;Painting of Boreas by J.W. Waterhouse&quot;&gt;</pre>
+<p>Since the width and height attributes were not included, the image was rendered using the natural width and height.</p>
+<p><a href="#top">↑Top</a></p>
+<hr>
+<h3 id="borderproperty">Border</h3>
+<p>A <strong>border</strong> may surround an image. Use an internal style sheet for the border property. The border property is a shorthand for the three properties: border-style, border-color and border-width. </p>
+<ul>
+  <li>border-style (required)</li>
+  <li>border-color</li>
+  <li>border-width</li>
+</ul>
+
+<p>The border-style values may be none, dotted, dashed, solid,  double, groove, ridge, inset, and outset (as shown in the first 9 images below. The border-width of all the images are 1em. except the first one which has no border. The border-color of the dotted and dashed images are coral. The next 6 are borwn and the last 4 are red with a little of blue (#e3001b). The style of the first red one is dotted, solid, double, and dashed. The style of the second red one is dotted, solid, and double. The style of the third red one is dotted and solid. The style of the last red one is dotted. When one value is used in the style it is applied to all 4 sides. When two values are used, the first value is applied to the top and bottom borders and the second value is applied to the left and right borders. When 3 values are used the first value is applied to the top border, the second value is applied to the left and right borders and the third value is applied to the bottom border. When four values are used the first is applied to the top border, the second value is applied to the right border, the third value is applied to the bottom border, and the fourth value is applied to the left border.</p>
+
+<p><img class="img0" src="../images/boreas-t.jpg" width="80" height="120" alt=""/> <img class="img1" src="../images/charmer-t.jpg" width="80" height="120" alt=""/> <img class="img2" src="../images/circe-t.jpg" width="80" height="120" alt=""/> <img class="img3" src="../images/lady-t.jpg" width="80" height="120" alt=""/> <img class="img4" src="../images/ophelia-t.jpg" width="80" height="120" alt=""/> <img class="img5" src="../images/spring-t.jpg" width="80" height="120" alt=""/>
+  <img class="img6" src="../images/boreas-r.jpg" width="80" height="120" alt=""/></p>
+<p><img class="img7" src="../images/charmer-r.jpg" width="80" height="120" alt=""/> <img class="img8" src="../images/circe-r.jpg" width="80" height="120" alt=""/> <img class="img10" src="../images/ophelia-r.jpg" width="80" height="120" alt=""/> <img class="img11" src="../images/spring-r.jpg" width="80" height="120" alt=""/> <img class="img12" src="../images/boreas-t.jpg" width="80" height="120" alt=""/> <img class="img13" src="../images/circe-t.jpg" width="80" height="120" alt=""/>  </p>
+<p>Border color may be specified as a color name or hex triplet. For example. the following two style sheets will use &quot;firebrick&quot; as the border color. #B22222 is the hex triplet for firebrick.</p>
+<pre>&lt;style type=&quot;text/css&quot;&gt;<br />	img{border-style:solid; border-color:firebrick; border-width:0.25em;}<br />&lt;/style&gt;
+</pre>
+<p><b><i>or</i></b></p>
+<pre>&lt;style type=&quot;text/css&quot;&gt;<br />	img{border-style:solid; border-color:#B22222; border-width:0.25em;}<br />&lt;/style&gt;
+</pre>
+<p>Border width may be specified in any legal unit in HTML such as px, pt, em. For example:
+<pre>&lt;style type=&quot;text/css&quot;&gt;<br />	img{border-style:solid; border-color:#e3001b; border-width:0.75em;}<br />&lt;/style&gt;
+</pre>
+
+<p><a href="#top">↑Top</a></p>
+<hr class="hr01">
+
+<h3 id="hr">The &#60;hr&#62; Tag</h3>
+<p>
+  In HTML5 the &lt;hr&gt; tag shows a change in content, probably between sections of a document. There is no corresponding closing tag. Without CSS &lt;hr&gt; by itself renders as a dull thin line. The first &lt;hr&gt; are examples of this. All attributes must be in CSS. The orange &lt;hr&gt; above was created with the following CSS:</p>
+<pre>hr.hr01 {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-style: solid;
+    border-color: orange;
+    border-width: 4px;
+}</pre>
+<p>The &lt;hr&gt; below was created with the following CSS:</p>
+<pre>hr.hr02 {
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 3em;
+	margin-left: 3em;
+	margin-right: 3em;
+	border: inset bisque 12px;
+}
+</pre>
+<a href="#top">↑Top</a>
+<hr class="hr02">
+<h3 id="background">Background image for the &#60;body&#62;</h3>
+<p>
+The background image for the body tag is used to provide a background image for a web document. Since all attributes of the &lt;body&gt; were deprecated in HTML 4.01 and not supported in HTML5, you should use CSS for the background image. An example is: </p>
+<p>body{background-image:url(<em>image.ext</em>);} </p>
+<p>where <em>image</em> is the file name of a picture and <em>ext</em> is the file extension. You may  use both the background-image and background-color properties in the same document and if the background-image is not repeated (tiled) then both will appear in the same page. If the background-image is repeated, the background-image will  override background-color property. The following <a href="../demo/demobackgroundimage.html"><strong>example</strong></a> uses ophelia.jpg as the background image and as an image in the document. You can distinguish the two easily since the background image  cannot have a border and cannot be resized.</p>
+<pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;background image position&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+  body,td,th {
+		font-family: Verdana, Geneva, sans-serif;
+		font-size: 14px;
+		color: #600;}
+	body {
+		background-color: #FFC;
+background-image: url(ophelia.jpg);
+background-repeat: no-repeat;
+background-position: top right;}
+img{border: ridge brown 1em;}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;A background-color(#FFC) and background-image&lt;br&gt;
+(ophelia.jpg) are both used in this file.&lt;/h2&gt;
+&lt;h2&gt;  background-position is set to top right.&lt;/h2&gt;
+&lt;p&gt;background-position may have the following values:&lt;br&gt;
+top left&lt;br&gt;
+top center&lt;br&gt;
+top right&lt;br&gt;
+center left&lt;br&gt;
+center center&lt;br&gt;
+center right&lt;br&gt;
+bottom left&lt;br&gt;
+bottom center&lt;br&gt;
+bottom right&lt;br&gt;
+x% y%&lt;br&gt;
+xpos ypos&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;ophelia.jpg&quot; width=&quot;222&quot; height=&quot;333&quot; title=<br>&quot;This is not the background. It has a border <br>and has been resized. The bigger image is the <br>background image.&quot;&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+<p><a href="#top">↑Top</a></p>
+<hr>
+</div>
+</body>
+</html>

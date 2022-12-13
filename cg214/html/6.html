@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Web Page Construction</title>
+<link href="../mystyles.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<div id="container">
+<h1>Web Page Construction</h1>
+<div id="wrap">
+	<ul class="navbar">
+		<li><a href="../index.html">Home</a></li>
+        <li><a href="../info/infocontact.html">Contact</a>   		</li>
+		<li><a href="#">HTML/CSS</a>
+			<ul>
+				<li><a href="1.html">Lesson 1</a></li>
+				<li><a href="2.html">Lesson 2</a></li>
+				<li><a href="3.html">Lesson 3</a></li>
+                <li><a href="4.html">Lesson 4</a></li>
+				<li><a href="5.html">Lesson 5</a></li>
+				<li><a href="6.html">Lesson 6</a></li>
+                <li><a href="7.html">Lesson 7</a></li>
+                <li><a href="8.html">Lesson 8</a></li>
+
+			</ul>         
+		</li>
+		<li><a href="#">Dreamweaver</a>
+			<ul>
+				<li><a href="d1.html">Lesson 1</a></li>
+				<li><a href="d2.html">Lesson 2</a></li>
+				<li><a href="d6.html">Lesson 3</a></li>
+                <li><a href="d4.html">Lesson 4</a></li>
+				<li><a href="d5.html">Lesson 5</a></li>
+				<li><a href="d3.html">Lesson 6</a></li>  
+			</ul>         
+		</li>
+
+        <li><a href="#">Other</a>
+			<ul>
+				<li><a href="../info/infolinks.html">Useful Links</a></li>
+				<li><a href="../info/infofaq.html">FAQ</a></li>
+                <li><a href="../info/infoassets.html">Assets</a></li>
+				<li><a href="../info/infodocs.html">Documents</a></li>
+                <li><a href="../info/infohomework.html">Homework</a></li>
+			</ul>         
+		</li>
+	</ul>
+</div>
+<!--<iframe id="if1" name="if1" frameborder="0" height="1000" width="750" scrolling="auto" src="info/infohome.html"></iframe> -->
+<h2>HTML/CSS Lesson 6 - iframe and Sounds</h2>
+<p>
+<a href="#iframe">iframe</a> | 
+<a href="#iframesample">iframe Sample</a> | 
+<a href="#sounds">Sounds</a> |  
+<a href="#audio">Audio Element</a> | 
+<a href="#wav">WAV</a> | 
+<a href="#embed">embed Element</a> | 
+<a href="#object">Hyperlink</a> |</p>
+<hr>
+<h3 id="iframe">iframe</h3>
+<p>The iframe tag creates an inline frame to contain another HTML document. For example:</p>
+<pre>&lt;iframe src="f1.html"&gt;&lt;/iframe&gt;
+</pre>
+<p>You can target an iframe by giving it a name:</p>
+<pre>&lt;iframe src=&quot;f1.html&quot; name=&quot;if&quot;&gt;&lt;/iframe&gt;</pre>
+
+
+<p>A width and height may be specified:</p>
+<pre>&lt;iframe src=&quot;f1.html&quot; name=&quot;if&quot; width=&quot;570&quot; height=&quot;440&quot;&gt;&lt;/iframe&gt;</pre>
+<p>The global id attribute is supported. The id gives this element a unique id. The global style and title attributes are also supported. Style is an inline style below and title gives more information about this element.</p>
+<pre>&lt;iframe src=&quot;f1.html&quot; name=&quot;if&quot; width=&quot;420&quot; height=&quot;620&quot; 
+        id=&quot;if&quot; style=&quot;border-style:inset;&quot; title=&quot;The name of this iframe is 'if'&quot;&gt;&lt;/iframe&gt;</pre>
+<p>The value in the border-style property may be <em>none</em>, <em>dotted</em>, <em>dashed</em>, <em>solid</em>, <em>double</em>, <em>groove</em>, <em>ridge</em>, <em>inset</em>, <em>outset</em>, or <em>hidden</em>.</p>
+<p><a href="#top">↑Top</a></p>
+<hr />
+<h3  id="iframesample">iframe Sample</h3>
+<p>Here's a complete example with a table one to contain the thumbnails across the top of the page and the other to contain the iframe at the bottom of the page.</p>
+<p>&lt;!doctype html&gt;<br>
+  &lt;html&gt;<br>
+  &lt;head&gt;<br>
+  &lt;title&gt;Paintings&lt;/title&gt;<br>
+  &lt;meta charset=&quot;utf-8&quot;&gt;<br>
+  &lt;style type=&quot;text/css&quot;&gt;<br>
+  body <br>
+{	background-color:#c4c3d0;<br>
+margin-left:10px; <br>
+margin-top:10px; <br>
+margin-right:0px; <br>
+margin-bottom:0px; <br>
+}<br>
+img {border:0;}<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;p&gt; <br>
+&lt;a href=&quot;boreas.html&quot; target=&quot;if1&quot;&gt;&lt;img src=&quot;boreas-t.jpg&quot; title=&quot;boreas-t&quot;&gt;&lt;/a&gt;<br>
+&lt;a href=&quot;circe.html&quot; target=&quot;if1&quot;&gt;&lt;img src=&quot;circe-t.jpg&quot; title=&quot;circe-t&quot;&gt;&lt;/a&gt;<br>
+&lt;a href=&quot;lady.html&quot; target=&quot;if1&quot;&gt;&lt;img src=&quot;lady-t.jpg&quot; title=&quot;lady-t&quot;&gt;&lt;/a&gt;<br>
+&lt;a href=&quot;ophelia.html&quot; target=&quot;if1&quot;&gt;&lt;img src=&quot;ophelia-t.jpg&quot; title=&quot;ophelia-t&quot;&gt;&lt;/a&gt;&lt;/p&gt;<br>
+&lt;iframe id=&quot;if1&quot; name=&quot;if1&quot; src=&quot;boreas.html&quot; title=&quot;Paintings&quot; width=&quot;353&quot; height=&quot;520&quot; style=&quot;border:inset;&quot;&gt;<br>
+&lt;/iframe&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;</p>
+
+
+<p>See this <a href="../classwork/cw6/demoiframe.html"><strong>demo</strong></a>.</p>
+
+<p><a href="#top">↑Top</a></p>
+<hr />
+<h3 id="sounds">Sounds</h3>
+<p>There are several sound formats such as AU, AIFF, WAV, MIDI, and MP3. The sampling rate of AU is low (8-bit) and thus produces poor quality sounds. Apple developed the AIFF format for the Macintosh. IBM and Microsoft developed the WAV format for the PC. MIDI (Musical Instrument Digital Interface) is a standard protocol for connecting electronic musical instruments to computers. MP3 is a compressed format that eliminates sounds which the human ear can't hear. All these formats are proprietary formats. Some browsers currently support Ogg Vorbis (Ogg for short) sound format, which is a free open source software supported by HTML5. As of February 9, 2015, Ogg is supported by Chrome, Firefox, and Opera. Support can be added to Safari by installing an add-on to desktops, but not iOS. Ogg is not supported by Internet Explorer.</p>
+<p>See a <a href="http://www.wikivs.com/wiki/MP3_vs_Ogg_Vorbis">comparison of Ogg Vorbis and MP3</a>.</p>
+<p><a href="#top">↑Top</a></p>
+<hr />
+<h3  id="audio">Audio Element</h3>
+<p>Below is an example of the  HTML5 audio element. The ogg file, thehappyfarmer.ogg, is 910,845 bytes and plays for 49 seconds. You can download other ogg files from <a href="http://www.piano-midi.de/ogg.htm">http://www.piano-midi.de/ogg.htm</a>. The equivalent midi file is 3,187 bytes - 40 seconds. <a href="../classwork/cw6/ogg.html"><strong>Hear it</strong></a>.</p>
+<pre>&lt;!doctype html&gt;<br>&lt;html&gt;<br>&lt;body&gt;<br>&lt;audio controls&gt;<br>  &lt;source src=&quot;happyfarmer.ogg&quot; type=&quot;audio/ogg&quot; /&gt;<br>&lt;/audio&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;
+</pre>
+<h4>Variations</h4>
+<pre>1. Audio element with controls (<a href="../classwork/cw6/happyfarmer-1.html"><strong>normal</strong></a>)</pre>
+
+<pre>
+&lt;audio controls&gt;<br>  &lt;source src=&quot;happyfarmer.ogg&quot; type=&quot;audio/ogg&quot; /&gt;<br>&lt;/audio&gt;</pre>
+<pre>2. Audio element with controls, but <a href="../classwork/cw6/happyfarmer-2.html"><strong>muted</strong></a></pre>
+<pre>&lt;audio controls muted&gt;
+&lt;source src=&quot;happyfarmer.ogg&quot; type=&quot;audio/ogg&quot;&gt;
+&lt;/audio&gt; </pre>
+
+<pre>     If you want to hear the music...
+       Drag the volume control to the right.
+ 		Then click on the Play button.</pre>
+
+<pre>3. Audio element with <a href="../classwork/cw6/happyfarmer-3.html"><strong>controls and autoplay</strong></a> on
+
+&lt;audio controls autoplay&gt;<br>  &lt;source src=&quot;happyfarmer.ogg&quot; type=&quot;audio/ogg&quot; /&gt;<br>&lt;/audio&gt;
+
+4. Audio element with <a href="../classwork/cw6/happyfarmer-4.html"><strong>no controls and autoplay</strong> on</a>
+
+&lt;audio autoplay&gt;<br>  &lt;source src=&quot;happyfarmer.ogg&quot; type=&quot;audio/ogg&quot; /&gt;<br>&lt;/audio&gt;
+
+5. Audio element with no controls, autoplay on and <a href="../classwork/cw6/happyfarmer-5.html"><strong>loop</strong></a> on
+(acts like background sound, playing continuously)
+
+&lt;audio autoplay loop&gt;<br>  &lt;source src=&quot;happyfarmer.ogg&quot; type=&quot;audio/ogg&quot; /&gt;<br>&lt;/audio&gt;</pre>
+<p><a href="#top">↑Top</a></p>
+<hr />
+<h3 id="wav">WAV</h3>
+<p>Safari does not recognize ogg but it does recognize WAV, so if you  add a WAV file, Safari will play the first one it recognizes. Internet Explorer doesn't support the &lt;audio&gt; element, so it will therefore display some error  message. Browsers will skip the ones it can not find and attempt to play the next one on the list. In the example below, happy_farm.ogg is not found and the next file, <a href="../classwork/cw6/ogg_or_wav.html"><strong>gust.wav</strong></a>, will be played.</p>
+<pre>&lt;!doctype html&gt;<br>&lt;html&gt;<br>&lt;body&gt;<br>&lt;audio controls&gt;  <br>  &lt;source src=&quot;happy_farm.ogg&quot; type=&quot;audio/ogg&quot; /&gt;<br>  &lt;source src=&quot;gust.wav&quot; type=&quot;audio/wav&quot; /&gt;<br>&lt;/audio&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;</pre>
+<p><a href="#top">↑Top</a></p>
+<hr />
+<h3 id="embed">embed Element</h3>
+<p>You could &lt;embed&gt; the any sound file like this:</p>
+<pre>&lt;embed src=&quot;harp.wav&quot;&gt; </pre>
+<p>The &lt;embed&gt; method works in Chrome, Firefox, Internet Explorer, and Safari but not in Opera. <a href="../classwork/cw6/embed.html"><strong>Play</strong></a> it..</p>
+<p><a href="#top">↑Top</a></p>
+<hr />
+<h3 id="object">Hyperlink</h3>
+
+<p>You can <strong><a href="../classwork/cw6/hyperlink.html">hyperlink</a></strong> to any sound.</p>
+<pre>&lt;!doctype html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;meta charset=&quot;utf-8&quot;&gt; <br>&lt;title&gt;Using Hyperlink to a Sound&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&lt;h2&gt;Using A Hyperlink&lt;/h2&gt;<br>&lt;p&gt;&lt;b&gt;&lt;a href=&quot;happyfarmer.ogg&quot;&gt;The Happy Farmer (ogg)&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;<br>&lt;p&gt;&lt;b&gt;&lt;a href=&quot;harp.wav&quot;&gt;Harp (wav)&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;</pre>
+
+<p><a href="#top">↑Top</a></p>
+<hr />
+
+<h2 id="hw">&nbsp;</h2>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+hw8: 7 points
+
+Copy all all files from hw7 to hw8.
+From the Assets page copy bg1.gif to hw8 folder.
+
+Create external style sheet from an internal (embedded) style sheet...
+
+In index.html, copy all the styles in the head section between <style>
+and </style> into a new text page. Save it as css1.css.
+
+In index.html remove all lines between <style> and </style> (the lines you 
+have just copied)
+
+In index.html, head section, insert this link...
+<link rel="stylesheet" type="text/css" href="../homework/hw8/css1.css" />
+right below the <title> line.
+
+In ophelia.html remove all lines between <style> and </style>.
+
+In ophelia.html, head section, insert this link...
+<link rel="stylesheet" type="text/css" href="../homework/hw8/css1.css" />
+right below the <title> line.
+
+Do not change checklist.html.
+
+Now to make ophelia.html look slightly different, we can have an internal
+style sheet after the link to the external style sheet. These styles are
+executed in sequence, i.e., what comes later will override what comes before.
+
+Add the following lines between <style> and </style>...
+body {
+	background-color: #C3FFE7;
+	background-image: url(bg1.gif);
+	background-repeat: repeat-x;
+}
+a:link {
+	color: #060;
+}
+a:visited {
+	color: #060;
+}
+a:hover {
+	color: #F00;
+	font-size:15px;
+}
+a:active {
+	color: #060;
+}
+
+
+Replace the <h2>Ophelia</h2> line with:
+<h2 style="font-family:'Comic Sans MS', cursive; font-size:29px; color:#88B2A2;">Ophelia</h2>
+
+Replace the <p>Ophelia (by the pond), 1894</p> line with:
+<p style="font-family:'Courier New', Courier, monospace; font-size:17px; color:#009933;"><i>Ophelia (by the pond)</i>, 1894</p>
+
+
+Now, the last step, fill out the Final Project Worksheet.

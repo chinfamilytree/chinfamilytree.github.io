@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Links</title>
+<style type="text/css">
+body,td,th {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	color: #000;
+}
+body {
+	background-color: #FFC;
+	background-image: url(bg2.gif);
+	background-repeat: repeat-x;
+	margin-left: 8px;
+	margin-top: 48px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+h1 {
+	font-size: 36px;
+}
+h2 {
+	font-size: 24px;
+}
+h3 {
+	font-size: 18px;
+}
+h4 {
+	font-size: 16px;
+	color:gray;
+}
+h5 {
+	font-size: 14px;
+}
+h6 {
+	font-size: 12px;
+}
+a {
+	font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+<h2>Rollovers</h2>
+<!-- Since the name attribute is now obsolete, the first two rollovers would validate with errors, even though they work. -->
+<p><strong>Using "name" attribute.</strong></p>
+<p><a href="http://en.wikipedia.org/wiki/Boreas_(painting)" 
+onmouseover="document.bore.src='boreas-r.jpg'" 
+onmouseout= "document.bore.src='boreas-t.jpg'"><img src="boreas-t.jpg" name="bore" alt="boreas" title="Boreas"> </a>
+  
+  <a href="http://en.wikipedia.org/wiki/Circe_Offering_the_Cup_to_Ulysses" 
+onmouseover="document.circ.src='circe-r.jpg'" 
+onmouseout= "document.circ.src='circe-t.jpg'">
+  <img src="circe-t.jpg" name="circ" alt="Circe" ></a>
+</p>
+<p>&lt;a href=&quot;http://en.wikipedia.org/wiki/Boreas_(painting)&quot; <br>
+  onmouseover=&quot;document.bore.src='boreas-r.jpg'&quot; <br>
+  onmouseout= &quot;document.bore.src='boreas-t.jpg'&quot;&gt;&lt;img src=&quot;boreas-t.jpg&quot; name=&quot;bore&quot; alt=&quot;boreas&quot; title=&quot;Boreas&quot;&gt; &lt;/a&gt;
+  
+  <!-- The next two rollovers would validate with no errors since the "name" attribute is not used. -->  
+</p>
+<hr>
+<p><strong>No name attribute used.</strong></p>  
+
+<p><img src="boreas-t.jpg" alt="img rollover demo"
+   onmouseover="this.src='boreas-r.jpg'"
+   onmouseout="this.src='boreas-t.jpg'"
+  onclick="location.href='http://en.wikipedia.org/wiki/Boreas_(painting)'"
+/>
+  <img src="circe-t.jpg" alt="img rollover demo"
+   onmouseover="this.src='circe-r.jpg'"
+   onmouseout="this.src='circe-t.jpg'"
+  onclick="location.href='http://en.wikipedia.org/wiki/Circe_Offering_the_Cup_to_Ulysses'"
+/>
+  
+</p>
+<p>&lt;img src=&quot;boreas-t.jpg&quot; alt=&quot;img rollover demo&quot;<br>
+onmouseover=&quot;this.src='boreas-r.jpg'&quot;<br>
+onmouseout=&quot;this.src='boreas-t.jpg'&quot;<br>
+onclick=&quot;location.href='http://en.wikipedia.org/wiki/Boreas_(painting)'&quot;&gt;</p>
+</body>
+</html>

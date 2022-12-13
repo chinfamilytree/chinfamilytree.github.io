@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Web Page Construction</title>
+<link href="../mystyles.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<div id="container">
+<h1>Web Page Construction</h1>
+<div id="wrap">
+	<ul class="navbar">
+		<li><a href="../index.html">Home</a></li>
+        <li><a href="../info/infocontact.html">Contact</a>   		</li>
+		<li><a href="#">HTML/CSS</a>
+			<ul>
+				<li><a href="1.html">Lesson 1</a></li>
+				<li><a href="2.html">Lesson 2</a></li>
+				<li><a href="3.html">Lesson 3</a></li>
+                <li><a href="4.html">Lesson 4</a></li>
+				<li><a href="5.html">Lesson 5</a></li>
+				<li><a href="6.html">Lesson 6</a></li>
+                <li><a href="7.html">Lesson 7</a></li>
+                <li><a href="8.html">Lesson 8</a></li>
+
+			</ul>         
+		</li>
+		<li><a href="#">Dreamweaver</a>
+			<ul>
+				<li><a href="d1.html">Lesson 1</a></li>
+				<li><a href="d2.html">Lesson 2</a></li>
+				<li><a href="d6.html">Lesson 3</a></li>
+                <li><a href="d4.html">Lesson 4</a></li>
+				<li><a href="d5.html">Lesson 5</a></li>
+				<li><a href="d3.html">Lesson 6</a></li>  
+			</ul>         
+		</li>
+
+        <li><a href="#">Other</a>
+			<ul>
+				<li><a href="../info/infolinks.html">Useful Links</a></li>
+				<li><a href="../info/infofaq.html">FAQ</a></li>
+                <li><a href="../info/infoassets.html">Assets</a></li>
+				<li><a href="../info/infodocs.html">Documents</a></li>
+                <li><a href="../info/infohomework.html">Homework</a></li>
+			</ul>         
+		</li>
+	</ul>
+</div>
+<!--<iframe id="if1" name="if1" frameborder="0" height="1000" width="750" scrolling="auto" src="info/infohome.html"></iframe> -->
+<h2>HTML/CSS Lesson 1 - Introduction</h2>
+ 
+<p>
+<a href="#basicskills">Basic Skills</a> | 
+ 
+<a href="#html">HTML</a> | 
+<a href="#tags">Tags</a> | <a href="#whitespace">White Space</a> | 
+<a href="#indentationofcode">Indentation of Code</a> | <a href="#skeletonwebpage">First Web Page</a> | 
+<a href="#launchingabrowser">Launching a Browser</a> | 
+<a href="#openingapage">Opening and Testing a Page</a> | 
+<a href="#someothertagsandattributes">Other Text Tags</a> | 
+<a href="#internalcss">Internal CSS</a> | <a href="#colors">Colors</a> | <a href="#encoding">Encoding</a> | 
+<a href="#model">A Model Web Page</a> | 
+</p>
+<hr />
+ 
+<h3 id="basicskills">Basic Skills</h3>
+<p>Create the following folder on your desktop:  <strong>CG214</strong>. This is the folder where you will keep all of your CG214 work.   At the end of class, do not leave any work on the desktop, as these will be wiped out when you log off. So move your work to a more permanent place, such as your USB flash drive, portable hard drive, a &quot;cloud&quot; drive, or the campus-wide  drive (sometimes denoted as &quot;N&quot; or &quot;Y&quot; drive). Be aware that this drive can only be accessed from FIT's computers on campus.</p>
+<p>Inside the folder you have just created, create the following three (3) folders: <b>classwork, homework, and <i>first_last-</i>final_project,</b> where <i>first</i> is your first name, <i>last</i> is your last name. For example: jane_smith-final_project.</p>
+<p>Within the classwork folder, create the following 14 folders: lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, and lesson14. These are the folders where you will keep each lesson's classwork. There will not be a lecture on the last day of class.</p>
+<p>Within the homework folder, create the following 14 folders: hw1, hw2, hw3, hw4, hw5, hw6, hw7, hw8, hw9, hw10, hw11, hw12, hw13, and hw14. These are the folders where you will keep each homework exercise. The first eight (8) homeworks will be graded at the beginning of the next lecture. The last six (6) homeworks are optional and will not be checked and have no effect on your final letter grade. HW1, HW4 and HW7 are worth 10 points each. The other five are 6 points each. Homework has a total of 60 points.</p>
+ 
+ 
+<h3 id="html">HTML</h3>
+<p>Hypertext Markup Language (HTML) is the standard medium for publishing hypertext on the World Wide Web. It can be created and processed by a wide range of tools, from simple text editors such as Microsoft Notepad, Microsoft WordPad, TextEdit (on the Mac) to sophisticated editors such as Dreamweaver. HTML uses tags to provide content for headings, paragraphs, lists, links, etc. </p>
+<a href="#top">↑Top</a>
+ 
+<h3 id="tags">Tags</h3>
+<p>A tag tells a browser how to display content. A tag usually comes in pairs: an opening tag and a closing tag. An opening tag is always enclosed by angle brackets, such as &lt;title&gt;, which is the title tag. A closing tag is always enclosed by angle brackets with a slash immediately after the left angle bracket, such as &lt;/title&gt;. Between the opening tag and the closing tag is text, called content. There are some tags, such as line break, &lt;br /&gt;, that do not have content. These tags do not have a closing tag. We can also write this tag as &lt;br&gt;, &lt;br/&gt;, &lt;BR&gt;, &lt;BR/&gt; or &lt;BR /&gt; because HTML5 is backwards compatible with HTML 4.01 and XHTML 1.0.  I will use the form which has the least amount of typing, &lt;br&gt;.</p>
+<a href="#top">↑Top</a>
+ 
+<h3 id="whitespace">White Space</h3>
+<p>White space (spaces, tabs, and hard returns) in an HTML document will be removed except for one space by a browser before it is displayed.  Use white space to make your document more readable.</p>
+<a href="#top">↑Top</a>
+ 
+<h3 id="indentationofcode">Indentation of Code</h3>
+<p>Indentation of code in your document is not required by HTML. However, it makes your document much easier to read and debug.</p>
+<a href="#top">↑Top</a>
+ 
+<h3 id="skeletonwebpage">First Web Page</h3>
+ 
+<p> Every document starts with the document type tag. <strong>&lt;!doctype html&gt;</strong> is for HTML5. The document type specifies which standard is being followed by the html document and is used by validators, such as the <a href="http://validator.w3.org/" target="_top">W3C Markup Validator</a> to check the markup validity of web documents. This tag does not have a closing tag. This line  may be written in capital letters. Even though HTML5 is backwards compatible with HTML 4.01 (which uses capital letters) and XHTML 1.0 (which uses lowercase letters), I recommend that you use lower case letters in all your documents. Also use lowercase letters for your file names and extensions, e.g., contact.html or wpc.css.</p>
+<p><a href="#top">↑Top</a></p>
+<p><strong>&lt;html&gt;</strong><br />
+The second line of every document in HTML5 is the &lt;html&gt; tag and ends with the &lt;/html&gt; tag. </p>
+<pre><strong>	&lt;!doctype html&gt;</strong>
+	&lt;html&gt;
+       :
+       :
+    &lt;/html&gt;
+</pre>
+ 
+<p><strong>&lt;head&gt;</strong><br />
+The &lt;head&gt; tag is the document header and can provide information for users and searchers. The &lt;head&gt; tag must follow the opening &lt;html&gt; tag and precede the opening &lt;body&gt; tag.</p>
+<pre><strong>	&lt;!doctype html&gt;</strong>
+	&lt;html&gt;
+       &lt;head&gt;
+          :
+       &lt;/head&gt;
+          :
+          :
+    &lt;/html&gt;
+</pre>
+ 
+<p><strong>&lt;title&gt;</strong><br />
+The &lt;title&gt; tag is the name of your Web page and appears in the title bar when your HTML document is displayed by a browser. It goes within the &lt;head&gt;...&lt;/head&gt; tags like this:</p>
+<pre>
+    &lt;!<strong>doctype html</strong>&gt;
+    &lt;html&gt;
+       &lt;head&gt;
+          &lt;title&gt;Simple Web Page&lt;/title&gt;
+       &lt;/head&gt;
+          :
+          :
+       &lt;/html&gt;
+</pre>
+ 
+<p><strong>&lt;body&gt;</strong><br />
+The &lt;body&gt; tag contains the bulk of the HTML document. It must follow the &lt;head&gt; tag and there can be only one &lt;body&gt; just as there can only be one &lt;head&gt;.</p>
+<pre>    &lt;!<strong>doctype html</strong>&gt;
+    &lt;html&gt;
+       &lt;head&gt;
+          &lt;title&gt;Simple Web Page&lt;/title&gt;
+       &lt;/head&gt;
+       &lt;body&gt;
+          :
+          :
+       &lt;/body&gt;
+    &lt;/html&gt;    
+</pre>
+<p><strong>&lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&gt; &lt;h5&gt; &lt;h6&gt;</strong> <br />
+The &lt;h1&gt; tag creates the largest heading and is of the greatest importance. The &lt;h2&gt; tag is a little less important than &lt;h1&gt; and &lt;h6&gt; is the least important and creates the smallest heading. All heading tags will produce bold text. Heading tags are block-level elements, that is, there is a line space before and after the heading when displayed by a browser.</p>
+ 
+<p><strong>&lt;p&gt;</strong><br />
+The &lt;p&gt; tag creates a new paragraph and the &lt;/p&gt; end the paragraph. The paragraph tag is also a block-level element.</p>
+<a href="#top">↑Top</a>
+ 
+ 
+ 
+ 
+<p id="simple">Use Microsoft Notepad or WordPad on the PC to type the following  Web page and save it as <strong><a href="../classwork/cw1/simple.html">simple.html</a></strong> in the lesson1 folder on the desktop. If your operating system is OS X on the Mac use TextEdit. See <a href="../faq.html#Q6">Q6</a> in the FAQs section for complete instructions.
+</p>
+<pre>
+   &lt;!doctype html&gt;
+   &lt;html&gt;
+      &lt;head&gt;
+         &lt;title&gt;Simple Web Page&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+         &lt;h1&gt;This is a large heading&lt;/h1&gt;
+         &lt;p&gt;The entire document is between the opening 
+            and closing body tags.&lt;/p&gt;
+      &lt;/body&gt;
+   &lt;/html&gt;
+</pre>
+<a href="#top">↑Top</a>
+ 
+<h3 id="launchingabrowser">Launching a Browser</h3>
+ 
+  <p>Double-click on the Google Chrome icon, Internet Explorer icon or the Firefox icon. What works in one browser may not work in another browser, especially in Internet Explorer. This is because Google Chrome and Firefox are more lenient in checking your code, whereas Internet Explorer is less forgiving.</p>
+  
+ 
+<a href="#top">↑Top</a>
+ 
+<h3 id="openingapage">Opening a Page</h3>
+<ol>
+    <li>Navigate to the folder (lesson1) that contains simple.html and double-click on it.</li>    
+    <li>OR 
+       
+    right-click on simple.html, then click on Open With and click on the browser you wish to use.</li>
+</ol>
+ 
+ 
+<h3 id="testingapage">Testing a Page</h3>
+<ol>
+<li>Use Notepad or WordPad or TextEdit to make changes as required.</li>
+<li>Save your changes.</li>
+<li>Open the page again with a browser.</li>
+</ol>
+<a href="#top">↑Top</a>
+ 
+<h3 id="someothertagsandattributes">Some Other Text Tags</h3>
+<p>
+<strong>&lt;strong&gt;</strong>...&lt;/strong&gt;, <strong>&lt;em&gt;</strong>...&lt;/em&gt;<br />
+Text within the &lt;strong&gt;...&lt;/strong&gt; tags are bold, and within the &lt;em&gt;...&lt;/em&gt; are italic. You can also use <strong>&lt;b&gt;</strong>...&lt;/b&gt; for bold and <strong>&lt;i&gt;</strong>...&lt;/i&gt; for italic. These tags are inline elements, that is, in the same line, as opposed to block-level elements that produce line spaces before and after. The heading tags, h1, h2, h3, h4, h5, and h6 are block-level elements. &lt;p&gt; is also a block-level element.
+</p>
+<a href="#top">↑Top</a>
+ 
+<p><strong>Blockquote</strong> uses the &lt;blockquote&gt; and &lt;/blockquote&gt; tags. It displays a quotation. It is a similar to &lt;p&gt; but indents the paragraph from both sides. It is a block-level element. Below is an example of a blockquote:</p>
+<blockquote>
+The blockquote tag displays a quotation. The difference between a paragraph (using the &lt;p&gt; tag) and a blockquote (using the &#60;blockquote&#62; tag) is that the blockquote is indented on the left as well as on the right, approximately half an inch. 
+</blockquote>
+<p style="font-family:Arial;"><strong>Preformatted</strong> text uses the &#60;pre&#62; and &#60;/pre&#62; tags. Everything between these two tags will be displayed exactly as you have typed them on the page, including all white spaces. By default, preformatted text uses the &quot;Courier New&quot; font family. Changing the font face to a proportionally spaced font (not monospaced font) would destroy the look of a monospaced font.</p> 
+<pre>
+    This is
+        an example of
+                preformatted text.
+</pre>
+<a href="#top">↑Top</a>
+
+<p><strong>&lt;br&gt;</strong><br />
+The &lt;br&gt; tag inserts a line break. This tag does not have a corresponding closing tag.<!-- div align is obsolete in HTML5 
+<p>
+&lt;div align=&quot;center&quot;&gt;...&lt;/div&gt;<br />
+The div tag is used to break pages into divisions so that styles can be applied to each section en masse. This is useful when you use CSS (cascading style sheets). For now we are using div with the align attribute to center some text. Align may be given &quot;center&quot;, &quot;left&quot;, or &quot;right&quot;. </p>
+--></p>
+<p>
+  <strong>&lt;!-- ... --&gt;</strong><br />
+This is the comment tag, which is used to insert notes or scripts that are not displayed by the browser.</p>
+
+<a href="#top">↑Top</a>
+
+<h3 id="internalcss">Internal CSS</h3>
+<p>Use an internal (embedded) style sheet inside the head section to align a heading (default is left), change the background color (default is white), and change the default text color (default is black). A code sample follows:</p>
+<pre>&lt;style type=&quot;text/css&quot;&gt;
+body {background-color:aqua; color:navy;}
+h1 {text-align:center;}<br />p {font-family:verdana,arial,helvetica; 
+  font-size:11px;}<br />&lt;/style&gt;</pre>
+<p>The portion in front of the braces {} is called a <em>selector</em>. We will use only tags, for now, as our selectors. Enclosed in braces are <em>property-value</em> pairs with a colon (:) in between and separated from other property-value pair by a semicolon (;).</p>
+<p>To align all headings substitute this line</p>
+<pre>h1,h2,h3,h4,h5,h6 {text-align:center;} 
+</pre>
+<p>for the h1 line above.</p>
+
+<a href="#top">Top</a>
+
+<h3 id="colors">Colors</h3>
+<p> Background color and text color may be any one of the 16 predefined colors 
+  (red <img src="../images/bcred.png" width="12" height="12" alt="red" /> #ff0000, 
+  lime <img src="../images/bclime.png" width="12" height="12" alt="lime (the RGB green)" /> #00ff00, 
+  blue <img src="../images/bcblue.png" width="12" height="12" alt="blue" /> #0000ff, 
+  aqua <img src="../images/bcaqua.png" width="12" height="12" alt="aqua (cyan)" /> #00ffff, 
+  fuchsia <img src="../images/bcfuchsia.png" width="12" height="12" alt="fuchsia (magenta)" /> #ff00ff, 
+  yellow <img src="../images/bcyellow.png" width="12" height="12" alt="yellow" class="thinborder" /> #ffff00, 
+  black <img src="../images/bcblack.png" width="12" height="12" alt="black" /> #000000, 
+  gray <img src="../images/bcgray.png" width="12" height="12" alt="gray" /> #808080, 
+  silver <img src="../images/bcsilver.png" width="12" height="12" alt="silver" /> #c0c0c0, 
+  white <img src="../images/bcwhite.png" width="12" height="12" alt="white" class="thinborder" />  #ffffff, 
+  navy <img src="../images/bcnavy.png" width="12" height="12" alt="navy" /> #000080, 
+  green <img src="../images/bcgreen.png" width="12" height="12" alt="green" /> #008000, 
+  teal <img src="../images/bcteal.png" width="12" height="12" alt="teal" /> #008080,
+  maroon <img src="../images/bcmaroon.png" width="12" height="12" alt="maroon" /> #800000, 
+  purple <img src="../images/bcpurple.png" width="12" height="12" alt="purple" /> #800080, 
+  olive <img src="../images/bcolive.png" width="12" height="12" alt="olive" /> #808000) or any of 16 million colors expressed in  hexadecimal triplets. The first of the triplets represents 256 shades of red; the second triplet represents 256 shade of green; and the third triplets represents 256 shades of blue. The hexadecimal numbers vary from 00 (decimal 0) to FF (decimal 255). For example: red is &quot;#ff0000&quot;, that is, all red, no green, and no blue. Hexadecimal triplets are case insensitive.</p>
+<p>A color value may be one of 16 predefined color names or 145 color names in <a href="http://en.wikipedia.org/wiki/X11_color_names" target="_top">X11 color names</a> (Some of the names in X11 color names may refer to the same color: e.g., fuchsia and magenta.) or a hex triplet, prefixed by a hash mark to represent any one of 16, 777, 216 colors.</p>
+<p>A hex triplet uses the format: #rrggbb, where rr is the hexadecimal value for Red, gg is the hexadecimal value for Green  and bb is the hexadecimal value for Blue. Note that Lime is the W3C designation for the RGB Green. which is different from the W3C green. </p>
+<p>For example, the hex triplet &quot;#800080&quot; and &quot;purple&quot; both refer to the same color. An alternate name for aqua is cyan and magenta may be substituted for fuchsia. You could also use the names or hex triplets  in <a href="http://en.wikipedia.org/wiki/X11_color_names" target="_top">X11 color names</a> or the hex triplets in <a href="http://en.wikipedia.org/wiki/List_of_colors" target="_top">List of Colors</a>. Note that some of the names in X11 color names and the List of Colors do not work. To be safe  use the hex triplets in either X11 color names or List of Colors. When you use color names make sure you <em>remove all spaces</em> in the color names. This has been done in <a href="http://www.w3schools.com/tags/ref_colornames.asp">w3schools.com's color names</a>, where you  can view any of 141 colors as the background color along with different text colors by clicking on any of 141 color names (or a hex value). An HTML <a href="http://www.w3schools.com/tags/ref_colorpicker.asp">color picker</a> is also available in w3schools.com where you can get lighter or darker shades of any color.</p>
+<p>You can download a copy of <a href="../RGB.exe">RGB Color Model</a>. This is an .exe file written by Gene M. Chin in 1999 and works on PCs only. The display is in hexadecimal and decimal. There are three sliders, each corresponding to the three primary additive colors: R, G,  and B. Clicking on the left arrow of a slider decrements the value by 1. Clicking on the right arrow of a slider increments the value by 1. Clicking on a slider increments or decrements by 51 decimal (33 hexadecimal). You can drag a slider to any value you want to display all 16,777,216 colors, one color a time.</p>
+
+<a href="#top">Top</a>
+
+<h3 id="encoding">Encoding</h3>
+<p>A meta tag to show character encoding must be included in the head section such as: <br />
+  &lt;meta charset=&quot;utf-8&quot;&gt;</p>
+<p>UTF-8 is Unicode 8 bits. This encoding is for all languages supported by the W3C Consortium. This includes all European and Asian languages plus some other less known languages.</p>
+
+<a href="#top">Top</a>
+
+<h3 id="model">A Model Web Page</h3>
+<p>Use Notepad or WordPad or TextEdit to type the following and save it as model.html in your classwork/lesson1 folder:</p>
+<pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;!-- The following section is the &lt;head&gt; section, containing <br />     a title, a meta tag for the character set utf-8, <br />     and an internal (embedded) style sheet.<br />--&gt;
+&lt;head&gt;
+&lt;title&gt;Model Web Page&lt;/title&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;style type=&quot;text/css&quot;&gt;<br />body {
+   background-color:bisque;
+   color:firebrick;
+}
+h1 {
+   text-align:center;
+}<br />p {
+   font-family:verdana; 
+   font-size:14px;
+}<br />&lt;/style&gt;
+&lt;/head&gt;
+&lt;!-- The following section is the &lt;body&gt; section.
+--&gt;
+&lt;body&gt;<br />   &lt;h1&gt;Web Page Construction Class&lt;/h1&gt;<br />   &lt;h2&gt;Topics:&lt;/h2&gt;<br />   &lt;p&gt;HTML Basics&lt;br&gt;Basic Dreamweaver&lt;/p&gt;<br />   &lt;h2&gt;Some other tags&lt;/h2&gt;<br />   &lt;p&gt;&lt;b&gt;This is bold&lt;/b&gt;&lt;br&gt;&lt;i&gt;This is italic&lt;/i&gt;&lt;/p&gt;<br />&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>When you are finished, the executed version should look look <strong><a href="../classwork/cw1/model.html" target="_self">this</a></strong>.</p>
+
+<a href="#top">Top</a>
+<hr>
+</div>
+</body>
+</html>

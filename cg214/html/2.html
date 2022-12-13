@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Web Page Construction</title>
+<link href="../mystyles.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<div id="container">
+<h1>Web Page Construction</h1>
+<div id="wrap">
+	<ul class="navbar">
+		<li><a href="../index.html">Home</a></li>
+        <li><a href="../info/infocontact.html">Contact</a>   		</li>
+		<li><a href="#">HTML/CSS</a>
+			<ul>
+				<li><a href="1.html">Lesson 1</a></li>
+				<li><a href="2.html">Lesson 2</a></li>
+				<li><a href="3.html">Lesson 3</a></li>
+                <li><a href="4.html">Lesson 4</a></li>
+				<li><a href="5.html">Lesson 5</a></li>
+				<li><a href="6.html">Lesson 6</a></li>
+                <li><a href="7.html">Lesson 7</a></li>
+                <li><a href="8.html">Lesson 8</a></li>
+
+			</ul>         
+		</li>
+		<li><a href="#">Dreamweaver</a>
+			<ul>
+				<li><a href="d1.html">Lesson 1</a></li>
+				<li><a href="d2.html">Lesson 2</a></li>
+				<li><a href="d6.html">Lesson 3</a></li>
+                <li><a href="d4.html">Lesson 4</a></li>
+				<li><a href="d5.html">Lesson 5</a></li>
+				<li><a href="d3.html">Lesson 6</a></li>  
+			</ul>         
+		</li>
+
+        <li><a href="#">Other</a>
+			<ul>
+				<li><a href="../info/infolinks.html">Useful Links</a></li>
+				<li><a href="../info/infofaq.html">FAQ</a></li>
+                <li><a href="../info/infoassets.html">Assets</a></li>
+				<li><a href="../info/infodocs.html">Documents</a></li>
+                <li><a href="../info/infohomework.html">Homework</a></li>
+			</ul>         
+		</li>
+	</ul>
+</div>
+<!--<iframe id="if1" name="if1" frameborder="0" height="1000" width="750" scrolling="auto" src="info/infohome.html"></iframe> -->
+<h2>HTML/CSS Lesson 2 - Lists</h2>
+
+<p>
+<a href="#ordered">Ordered Lists</a> | 
+<a href="#unordered">Unordered Lists</a> | 
+<a href="#nestedordered">Nested Ordered Lists Using CSS</a> | 
+<a href="#nestedunordered">Nested Unordered Lists</a> | 
+<a href="#marker">Unordered List Using a Marker</a> | 
+<a href="#definitionlist">Definition Lists</a> |</p>
+<hr />
+
+
+<p>There are two types of lists in HTML that use markers: ordered and unordered. Lists may be nested within other lists. A definition list does not use markers.</p>
+<hr />
+<h3 id="ordered">Ordered List</h3>
+<p>An ordered list is a numbered list. Its opening and closing tags are &#60;ol&#62; and &#60;/ol&#62; respectively. Each item within an ordered list must begin with the list item tag, &#60;li&#62;. The closing tag for list item is &#60;/li&#62;. An ordered list can use five pre-defined markers or you can use an image as a marker. The default marker is &quot;1&quot; or Arabic numerals. Without using CSS you can only use  the default marker. Other  markers can be specified in CSS with the property of &quot;list-style-type&quot; and values of upper-roman, upper-alpha, decimal (Arabic numerals), lower-alpha, and lower-roman. Below is the code for an ordered list on how to change a light bulb without CSS.</p>
+
+<pre>&lt;h4&gt;&lt;i&gt;Instructions on how to change a light bulb&lt;/i&gt;&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Turn off the lamp or light fixture.&lt;/li&gt;
+&lt;li&gt;Allow the hot bulb to cool before touching it.&lt;/li&gt;
+&lt;li&gt;Grasp the bulb lightly but firmly and turn counterclockwise until it is released from the socket.&lt;/li&gt;
+&lt;li&gt;Insert a replacement bulb lightly but firmly into the socket, and turn it clockwise until it's snug.&lt;/li&gt;
+&lt;li&gt;Turn the lamp or fixture back on.&lt;/li&gt;
+&lt;li&gt;Dispose the used bulb.&lt;/li&gt;<br />&lt;/ol&gt;
+</pre>
+<p>
+Save it as <a href="../classwork/cw2/ordered_list.html"><strong>ordered_list.html</strong></a>.</p>
+
+<a href="#top">↑Top</a>
+
+<hr>
+<h3 id="unordered">Unordered Lists</h3>
+<p>Below is a sample unordered list without CSS. The default marker (bullet or disc) is used.</p>
+
+<pre>&lt;h4&gt;&lt;i&gt;Things you'll need to change a light bulb&lt;/i&gt;&lt;/h4&gt;
+&lt;ul&gt;
+    &lt;li&gt;Lamps &lt;/li&gt;
+    &lt;li&gt;Light Bulbs&lt;/li&gt;
+    &lt;li&gt;Ladder&lt;/li&gt;<br />&lt;/ul&gt;
+</pre>
+<p>Save it as <a href="../classwork/cw2/unordered_list.html"><strong>unordered_list.html</strong></a>
+</p>
+<a href="#top">↑Top</a>
+
+<hr>
+<h3 id="nestedordered">Nested Ordered Lists Using CSS</h3>
+<p>An alphanumeric outline uses capital Roman numerals for the first level, capital letters for the second level, Arabic numerals for the third level, and lowercase letters for the fourth level. These four levels are supported by HTML. The fifth level is Arabic numerals followed by a right parenthesis. This level is not supported by HTML. You might consider using lower case Roman numerals, which is supported by HTML. If we want to create a nested outline (with several levels), it is necessary to use CSS.</p>
+<p>The CSS could be an internal (embedded) style sheet placed in the &lt;head&gt; section of your document. Only the first 3 classes (ol.a, ol.b, ol.c) were used for this outline. The other 5 were put here for completeness. Save this document as <a href="../classwork/cw2/three_kingdoms.html"><strong>three_kingdoms.html</strong></a>.</p>
+<pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Nested Ordered Lists Using CSS&lt;/title&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;style type=&quot;text/css&quot;&gt;<br />  ol.a {list-style-type:upper-roman;}<br />  ol.b {list-style-type:upper-alpha;}<br />  ol.c {list-style-type:decimal;}<br />  ol.d {list-style-type:lower-alpha;}<br />  ol.e {list-style-type:lower-roman;}<br />  ul.f {list-style-type:disc;}<br />  ul.g {list-style-type:circle;}<br />  ul.h {list-style-type:square;}<br />&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h4&gt;&lt;i&gt;The Three Kingdoms&lt;/i&gt;&lt;/h4&gt;<br />&lt;ol class=&quot;a&quot;&gt;<br />    &lt;li&gt;History<br />        &lt;ol class=&quot;b&quot;&gt;<br />            &lt;li&gt;Yellow Turban Rebellion&lt;/li&gt;
+            &lt;li&gt;Dong Zhuo in power&lt;/li&gt;<br />            &lt;li&gt;Rise of Cao Cao&lt;/li&gt;<br />            &lt;li&gt;Battle of Red Cliffs<br />                &lt;ol class=&quot;c&quot;&gt;<br />                    &lt;li&gt;Background&lt;/li&gt;<br />                    &lt;li&gt;Battle&lt;/li&gt;<br />                    &lt;li&gt;Analysis&lt;/li&gt;<br />                    &lt;li&gt;Aftermath&lt;/li&gt;<br />                    &lt;li&gt;Location&lt;/li&gt;<br />                    &lt;li&gt;Fictionalized Account&lt;/li&gt;
+                    &lt;li&gt;Cultural Impact&lt;/li&gt;
+                &lt;/ol&gt;<br />            &lt;/li&gt;<br />            &lt;li&gt;Three Emperors&lt;/li&gt;<br />            &lt;li&gt;Consolidation&lt;/li&gt;<br />            &lt;li&gt;Zhuge Liang's Northern Expeditions&lt;/li&gt;  
+            &lt;li&gt;Wu and the South&lt;/li&gt;<br />        &lt;/ol&gt;<br />    &lt;/li&gt; <br />    &lt;li&gt;Decline and End of the Three Kingdoms
+        &lt;ol class=&quot;b&quot;&gt;<br />            &lt;li&gt;Fall of Shu&lt;/li&gt;<br />            &lt;li&gt;Fall of Wei&lt;/li&gt;<br />            &lt;li&gt;Fall of Wu&lt;/li&gt;<br />        &lt;/ol&gt;<br />    &lt;/li&gt;<br />    &lt;li&gt;Population&lt;/li&gt;<br />    &lt;li&gt;Economy&lt;/li&gt;<br />    &lt;li&gt;The Three Kingdoms in popular culture&lt;/li&gt; 
+&lt;/ol&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+
+
+
+<a href="#top">↑Top</a>
+
+<hr>
+<h3 id="nestedunordered">Nested Unordered Lists</h3> 
+<p>Unordered lists may also be nested.  The default sequence is disc, circle, and square. 
+To change the default sequence, you need to use CSS (the last 3 classes in the above internal style sheet: ul.f, ul.g, ul.h).
+
+
+
+<p>Use the following  code to create a nested unordered list and save it as <strong><a href="../classwork/cw2/nested_unordered_list.html">nested_unordered_list.html</a></strong>.</p>
+<pre>
+&lt;h4&gt;&lt;i&gt;The three most common fruits consumed by Americans&lt;/i&gt;&lt;/h4&gt;
+&lt;ul&gt;<br />	 &lt;li&gt;Apples<br />		 &lt;ul&gt;<br />			 &lt;li&gt;Delicious Apples<br />				 &lt;ul&gt;<br />					 &lt;li&gt;Red Delicious Apples&lt;/li&gt;
+					 &lt;li&gt;Golden Delicious Apples&lt;/li&gt;
+ 				 &lt;/ul&gt;<br />			 &lt;/li&gt;<br />			 &lt;li&gt;Granny Smith Apples&lt;/li&gt;<br />			 &lt;li&gt;Fuji Apples&lt;/li&gt;<br />		 &lt;/ul&gt;<br /> 	 &lt;/li&gt;<br />	 &lt;li&gt;Oranges<br />    	 &lt;ul&gt;<br />       	 &lt;li&gt;Common Oranges<br />            	 &lt;ul&gt;<br />                    &lt;li&gt;Valencia&lt;/li&gt;<br />                    &lt;li&gt;Hamlim&lt;/li&gt;<br />                &lt;/ul&gt;    <br />            &lt;/li&gt;<br />            &lt;li&gt;Navel Oranges&lt;/li&gt;<br />            &lt;li&gt;Blood Oranges&lt;/li&gt;<br />            &lt;li&gt;Acidless oranges&lt;/li&gt;<br />      	 &lt;/ul&gt;<br />  	 &lt;/li&gt;<br />  	 &lt;li&gt;Bananas<br />    	 &lt;ul&gt;<br />        	 &lt;li&gt;Manzano Banana&lt;/li&gt;<br />            &lt;li&gt;Baby Banana&lt;/li&gt;<br />            &lt;li&gt;Burro Banana&lt;/li&gt;<br />            &lt;li&gt;Red Banana&lt;/li&gt;<br />            &lt;li&gt;Plantain Banana&lt;/li&gt;<br />            &lt;li&gt;Cavendish (also called Chiquita) Banana&lt;/li&gt;
+    	 &lt;/ul&gt;<br />  	 &lt;/li&gt;<br />&lt;/ul&gt;
+</pre>
+
+<a href="#top">↑Top</a>
+
+<hr>
+<p id="marker"><b><i>Unordered List with an Image as a Marker using CSS</i></b></p>
+<p>I have used an inline style for this example. You also need to have the image &quot;right.gif&quot; in the same folder as this html document. You may copy this image here <img src="../images/right.gif" width="16" height="16" alt="right.gif" title="right.gif" />.
+
+<pre>
+&lt;ul style=&quot;list-style-image:url(right.gif);&quot;&gt;
+	 &lt;li&gt;this item&lt;/li&gt;<br />    &lt;li&gt;that item&lt;/li&gt;<br />&lt;/ul&gt;
+</pre>
+<p>Save as <a href="../classwork/cw2/my_marker.html"><strong>my_marker.html</strong></a>.</p>
+
+
+<a href="#top">↑Top</a>
+
+<hr>
+<h3 id="definitionlist">Definition List</h3>
+<p>A definition list starts with &lt;dl&gt;and ends with &lt;/dl&gt;. A &lt;dt&gt;...&lt;/dt&gt; is the term of the definition. A &lt;dd&gt;...&lt;/dd&gt; is the definition description. You can have as many pairs of &lt;dt&gt; &lt;dd&gt; as you like. The code does not require CSS.</p>
+<pre>
+&lt;dl&gt;
+    &lt;dt&gt;Byte&lt;/dt&gt;
+         &lt;dd&gt;A byte is 8 bits (binary digits).&lt;/dd&gt;
+    &lt;dt&gt;Googol&lt;/dt&gt;
+         &lt;dd&gt;A googol is 1 followed by 100 zeros.&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+
+<p>Save as <a href="../classwork/cw2/definition_list.html"><strong>definition_list.htm</strong></a>l.</p>
+
+
+
+<a href="#top">↑Top</a>
+
+<hr>
+</div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Web Page Construction</title>
+<link href="../mystyles.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<div id="container">
+<h1>Web Page Construction</h1>
+<div id="wrap">
+	<ul class="navbar">
+		<li><a href="../index.html">Home</a></li>
+        <li><a href="../info/infocontact.html">Contact</a>   		</li>
+		<li><a href="#">HTML/CSS</a>
+			<ul>
+				<li><a href="1.html">Lesson 1</a></li>
+				<li><a href="2.html">Lesson 2</a></li>
+				<li><a href="3.html">Lesson 3</a></li>
+                <li><a href="4.html">Lesson 4</a></li>
+				<li><a href="5.html">Lesson 5</a></li>
+				<li><a href="6.html">Lesson 6</a></li>
+                <li><a href="7.html">Lesson 7</a></li>
+                <li><a href="8.html">Lesson 8</a></li>
+
+			</ul>         
+		</li>
+		<li><a href="#">Dreamweaver</a>
+			<ul>
+				<li><a href="d1.html">Lesson 1</a></li>
+				<li><a href="d2.html">Lesson 2</a></li>
+				<li><a href="d6.html">Lesson 3</a></li>
+                <li><a href="d4.html">Lesson 4</a></li>
+				<li><a href="d5.html">Lesson 5</a></li>
+				<li><a href="d3.html">Lesson 6</a></li>  
+			</ul>         
+		</li>
+
+        <li><a href="#">Other</a>
+			<ul>
+				<li><a href="../info/infolinks.html">Useful Links</a></li>
+				<li><a href="../info/infofaq.html">FAQ</a></li>
+                <li><a href="../info/infoassets.html">Assets</a></li>
+				<li><a href="../info/infodocs.html">Documents</a></li>
+                <li><a href="../info/infohomework.html">Homework</a></li>
+			</ul>         
+		</li>
+	</ul>
+</div>
+<!--<iframe id="if1" name="if1" frameborder="0" height="1000" width="750" scrolling="auto" src="info/infohome.html"></iframe> -->
+<h2>HTML/CSS Lesson 5 - Fonts and Tables</h2>
+<p>
+<a href="#fonts">Fonts</a> | <a href="#adobeedgewebfonts">Adobe Edge Web Fonts</a> | <a href="#googlefonts">Google Fonts</a> | 
+<a href="#tables">Tables</a> | 
+<a href="#sampletable">Sample Table</a> |</p>
+<hr>
+
+
+<h3 id="fonts">Fonts</h3>
+<p>The font and basefont tags are deprecated in HTML 4.01 and XHTML. The World Wide Web Consortium has removed both tags from its list of recommendations. Some people are still using them but you should avoid using them and use styles instead. Using styles you can set the font-family (was face), font-size (was size), color and other properties. Here is an <b><a href="../demo/demoinline.html" target="_blank">inline</a></b> example of styles for fonts:</p>
+<p>&lt;!doctype html&gt;<br>
+  &lt;html&gt;<br>
+  &lt;head&gt;<br>
+  &lt;title&gt;Sample Inline Style for Fonts&lt;/title&gt;<br>
+  &lt;meta charset=&quot;utf-8&quot;&gt;<br>
+  &lt;/head&gt;<br>
+  &lt;body&gt;<br>
+  &lt;h1 style=&quot;font-family:verdana, arial; font-size:500%; color:blue;&quot;&gt;Styles define&lt;/h1&gt;<br>
+  &lt;p style=&quot;font-family:georgia; font-size:36pt; color:red;&quot;&gt;how to display (36pt) MMMM&lt;/p&gt;<br>
+  &lt;p style=&quot;font-family:georgia; font-size:36px; color:navy;&quot;&gt;how to display (36px) MMMM&lt;/p&gt;<br>
+  &lt;p style=&quot;font-family:impact; font-size:2em; color:green;&quot;&gt;HTML elements. (2em) MMMM&lt;/p&gt;<br>
+  &lt;p style=&quot;font-family:times new roman; font-size:1em; color:green;&quot;&gt;Times New Roman (1em) MMMM&lt;/p&gt;<br>
+  &lt;p style=&quot;font-family:times new roman; font-size:16px; color:green;&quot;&gt;Times New Roman (16px) MMMM&lt;/p&gt;<br>
+  &lt;p style=&quot;font-family:arial; font-size:1em; color:green;&quot;&gt;Arial (1em) MMMM&lt;/p&gt;<br>
+  &lt;p style=&quot;font-family: segoe ui; font-size:1em; color:green;&quot;&gt;Segoe UI (1em) MMMM&lt;/p&gt;<br>
+  &lt;p style=&quot;font-family: segoe ui; font-size:16px; color:green;&quot;&gt;Segoe UI (16px) MMMM&lt;/p&gt;<br>
+  &lt;p style=&quot;font-family:comic sans ms; font-size:36px; color:orange;&quot;&gt;Isn't this great? MMMM&lt;/p&gt;<br>
+  &lt;p style=&quot;font-family:impact; font-size:36px; color:#e3001b;&quot;&gt;Avoid using inline styles unless there is a special need!&lt;/p&gt;<br>
+  &lt;/body&gt;<br>
+  &lt;/html&gt;<br>
+</p>
+<p>If you have more than one value for the font-family property use commas to separate them. The font-size property may be expressed in percents (%), points (pt), pixels (px), medium, large, small, and more. Using pixels is better across platforms for the screen. Use points for printing a document. The default size for a paragraph, &lt;p&gt;, is 16px, which is equal to 1em. The W3C recommends using em for font size. The color property may be a color name (e.g. red) or hex number (e.g. #ff0000).</p>
+
+<p style="font-family:Segoe UI;">Common fonts between Windows OS and Mac OS are: Arial, 
+  <span style="font-family:Arial Black;">Arial Black, 
+  <span style="font-family:Comic Sans MS;">Comic Sans MS, 
+  <span style="font-family:Courier New;">Courier New, 
+  <span style="font-family:Georgia;">Georgia, 
+  <span style="font-family:Impact;">Impact, 
+  <span style="font-family:Arial;">Symbol (
+  <span style="font-family:Symbol;">abg)
+  <span style="font-family:Arial;">,
+  <span style="font-family:Times New Roman;">Times New Roman,
+  <span style="font-family:Trebuchet MS;">Trebuchet MS,
+  <span style="font-family:Verdana;">Verdana, 
+  <span style="font-family:Arial;">and Webdings (
+  <span style="font-family:Webdings;">3456
+  <span style="font-family:Arial;">).
+<span style="font-family:Arial;">See an <a href="../classwork/cw5/common-fonts.html"><strong>example</strong></a> of these fonts.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+
+
+<a href="#top">↑Top</a>
+<hr>
+<h3 id="adobeedgewebfonts">Adobe Edge Web Fonts </h3>
+<ul>
+  <li>Go to <a href="https://edgewebfonts.adobe.com/" target="_blank">Adobe Edge Web Fonts</a></li>
+    <li>Click on "Get Started"</li>
+</ul>
+
+<p>See an <a href="../demo/using_adobe_edge_web_fonts.html" target="_blank"><strong>example</strong></a> of Adobe Edge Web Fonts</p>
+<p><a href="#top">↑Top</a></p>
+<hr>
+<h3 id="googlefonts">Google Fonts </h3>
+<ul>
+  <li>Go to <a href="https://www.google.com/fonts" target="_blank">Google Fonts</a></li>
+  <li>In upper right corner, click on New to Google Fonts?</li>
+  <li>Follow the instructions...
+    <ul>
+      <li>Choose</li>
+      <li>Review</li>
+      <li>Use</li>
+    </ul>
+  </li>
+</ul>
+
+<p>See an <a href="../demo/using_google_fonts.html" target="_blank"><strong>example</strong></a> of Google fonts</p>
+<p><a href="#top">↑Top</a></p>
+<hr>
+<h3 id="tables">Tables</h3>
+<p>Tables allow you to present information in rows and columns (tabular data). Tables should no longer be used to divide a page into sections.</p>
+<ol>
+<li>Opening and closing tables tags are &#60;table&#62; and &#60;/table&#62; respectively. Practically none of the former particular attributes for &lt;table&gt; are supported in HTML5. Use CSS instead.
+</li>
+<li>A table row, whose opening and closing tags are &#60;tr&#62; and &#60;/tr&#62;, is enclosed inside the table tags. All former attributes particular for &lt;tr&gt; are not supported in HTML5. Use CSS instead.
+</li>
+<li>Inside the table row, you can have a table header cell: &#60;th&#62; or a regular table data cell &#60;td&#62;. Their respective closing tags are &#60;/th&#62; and &#60;/td&#62;. No attributes that are particular to &lt;th&gt; or &lt;td&gt; are supported in HTML5. Use CSS instead. </li>
+<li>You can merge cells across columns by using the colspan attribute inside the opening &#60;td&#62; or &#60;th&#62; tags. For example: &#60;th colspan=&quot;2&quot;&#62; would merge two columns. Use rowspan to merge rows in a similar manner, &#60;td rowspan=&quot;2&quot;&#62;. Note that the colspan and rowspan attributes are not available in CSS per se and are not stated as being supported by HTML5. Very convoluted solutions with nested &lt;div&gt; have been offered but these solutions are too complicated for this beginner course. I've tested rowspan and colspan in the major browsers (Chrome, Firefox, Internet Explorer, Opera, Safari) and W3C Markup Validator for HTML5. In all cases the 2 attributes worked fine.</li>
+<li>Use the &#60;caption&#62; tag to create a title or caption such as &#60;caption&#62;About My Friends and Me&#60;/caption&#62;. The &lt;caption&gt; tag must immediately follow the &lt;table&gt; tag. Captions default to the top of the table and is centered across the width of the table. You can use the internal style sheet such as:<br />
+<pre>  &lt;style type=&quot;text/css&quot;&gt;
+  caption {caption-side:bottom;}
+  &lt;/style&gt;</pre>
+  to center the caption on the bottom of the table.
+</li>
+<li>A border can be created around a table and then you set its thickness (border-width:n), style (border-style:type, and color (border-color). The border-width may be in abbreviated units such as 2px. Notice that the border looks like a double border, one border for the table and another for the cells in the table. The type in the border-style:type property value pair is none, dotted, dashed, solid, double, groove, ridge, inset, or outset. The border-color may be one of 140 color names or a hexadecimal triplet. You can also specify the border properties all at once like this: border (-top, -right, -bottom, or -left) to make all 4 sides the same. &quot;-property&quot; is optional, where property is one of width, style, or color. Now type the &quot;:&quot; separator. Then type the appropriate values for each type. For example, a 1 pixel, solid, teal border would be specified as:<br />
+<pre>
+table {border:1px solid teal;}</pre></li>
+<!--
+<li>For internal borders, use rules=area. Areas include: &quot;none&quot;, &quot;rows&quot;, &quot;cols&quot;. For example:  &#60;table border rules=&quot;rows&quot;&#62;.
+</li>
+
+<li>To resize the whole table use width=x and height=y where &quot;x&quot; and &quot;y&quot; are either values in pixels or a percentage of the full window. 
+For example: &#60;table border rules=&quot;rows&quot; width=&quot;50%&quot; height=&quot;75%&quot;&#62;
+</li>
+-->
+<li>To change the size of individual cells use the width and height properties for the th and td selectors.  For example: 
+<pre>
+th {height:30px;}
+</pre>
+</li>
+<li>Background image image may be specified as follows:<br />
+<pre>
+table {background-image: url(&quot;bg2.jpg&quot;);}
+</pre>
+
+</li>
+</ol>
+  
+<a href="#top">↑Top</a>
+<hr>
+<h3 id="sampletable">Sample Table</h3>
+<p>Use the following code to produce the table below and save as <a href="../classwork/cw5/table1.html"><strong>table1.html</strong></a> in your classwork/lesson5 folder.</p>
+<pre>&lt;!doctype html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Tables&lt;/title&gt;<br>&lt;meta charset=&quot;utf-8&quot;&gt;<br>&lt;style type=&quot;text/css&quot;&gt;<br>  body,td,th {<br>    font-family: Segoe ui;<br>    font-size: 1em; color:navy;}<br>  body {	background-color: #FFF;}<br>  table {border-collapse:collapse;<br>    border:solid teal 1px;<br>    width:500px;<br>    background-image: url(&quot;bg2.gif&quot;);}<br>  td,th {border:1px solid teal;}<br>  th {height:30px; vertical-align:middle;}<br>  td {padding:8px;}<br>&lt;/style&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>  &lt;table&gt;<br>    &lt;tr&gt;<br>      &lt;th rowspan=&quot;2&quot;&gt;&lt;img src=&quot;bg1.gif&quot; alt=&quot;bg2&quot;&gt;&lt;/th&gt;<br>      &lt;th colspan=&quot;2&quot;&gt;Work Stuff&lt;/th&gt;<br>      &lt;th colspan=&quot;2&quot;&gt;Fun Stuff&lt;/th&gt;<br>    &lt;/tr&gt;<br>    &lt;tr&gt;<br>      &lt;th&gt;Major&lt;/th&gt;<br>      &lt;th&gt;Job&lt;/th&gt;<br>      &lt;th&gt;Hobbies&lt;/th&gt;<br>      &lt;th&gt;Music&lt;/th&gt;<br>    &lt;/tr&gt;<br>    &lt;tr&gt;<br>      &lt;th&gt;Jane&lt;/th&gt;<br>      &lt;td&gt;Fine Arts&lt;/td&gt;<br>      &lt;td&gt;Scenic Artist&lt;/td&gt;<br>      &lt;td&gt;Dancing&lt;/td&gt;<br>      &lt;td&gt;Brandee&lt;/td&gt;<br>    &lt;/tr&gt;<br>    &lt;tr&gt;<br>      &lt;th&gt;Joe&lt;/th&gt;<br>      &lt;td&gt;Interior Design&lt;/td&gt;<br>      &lt;td&gt;Carpenter&lt;/td&gt;<br>      &lt;td&gt;Fishing&lt;/td&gt;<br>      &lt;td&gt;Nirvana&lt;/td&gt;<br>    &lt;/tr&gt;<br>    &lt;tr&gt;<br>      &lt;th&gt;Kathy&lt;/th&gt;<br>      &lt;td&gt;Liberal Arts&lt;/td&gt;<br>      &lt;td&gt;Teacher&lt;/td&gt;<br>      &lt;td&gt;XC Skiing&lt;/td&gt;<br>      &lt;td&gt;Pearl Jam&lt;/td&gt;<br>    &lt;/tr&gt;<br>  &lt;/table&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;<br>
+</pre>
+
+  
+<a href="#top">↑Top</a>
+<hr>
+</div>
+</body>
+</html>

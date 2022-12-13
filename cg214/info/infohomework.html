@@ -1,0 +1,848 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Web Page Construction</title>
+<link href="../mystyles.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<style type="text/css">
+body,td,th {
+	font-size: 16px;
+}
+body {
+	margin-left: 16px;
+	margin-top: 16px;
+	margin-right: 16px;
+	margin-bottom: 16px;
+}
+pre,a {font-size:16px;
+}
+</style>
+</head>
+<body>
+
+<div id="container">
+<h1>Web Page Construction</h1>
+<div id="wrap">
+	<ul class="navbar">
+		<li><a href="../index.html">Home</a></li>
+        <li><a href="infocontact.html">Contact</a>   		</li>
+		<li><a href="#">HTML/CSS</a>
+			<ul>
+				<li><a href="../html/1.html">Lesson 1</a></li>
+				<li><a href="../html/2.html">Lesson 2</a></li>
+				<li><a href="../html/3.html">Lesson 3</a></li>
+                <li><a href="../html/4.html">Lesson 4</a></li>
+				<li><a href="../html/5.html">Lesson 5</a></li>
+				<li><a href="../html/6.html">Lesson 6</a></li>
+                <li><a href="../html/7.html">Lesson 7</a></li>
+                <li><a href="../html/8.html">Lesson 8</a></li>
+			</ul>         
+		</li>
+		<li><a href="#">Dreamweaver</a>
+			<ul>
+				<li><a href="../html/d1.html">Lesson 1</a></li>
+				<li><a href="../html/d2.html">Lesson 2</a></li>
+				<li><a href="../html/d3.html">Lesson 3</a></li>
+                <li><a href="../html/d4.html">Lesson 4</a></li>
+				<li><a href="../html/d5.html">Lesson 5</a></li>
+				<li><a href="../html/d6.html">Lesson 6</a></li>  
+			</ul>         
+		</li>
+
+        <li><a href="#">Other</a>
+			<ul>
+				<li><a href="infolinks.html">Useful Links</a></li>
+				<li><a href="infofaq.html">FAQ</a></li>
+                <li><a href="infoassets.html">Assets</a></li>
+				<li><a href="infodocs.html">Documents</a></li>
+                <li><a href="infohomework.html">Homework</a></li>
+			</ul>         
+		</li>
+	</ul>
+</div>
+
+<p><a href="#hw1">HW1</a> | <a href="#hw2">HW2</a> | <a href="#hw3">HW3</a> | <a href="#hw4">HW4</a> | <a href="#hw5">HW5</a> | <a href="#hw6">HW6</a> | <a href="#hw7">HW7</a> | <a href="#hw8">HW8</a></p>
+<p><strong>Each homework assignment is worth 7% of your final grade</strong>.</p>
+<h2 id="hw1">Homework 1 - Text </h2>
+
+<ol class="c">
+	<li>Get a copy of <b><a href="../homework/hw1/main_page_text.txt">main_page_text.txt</a></b> and put it in the hw1 folder.</li>
+	<li>Create an internal (embedded) style sheet to include font-family, font-size, color; background-color; font-size for h1, h2, h3, h4, h5, h6	  
+	such as:<br>
+	<br>
+	&lt;style type=&quot;text/css&quot;&gt;<br>
+	body{<br>
+font-family: Verdana, Geneva, sans-serif;<br>
+font-size: 14px;<br>
+color: #000;<br>
+background-color:#FFC;<br>
+}<br>
+h1 {<br>
+font-size: 36px;<br>
+}<br>
+h2 {<br>
+font-size: 24px;<br>
+}<br>
+h3 {<br>
+font-size: 18px;<br>
+}<br>
+h4 {<br>
+font-size: 16px;<br>
+color:gray;<br>
+}<br>
+h5 {<br>
+font-size: 14px;<br>
+}<br>
+h6 {<br>
+font-size: 12px;<br>
+}<br>
+&lt;/style&gt;<br><br>
+
+	</li>
+	<li> Set all paragraphs</li>
+	<li>Set preformatted text</li>
+	<li>Set blockquotes<br>
+	</li>
+	<li>Save the document as <strong>index.html</strong> in the hw1 folder.</li>
+	<li>Your finished document should look like <b><a href="../homework/hw1/index.html">this</a></b>.<br>
+	  Warning: The coding may differ.
+	</li>
+</ol>
+<a href="#top">Top</a>
+<hr>
+
+<h2 id="hw2">Homework 2 -  Lists</h2>
+
+<ol type="A">
+  <li>Copy index.html from hw1 folder to hw2 folder.</li>
+  <li> Add to bottom of style sheet...
+    <ol type="1">
+      <li>ol.ur {list-style-type:upper-roman;}</li>
+      <li>ol.ua {list-style-type:upper-alpha;}</li>
+      <li>ol.de {list-style-type:decimal;}</li>
+      <li>ol.la {list-style-type:lower-alpha;}</li>
+      <li>ol.lr {list-style-type:lower-roman;}</li>
+      <li>ul.d {list-style-type:disc;}</li>
+      <li>ul.c {list-style-type:circle;}</li>
+      <li>ul.s {list-style-type:square;} </li>
+    </ol>
+  </li>
+  <li>On the index.html page...  
+    <ol>
+      <li>Make Biography, Gallery and Vitals Upper Alpha.  </li>
+      <li>Make the rest Decimal.  </li>
+    </ol>
+  </li>
+  <li>Below Vitals...  
+    <ol>
+      <li>Create an unordered list of three items from:  
+        <ol type="a">
+          <li>Click on Boreas to learn more.  </li>
+          <li>Click here to hear the wind blowing on Boreas.  </li>
+          <li>Click here to hear Ulysses' men whom Circe had turned into pigs.  </li>
+        </ol>
+      </li>
+      <li>Make a definition list containing three definition terms:  
+        <ol type="a">
+          <li>Pre-Raphaelites, Greek Mythology, and King Arthur. </li>
+          <li>Make these bold.  </li>
+          <li>Use the paragraphs following each term as definition descriptions.  </li>
+        </ol>
+  </li></ol></li>
+</ol>
+<p>When you are finished, your page should look like <strong><a href="../homework/hw2/index.html">this</a></strong>.<br>
+  Warning: The coding may differ.</p>
+
+<a href="#top">Top</a>
+<hr>
+
+<h2 id="hw3">Homework 3 - Images</h2>
+
+<pre>
+Copy index.html from hw2 into hw3.  </pre>
+<pre>Copy the following images from &quot;Assets&quot; to the hw3 folder:</pre>  
+<pre>
+   bg2.gif
+   boreas-t.jpg
+   circe-t.jpg
+   lady-t.jpg
+   ophelia.jpg
+   ophelia-t.jpg
+   spring-t.jpg
+</pre>
+<pre>In style sheet of index.html, add the following to the body selector...
+
+  background-image: url(bg2.gif);
+  background-repeat: repeat-x;
+  margin-left: 8px;
+  margin-top: 48px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+</pre>
+
+<pre>
+Make a copy of index.html and name it ophelia.html...
+
+	Erase everything below the navigation line, but 
+     keep the last line (Return to Top).
+	Add a heading 3: Ophelia.
+	Insert the large image ophelia.jpg on the next line.
+  Add the alt attribute.
+	Add the title attribute for the image...
+		title="Ophelia (by the pond), 1894"
+	Below the image add a paragraph...
+		Ophelia (by the pond), 1894
+	
+In index.html immediately below Vitals there is a list of
+five thumbnails. Replace each word with its image and add
+a space between each image...
+
+	boreas-t.jpg
+	circe-t.jpg
+	lady-t.jpg
+	ophelia-t.jpg
+	spring-t.jpg
+</pre>
+<p>When you are finished, index.html should look like <strong><a href="../homework/hw3/index.html">this</a></strong>. Warning: The coding may differ.  </p>
+<p>When you are finished, ophelia.html should look like <strong><a href="../homework/hw3/ophelia.html">this</a></strong>. Warning: The coding may differ.  </p>
+
+<a href="#top">Top</a>
+<hr>
+<h2 id="hw4">Homework 4 - Links</h2>
+<pre>
+Copy everything from the hw3 folder to hw4 folder.
+
+Make a copy of the following two documents and put them
+in the hw4 folder:
+   <a href="../homework/hw4/final-project-sheet.doc">final-project-sheet.doc</a>
+   <a href="../homework/hw4/checklist.html">checklist.html</a>
+
+Add the following styles to index.html and ophelia.html...
+   img{border: none;}
+   a:link {color:blue; text-decoration: none;}
+   a:visited {color:blue; text-decoration: none;}
+   a:hover{color:red; text-decoration: none;}
+   a:active{color:blue; text-decoration: none;}
+
+In index.html set the proper links for...
+   Checklist (checklist.html)
+   Worksheet (final-project-sheet.doc); 
+       set the target to &quot;_blank&quot;
+   Class Site (http://sites.fitnyc.edu/users/gene_chin/c2/);
+       set the target for Class Site to "new"
+
+In ophelia.html set the proper links for...
+   Home (index.html) 
+   Checklist (checklist.html)
+   Worksheet (final-project-sheet.doc);
+       set the target to &quot;_blank&quot;
+   Class Site (http://sites.fitnyc.edu/users/gene_chin/c2/);
+       set the target for Class Site to "new"
+   The image "ophelia.jpg" (http://en.wikipedia.org/wiki/Ophelia)
+
+
+Add id="top" to the index.html...
+&lt;h1 id="top"&gt;John William Waterhouse&lt;/h1&gt;
+
+Set all Return to Top...
+&lt;a href="#top"&gt;Return to Top&lt;/a&gt;
+
+Add id to the heading 2, 3, and 4 lines in index.html...
+&lt;h2 id=&quot;biography&quot;&gt;Biography&lt;/h2&gt;<br>&lt;h2 id=&quot;gallery&quot;&gt;Gallery&lt;/h2&gt;<br>&lt;h2 id=&quot;vitals&quot;&gt;Vitals&lt;/h2&gt;<br>&lt;h3 id=&quot;earlylife&quot;&gt;Early Life&lt;/h3&gt;<br>&lt;h3 id=&quot;earlycareer&quot;&gt;Early Career&lt;/h3&gt;<br>&lt;h3 id=&quot;latercareer&quot;&gt;Later Career&lt;/h3&gt;<br>&lt;h4 id=&quot;1870s&quot;&gt;1870s&lt;/h4&gt;<br>&lt;h4 id=&quot;1880s&quot;&gt;1880s&lt;/h4&gt; <br>&lt;h4 id=&quot;1890s&quot;&gt;1890s&lt;/h4&gt; <br>&lt;h4 id=&quot;1900s&quot;&gt;1900s&lt;/h4&gt; <br>&lt;h4 id=&quot;1910s&quot;&gt;1910s&lt;/h4&gt; 
+
+Set the links (in the ordered list) for 
+Biography 
+&lt;a href="#biography"&gt;Biography&lt;/a&gt;
+
+Gallery
+&lt;a href="#gallery"&gt;Gallery&lt;/a&gt;
+
+Vitals
+<a href="#vitals"></a>&lt;a href="#vitals"&gt;Vitals&lt;/a&gt;
+
+Early Life
+&lt;a href="#earlylife"&gt;Early Life&lt;/a&gt;
+
+Early Career
+&lt;a href="#earlycareer"&gt;Early Career&lt;/a&gt;
+
+Later Career<br>&lt;a href="#latercareer"&gt;Later Career&lt;/a&gt;<br><br>1870s<br>&lt;a href="#1870s"&gt;1870s&lt;/a&gt;<br><br>1880s<br>&lt;a href="#1880s"&gt;1880s&lt;/a&gt;<br><br>1890s<br>&lt;a href="#1890s"&gt;1890s&lt;/a&gt;<br><br>1900s<br>&lt;a href="#1900s"&gt;1900s&lt;/a&gt;<br><br>1910s<br>&lt;a href="#1910s"&gt;1910s&lt;/a&gt; </pre>
+<pre>To test these links, insert a dummy image (such as
+ophelia.jpg) in each decade to put some space in between.</pre>
+<pre>Set the link for the boreas-t.jpg image to...  
+http://en.wikipedia.org/wiki/Boreas_(painting)</pre>
+
+<p>When you are finished, index.html should look like <strong><a href="../homework/hw4/index.html">this</a></strong>. Warning: The coding may differ.  </p>
+<p>When you are finished, ophelia.html should look like <strong><a href="../homework/hw4/ophelia.html">this</a></strong>. Warning: The coding may differ.  </p>
+<p>Make sure that every link from every document works properly. You can use <a href="https://validator.w3.org/">W3C Markup Validator</a> to see if your coding conforms to HTML5 standards.</p>
+
+
+<a href="#top">Top</a>
+<hr>
+<h2 id="hw5">Homework 5 -Tables</h2>
+
+<p>Copy all the files from the hw4 folder to the hw5 folder.</p>
+<p>In index.html remove all 5 dummy images inserted in the decades 
+  for testing purposes. <br>
+  We will put tables in these places.</p>
+<p>~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~</p>
+<p>Put the following styles into the internal style sheet of index.html...</p>
+<p>.table1 {<br>
+  background-image:url(bg2.gif);<br>
+  border:solid navy 2px;<br>
+  border-collapse:collapse;<br>
+  }<br>
+  .table2 {<br>
+  background-color:#FFE6CC;<br>
+  border:solid navy 2px;<br>
+  border-collapse:collapse;<br>
+  }<br>
+  .table3 {<br>
+  background-color:#FFEBD6;<br>
+  border:solid navy 2px;<br>
+  border-collapse:collapse;<br>
+  }<br>
+  .table4 {<br>
+  background-color:#FFF0E0;<br>
+  border:solid navy 2px;<br>
+  border-collapse:collapse;<br>
+  }<br>
+  .table5 {<br>
+  background-color:#FFF5EB;<br>
+  border:solid navy 2px;<br>
+  border-collapse:collapse;<br>
+  }<br>
+  td,th {<br>
+  border:solid teal 1px;<br>
+  }<br>
+  th {<br>
+  height:30px; vertical-align:middle;<br>
+  }<br>
+  td {<br>
+  padding:8px;<br>
+  }</p>
+<p>~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~</p>
+<p>Put the following table for 1870s...</p>
+<p>&lt;table class=&quot;table1&quot;&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;th&gt;Year&lt;/th&gt;<br>
+  &lt;th&gt;Name&lt;/th&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1872&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Undine#/media/File:John_William_Waterhouse_-_Undine.JPG&quot; title=&quot;Undine&quot;&gt;Undine&lt;/a&gt;&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1873&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;Gone, But Not Forgotten&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1873&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/The_Unwelcome_Companion:_A_Street_Scene_in_Cairo#/media/File:John_William_Waterhouse-_The_Unwelcome_Companion_-_a_Street_Scene_in_Cairo.JPG&quot; title=&quot;The Unwelcome Companion--A Street Scene in Cairo&quot;&gt;The Unwelcome Companion--A Street Scene in Cairo&lt;/a&gt;&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1874&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;La Fileuse&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1874&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;In the Peristyle&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1875&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;Miranda&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1877&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;A Sick Child brought into the Temple of Aesculapius&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1878&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;The Remorse of the Emperor Nero after the Murder of his Mother&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;/table&gt;<br>
+</p>
+<p>~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~</p>
+<p>Put the following table for 1880s...</p>
+<p>&lt;table class=&quot;table2&quot;&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;th&gt;Year&lt;/th&gt;<br>
+  &lt;th&gt;Name&lt;/th&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1880&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;Dolce far Niente&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1882&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Diogenes_of_Sinope#/media/File:Waterhouse-Diogenes.jpg&quot; title=&quot;Diogenes of Sinope&quot;&gt;Diogenes&lt;/a&gt;&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1883&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/The_Favourites_of_the_Emperor_Honorius#/media/File:John_William_Waterhouse_-_The_Favorites_of_the_Emperor_Honorius_-_1883.jpg&quot; title=&quot;The Favourites of the Emperor Honorius&quot;&gt;The Favourites of the Emperor Honorius&lt;/a&gt;&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1884&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Consulting_the_Oracle#/media/File:John_William_Waterhouse_-_Consulting_the_Oracle_-_Tate_Britain.jpg&quot; title=&quot;Consulting the Oracle&quot;&gt;Consulting the Oracle&lt;/a&gt;&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1885&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Saint_Eulalia_(Waterhouse_painting)#/media/File:John_William_Waterhouse_-_Saint_Eulalia_-_1885.jpg&quot; title=&quot;Saint Eulalia (Waterhouse painting)&quot;&gt;Saint Eulalia&lt;/a&gt;&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1886&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/The_Magic_Circle_(Waterhouse_painting)#/media/File:John_William_Waterhouse_-_Magic_Circle.JPG&quot; title=&quot;The Magic Circle (Waterhouse painting)&quot;&gt;Magic Circle&lt;/a&gt;&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1886&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/The_Lady_of_Shalott_(painting)#/media/File:John_William_Waterhouse_The_Lady_of_Shalott.jpg&quot; title=&quot;The Lady of Shalott (painting)&quot;&gt;The Lady of Shalott&lt;/a&gt;&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1888&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;&lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/6/62/Cleopatra_-_John_William_Waterhouse.jpg&quot; title=&quot;Cleopatra&quot;&gt;Cleopatra&lt;/a&gt;&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1889&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;&lt;a href=&quot;http://www.wikiart.org/en/john-william-waterhouse/ophelia-1889#supersized-artistPaintings-188021&quot;&gt;Ophelia&lt;/a&gt;&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;/table&gt;<br>
+</p>
+<br>
+<p>~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~</p>
+<p>Put the following table for 1890s...</p>
+<p>&lt;table class=&quot;table3&quot;&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;th&gt;Year&lt;/th&gt;<br>
+  &lt;th&gt;Name&lt;/th&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1890&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;A Roman Offering&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1891&lt;/td&gt;<br>
+  &lt;td&gt;&lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Circe_Offering_the_Cup_to_Ulysses&quot;&gt;&lt;img src=&quot;circe-t.jpg&quot; width=&quot;80&quot; height=&quot;120&quot; alt=&quot;Circe&quot;&gt;&lt;/a&gt;&lt;/p&gt;<br>
+  &lt;p&gt;&lt;em&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Circe_Offering_the_Cup_to_Ulysses#/media/File:Circe_Offering_the_Cup_to_Odysseus.jpg&quot; title=&quot;Circe Offering the Cup to Ulysses&quot;&gt;Circe Offering the Cup to Ulysses&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1891&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;&lt;a href=&quot;http://www.johnwilliamwaterhouse.com/pictures/ulysses-sirens-1891/&quot; title=&quot;Odysseus&quot;&gt;Ulysses and the Sirens&lt;/a&gt;&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1892&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;&lt;a href=&quot;http://www.johnwilliamwaterhouse.com/articles/danae-in-colour/&quot; title=&quot;Danaë&quot;&gt;Danaë&lt;/a&gt;&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1892&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Circe_Invidiosa#/media/File:Circe_Invidiosa_-_John_William_Waterhouse.jpg&quot; title=&quot;Circe Invidiosa&quot;&gt;Circe Invidiosa&lt;/a&gt;&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1893&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Naiad#/media/File:Naiad1.jpg&quot;&gt;A Naiad&lt;/a&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Naiad#/media/File:Naiad1.jpg&quot; title=&quot;Naiad&quot;&gt;&lt;/a&gt;&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1893&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;La Belle Dame sans Merci&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1894&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;A Female Study&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1894&lt;/td&gt;<br>
+  &lt;td&gt;&lt;p&gt;&lt;em&gt;&lt;img src=&quot;lady-t.jpg&quot; width=&quot;80&quot; height=&quot;120&quot; alt=&quot;Lady 1894&quot;&gt;&lt;/em&gt;&lt;/p&gt;<br>
+  &lt;p&gt;&lt;em&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/The_Lady_of_Shalott#/media/File:The_Lady_of_Shallot_Looking_at_Lancelot.jpg&quot;&gt;The Lady of Shalott Looking at Lancelot&lt;/a&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Lancelot&quot; title=&quot;Lancelot&quot;&gt; &lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1894&lt;/td&gt;<br>
+  &lt;td&gt;&lt;p&gt;&lt;a href=&quot;http://www.jwwaterhouse.com/view.cfm?recordid=23&quot;&gt;&lt;img src=&quot;ophelia-t.jpg&quot; width=&quot;80&quot; height=&quot;120&quot; alt=&quot;Ophelia&quot;&gt;&lt;/a&gt;&lt;/p&gt;<br>
+  &lt;p&gt;&lt;em&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Ophelia#/media/File:Ophelia_1894.jpg&quot; title=&quot;Ophelia&quot;&gt;Ophelia&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1895&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;The Shrine&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1895&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;&lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/b/bd/Waterhouse,_John_William_-_Saint_Cecilia_-_1895.jpg&quot; title=&quot;Saint Cecilia&quot;&gt;Saint Cecilia&lt;/a&gt;&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1896&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Pandora#/media/File:Pandora_-_John_William_Waterhouse.jpg&quot; title=&quot;Pandora&quot;&gt;Pandora&lt;/a&gt;&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1896&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Hylas#/media/File:Waterhouse_Hylas_and_the_Nymphs_Manchester_Art_Gallery_1896.15.jpg&quot; title=&quot;Hylas&quot;&gt;Hylas and the Nymphs&lt;/a&gt;&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1898&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;&lt;a href=&quot;http://www.jwwaterhouse.com/paintings/images/waterhouse_juliet.jpg&quot; title=&quot;Juliet&quot;&gt;Juliet&lt;/a&gt;&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;/table&gt;<br>
+</p>
+<br>
+<p>~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~</p>
+<p>Put the following table for 1900s...</p>
+<p>&lt;table class=&quot;table4&quot;&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;th&gt;Year&lt;/th&gt;<br>
+  &lt;th&gt;Name&lt;/th&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;c.1900&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;The Siren&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1900&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;Destiny&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1900&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;The Lady Clare&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1900&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;Nymphs Finding the Head of Orpheus&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1900&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;The Mermaid&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1902&lt;/td&gt;<br>
+  &lt;td&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/The_Crystal_Ball_(painting)#/media/File:John_William_Waterhouse_-_The_Crystal_Ball.JPG&quot; title=&quot;The Crystal Ball (painting)&quot;&gt;&lt;em&gt;The Crystal Ball&lt;/em&gt;&lt;/a&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1902&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;The Missal&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1902&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;Windflowers&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1903&lt;/td&gt;<br>
+  &lt;td&gt;&lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Boreas_(painting)&quot;&gt;&lt;img src=&quot;boreas-t.jpg&quot; width=&quot;80&quot; height=&quot;120&quot; alt=&quot;Boreas&quot;&gt;&lt;/a&gt;&lt;/p&gt;<br>
+  &lt;p&gt;&lt;em&gt;<br>
+  &lt;a href=&quot;https://en.wikipedia.org/wiki/Boreas_(painting)#/media/File:Boreas.jpg&quot; title=&quot;Boreas (Waterhouse painting)&quot;&gt;Boreas&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1903&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Echo_and_Narcissus_(Waterhouse_painting)#/media/File:John_William_Waterhouse_-_Echo_and_Narcissus_-_Google_Art_Project.jpg&quot; title=&quot;Echo and Narcissus (Waterhouse painting)&quot;&gt;Echo and Narcissus&lt;/a&gt;&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1903&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;Psyche Opening the Golden Box&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1904&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;Psyche Opening the Door into Cupid's Garden&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1905&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Lamia#/media/File:Lamia_and_the_Soldier.jpg&quot; title=&quot;Lamia&quot;&gt;Lamia&lt;/a&gt;&lt;/em&gt; (first version)&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1907&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;Jason and Medea&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1908&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;The Bouquet&lt;/em&gt; (a study)&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;c. 1908&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;Gather Ye Rosebuds&lt;/em&gt; or &lt;em&gt;Ophelia&lt;/em&gt; (a study)&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1908&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;Gather Ye Rosebuds While Ye May...&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1908&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;The Soul of the Rose&lt;/em&gt; or&lt;em&gt;My Sweet Rose&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1909&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;Gather Ye Rosebuds While Ye May&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1909&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Lamia#/media/File:Lamia_Waterhouse.jpg&quot;&gt;Lamia&lt;/a&gt;&lt;/em&gt; (second version)&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1909&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;Thisbe&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;/table&gt;<br>
+</p>
+<p>~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~</p>
+<p>Put the following table for 1910s...</p>
+<p>&lt;table class=&quot;table5&quot;&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;th&gt;Year&lt;/th&gt;<br>
+  &lt;th&gt;Name&lt;/th&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1910&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;Ophelia&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1910&lt;/td&gt;<br>
+  &lt;td&gt;<br>
+  &lt;p&gt;<br>
+  &lt;a href=&quot;http://www.johnwilliamwaterhouse.com/pictures/spring-spreads-one-green-lap-flowers-1910/&quot;&gt;<br>
+  &lt;img src=&quot;spring-t.jpg&quot; width=&quot;80&quot; height=&quot;120&quot; alt=&quot;Spring&quot;&gt;&lt;/a&gt;<br>
+  &lt;/p&gt;<br>
+  &lt;p&gt;&lt;em&gt;&lt;a href=&quot;http://www.wikiart.org/en/john-william-waterhouse/spring-spreads-one-green-lap-of-flowers-1910&quot;&gt;Spring Spreads One Green Lap of Flowers&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;<br>
+  &lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1911&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;The Charmer&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1912&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;Penelope and the Suitors&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1914&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;The Annunciation&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;c. 1915&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;Beatrice&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1915&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;Dante and Beatrice&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1916&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;I am half-sick of shadows, said the Lady of Shalott&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1916&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;A Tale from the Decameron&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1916&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;Miranda -- The Tempest&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1916&lt;/td&gt;<br>
+  &lt;td&gt;&lt;em&gt;Tristan and Isolde&lt;/em&gt;&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;/table&gt;</p>
+<p>~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~</p>
+<p>Put a horizontal rule  &lt;hr&gt; to separate each decade.</p>
+<p>When you are finished, index.html should look like <strong><a href="../homework/hw5/index.html">this</a></strong>. Warning: The coding may differ.  </p>
+<p>(Note: ophelia.html was not changed.)</p>
+
+
+
+
+<a href="#top">Top</a>
+<hr>
+<h2 id="hw6">Homework 6 - iFrame and Sounds</h2>
+<p>Copy all the files from the hw5 folder to the hw6 folder.</p>
+<p>Using Internet Explorer, go to the class website and obtain the three sound files from &quot;Assets&quot; by right clicking on the file and then &quot;save target as&quot; into the hw6 folder. Also obtain the three images boreas,jpg, circe.jpg and lady.jpg and put them into the hw6 folder.<br>
+</p>
+<p>In the unordered list below Vitals... <br>
+  Use the &quot;gust.wav&quot; as the link for the word &quot;here&quot; in the second line<br>
+  Use the &quot;pig.mp3&quot; as the link for the word &quot;here&quot; in the third line<br>
+  <br>
+  On the next line remove the words &quot;audio element here&quot; and put the <br>
+  following  lines in its place...<br>
+  &lt;p&gt;<br>
+  &lt;audio controls&gt;<br>
+  &lt;source src=&quot;prelude10-chopin.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;<br>
+  &lt;/audio&gt; <br>
+  &lt;/p&gt;<br>
+  <br>
+  On the next line insert an iframe with the following attributes...<br>
+  id=&quot;if1&quot; <br>
+  name=&quot;if1&quot; <br>
+  frameborder=&quot;0&quot; <br>
+  height=&quot;510&quot; <br>
+  width=&quot;340&quot; <br>
+  scrolling=&quot;auto&quot; <br>
+  src=&quot;boreas.jpg&quot;</p>
+<p> <br>
+  Link circe-t.jpg to circe.jpg and set the target to &quot;if1&quot;...<br>
+  &lt;a href=&quot;circe.jpg&quot; target=&quot;if1&quot;&gt;<br>
+  &lt;img src=&quot;circe-t.jpg&quot; alt=&quot;circe-t&quot; title=&quot;circe-t&quot;&gt;<br>
+  &lt;/a&gt;<br>
+  <br>
+  Link lady-t.jpg to lady.jpg and set the target to &quot;if1&quot;...<br>
+  &lt;a href=&quot;lady.jpg&quot; target=&quot;if1&quot;&gt;<br>
+  &lt;img src=&quot;lady-t.jpg&quot; alt=&quot;lady-t&quot; title=&quot;lady-t&quot;&gt;<br>
+  &lt;/a&gt;</p>
+<p>When you are finished, index.html should look like <strong><a href="../homework/hw6/index.html">this</a></strong>. Warning: The coding may differ.  </p>
+<p>(Note: ophelia.html was not changed.)</p>
+
+<a href="#top">Top</a>
+<hr>
+<h2 id="hw7">Homework 7 - Rollover and Image Map</h2>
+
+<p>Copy all the files from the hw6 folder to the hw7 folder.</p>
+<p>Copy the following images from &quot;Assets&quot; to the hw7 folder:</p> 
+<pre>
+   ophelia-r.jpg
+   spring-r.jpg
+   spring.jpg
+   waterhouse.jpg
+</pre>
+
+<p>Open waterhouse.jpg in Photoshop to find the coordinates for the<br>
+  three hotspots: </p>
+<ul>
+  <li>a circle for his left eye</li>
+  <li>a rectangle on his forehead</li>
+  <li>
+    a polygon for his ear</li>
+</ul>
+<p>
+  In Photoshop...	Window/Info<br>
+  In Info make sure the cross in the X: Y: section shows pixels.<br>
+  </p>
+<p>For the circle you need to specify the X, Y coordinates of the center<br>
+  of the circle and the Radius...</p>
+<ul>
+  <li>Move your mouse to the center of his left eye, note the X and Y 
+    coordinates, such as 93, 78.</li>
+  <li>To get the radius for the circle, move your mouse straight to  the right and note the <br>
+    X coordinate, such as 102.</li>
+  <li>Subtract 93 from 102 to get 9. This is the radius. <br>
+    Thus the coordinates are written as 93,78,9</li>
+</ul>
+<p>For the rectangle you need to know the coordinates of the upper<br>
+  left corner and the lower right corner, such as 64,49,103,64<br>
+  <br>
+  For a polygon you need to know coordinates of each vertex, such as<br>
+  129,69,139,87,129,97,123,84<br>
+  Each pair of numbers specifies a vertex, so in this case,  there are 4 vertices.</p>
+<p>For all this to work we need to specify the image and the map <br>
+  associated with the image by means of a name attribute...<br>
+  The name in the following case is &quot;Map&quot;.</p>
+  <p>Insert the waterhouse.jpg image into index.html immediately after the <br>
+nested ordered list (C. Vitals) and before the paragraph &quot;John William Waterhouse&quot;.</p>
+<pre>  &lt;img src=&quot;waterhouse.jpg&quot; alt=&quot;JWW&quot; title=&quot;John William Waterhouse&quot;
+  width=&quot;180&quot; height=&quot;287&quot; usemap=&quot;#Map&quot;&gt;</pre>
+
+<p>The three areas used as hot spots enclosed in the map element are  as follows...</p>
+<pre>
+  &lt;map name=&quot;Map&quot;&gt;
+  &lt;area shape=&quot;circle&quot; coords=&quot;93,78,9&quot; href=&quot;ophelia.html&quot; 
+      alt=&quot;left eye&quot; title=&quot;Left Eye&quot;&gt;
+  &lt;area shape=&quot;rect&quot; coords=&quot;64,49,103,64&quot; 
+      href=&quot;checklist.html&quot; alt=&quot;forehead&quot; title=&quot;Forehead&quot;&gt;
+  &lt;area shape=&quot;poly&quot; coords=&quot;129,69,139,87,129,97,123,84&quot; 
+      href=&quot;prelude10-chopin.mp3&quot; alt=&quot;left ear&quot; title=&quot;Left Ear&quot;&gt;
+  &lt;/map&gt;</pre>
+<p>We also give each area a &quot;title&quot; so that when the mouse rolls over it,  the title will show.<br>
+  When you click on the hotspot, the link is shown in the href attribute. Put the above &quot;map&quot;<br>
+  immediately below the image.
+</p>
+<p>~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~</p>
+<p>For the rollovers we will use the two rollover thumbnails, ophelia-r.jpg and spring-r.jpg<br>
+  in index.html
+...</p>
+<p>For the ophelia rollover...</p>
+<p>Replace the line... <br>
+  &lt;img src=&quot;ophelia-t.jpg&quot; title=&quot;ophelia-t&quot; alt=&quot;&quot;&gt;</p>
+<p>with...<br>
+  &lt;a href=&quot;ophelia.jpg&quot; target=&quot;if1&quot;<br>
+  onmouseover=&quot;document.ophi.src='ophelia-r.jpg'&quot; <br>
+  onmouseout= &quot;document.ophi.src='ophelia-t.jpg'&quot;&gt;<br>
+  &lt;img src=&quot;ophelia-t.jpg&quot; name=&quot;ophi&quot; alt=&quot;ophelia&quot; title=&quot;Ophelia&quot;&gt; <br>
+  &lt;/a&gt;</p>
+<p>For the spring rollover...</p>
+<p>Replace the line... <br>
+  &lt;img src=&quot;spring-t.jpg&quot; title=&quot;spring-t&quot; alt=&quot;&quot;&gt;&lt;/p&gt;</p>
+<p>with...<br>
+  &lt;a href=&quot;spring.jpg&quot; target=&quot;if1&quot;<br>
+  onmouseover=&quot;document.spr.src='spring-r.jpg'&quot; <br>
+  onmouseout= &quot;document.spr.src='spring-t.jpg'&quot;&gt;<br>
+  &lt;img src=&quot;spring-t.jpg&quot; name=&quot;spr&quot; alt=&quot;spring&quot; title=&quot;Spring&quot;&gt; <br>
+&lt;/a&gt;</p>
+
+<p>When you are finished, index.html should look like <strong><a href="../homework/hw7/index.html">this</a></strong>. Warning: The coding may differ.  </p>
+<p>(Note: ophelia.html was not changed.)</p>
+
+<p>~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~</p>
+<h4>Do the following to help you get started on your final project:</h4>
+<ol>
+  <li> Select several images (no more than 500 pixels for the larger dimension), in jpg, gif, or png format, appropriate for your project theme. </li>
+  <li> Use Photoshop to make thumbnails for the  images, (no more than 150 pixels for the larger dimension). Name them with a &quot;-t&quot; at the end.</li>
+  <li> Use Photoshop to change the thumbnails  and name them the same but with &quot;-r&quot; at the end.. </li>
+  <li> For each of the large images, make a corresponding html file that contains the large image. Name them the same as the image but with html as the file extension. One of these images will be used for hot spots.</li>
+  <li>Select two images to be used as background images.</li>
+  <li> Select two  small (in file size) audio files in wav, mp3, or ogg format.</li>
+</ol>
+<p>&nbsp;</p>
+
+<a href="#top">Top</a>
+<hr>
+<h2 id="hw8">Homework 8 - Style Sheets</h2>
+
+<p>Copy all the files from the hw7 folder to the hw8 folder.</p>
+<p>Copy bg1.gif from &quot;Assets&quot; to hw8 folder.<br>
+</p>
+<p>Create external style sheet from an internal (embedded) style sheet...</p>
+<p>In index.html, copy all the styles in the head section between &lt;style&gt;<br>
+  and &lt;/style&gt; into a new text page. Save it as css1.css.</p>
+<p>In index.html remove all lines between &lt;style&gt; and &lt;/style&gt; (the lines you <br>
+  have just copied)</p>
+<p>In index.html, head section, insert this link...<br>
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css1.css&quot;&gt;<br>
+  right below the &lt;title&gt; line. </p>
+<p>Save index.html.</p>
+
+<p>In ophelia.html remove all lines between &lt;style&gt; and &lt;/style&gt;.</p>
+<p>In ophelia.html, head section, insert this link...<br>
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css1.css&quot;&gt;<br>
+  right below the &lt;title&gt; line.</p>
+<p>Now to make ophelia.html look slightly different, we can have an internal<br>
+  style sheet after the link to the external style sheet. These styles are<br>
+executed in sequence, i.e., what comes later will override what comes before.</p>
+<p>Add the following lines between &lt;style&gt; and &lt;/style&gt;...<br>
+  body {<br>
+  background-color: #C3FFE7;<br>
+  background-image: url(bg1.gif);<br>
+  background-repeat: repeat-x;<br>
+  }<br>
+  a:link {<br>
+  color: #060;<br>
+  }<br>
+  a:visited {<br>
+  color: #060;<br>
+  }<br>
+  a:hover {<br>
+  color: white;<br>
+  background-color:black;<br>
+  font-size:14px;<br>
+  }<br>
+  a:active {<br>
+  color: #060;<br>
+  }<br>
+</p>
+<p>Replace the &lt;h2&gt;Ophelia&lt;/h2&gt; line with:<br>
+  &lt;h2 style=&quot;font-family:'Comic Sans MS', cursive; font-size:29px; color:#88B2A2;&quot;&gt;Ophelia&lt;/h2&gt;</p>
+<p>Replace the &lt;p&gt;Ophelia (by the pond), 1894&lt;/p&gt; line with:<br>
+  &lt;p style=&quot;font-family:'Courier New', Courier, monospace; font-size:17px; color:#009933;&quot;&gt;&lt;i&gt;Ophelia (by the pond)&lt;/i&gt;, 1894&lt;/p&gt;</p>
+<p>Save ophelia.html</p>
+<p>Let's also remove the internal styles in checklist.html and replace them with a link (as we had done for index.html). Save checklist.html. <a href="../homework/hw8/checklist.html"><strong>checklist.html</strong></a> should look exactly the same as before, but with fewer lines of code.</p>
+
+
+<p>When you are finished, index.html should look like <strong><a href="../homework/hw8/index.html">this</a></strong>. Warning: The coding may differ.  </p>
+<p>When you are finished, ophelia.html should look like <strong><a href="../homework/hw8/ophelia.html">this</a></strong>. Warning: The coding may differ.  </p>
+<p>Your external style sheet (css1.css) should resemble <a href="../homework/hw8/css1.css"><strong>this</strong></a>. Warning: The coding may differ.  </p>
+<p>The last step is to fill out the <a href="../doc/final-project-sheet.doc">Final Project Sheet</a>.</p>
+<a href="#top">Top</a>
+<hr>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+﻿hw7: 7 points
+
+Copy all files from hw6 to hw7 folder.
+From the Assets folder copy the following to hw7 folder:
+boreas-r.jpg 
+circe-r.jpg
+lady-r.jpg
+ophelia-r.jpg
+spring-r.jpg
+waterhouse.jpg
+
+-`-`-`-`-`-`-`-
+
+Insert the waterhouse.jpg image into index.html immediately after the 
+nested ordered list (C. Vitals) and before the paragraph "John William Waterhouse".
+
+Open waterhouse.jpg in Photoshop to find the coordinates for the
+three hotspots: a circle for his eye, a polygon for his ear, and
+a rectangle on his forehead.
+	In Photoshop...	Window/Info
+	In Info make sure the cross in the X: Y: section shows pixels.
+	Move your mouse to the center of his left eye, note the X and Y 
+		coordinates, such as 93, 78.
+	To get the radius for the circle, move your mouse straight to
+		the right and note the X coordinate, such as 102.
+	Subtract 93 from 102 to get 9. This is the radius.
+	So the coordinates are written as 93, 78, 9.
+	
+	For the rectangle you need to know the coordinates of the upper
+		left corner and the lower right corner, such as 64,49,103,64.
+		
+	For a polygon you need to know coordinates of each vertex, such as
+		129,69,139,87,129,97,123,84
+		Each pair of numbers specifies a vertex, so in this case,
+			there are 4 vertices.
+		
+	For all this to work we need to specify the image and the map 
+		associated with the image by means of a name attribute...
+		The name in the following case is "Map".
+		
+	<img src="../homework/hw7/waterhouse.jpg" alt="JWW" title="John William Waterhouse"
+		width="180" height="287" usemap="#Map">
+			
+		
+	The three areas used as hot spots enclosed in the map element are
+		as follows...
+	
+	<map name="Map">
+        <area shape="circle" coords="93,78,9" href="../homework/hw7/ophelia.html" alt="left eye" title="Left Eye">
+        <area shape="poly" coords="129,69,139,87,129,97,123,84" href="../homework/hw7/prelude10-chopin.mp3" alt="left ear" title="Left Ear">
+        <area shape="rect" coords="64,49,103,64" href="../homework/hw7/checklist.html" alt="forehead" title="Forehead">
+    </map>
+	
+	We also give each area a "title" so that when the mouse rolls over it,
+		the title will show.
+	When you click on the hotspot, the link is shown in the href attribute.
+
+-`-`-`-`-`-`-`-
+
+For the rollovers we will use the two thumbnails, ophelia-t.jpg and spring-t.jpg...
+
+For the ophelia rollover...
+
+Replace the line... 
+<img src="../homework/hw7/ophelia-t.jpg" width="80" height="120" alt="ophelia-t" title="ophelia-t">
+
+with...
+<a href="../homework/hw7/ophelia.jpg" target="if1"
+onmouseover="document.ophi.src='ophelia-r.jpg'" 
+onmouseout= "document.ophi.src='ophelia-t.jpg'">
+<img src="../homework/hw7/ophelia-t.jpg" name="ophi" alt="ophelia" title="Ophelia"> 
+</a>
+
+For the spring rollover...
+
+Replace the line... 
+<img src="../homework/hw7/spring-t.jpg" width="80" height="120" alt="spring-t" title="spring-t">
+
+with...
+<a href="../homework/hw7/spring.jpg" target="if1"
+onmouseover="document.spr.src='spring-r.jpg'" 
+onmouseout= "document.spr.src='spring-t.jpg'">
+<img src="../homework/hw7/spring-t.jpg" name="spr" alt="spring" title="Spring"> 
+</a>

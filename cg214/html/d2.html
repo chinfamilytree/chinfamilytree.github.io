@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Web Page Construction</title>
+<link href="../mystyles.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<div id="container">
+<h1>Web Page Construction</h1>
+<div id="wrap">
+	<ul class="navbar">
+		<li><a href="../index.html">Home</a></li>
+        <li><a href="../info/infocontact.html">Contact</a>   		</li>
+		<li><a href="#">HTML/CSS</a>
+			<ul>
+				<li><a href="1.html">Lesson 1</a></li>
+				<li><a href="2.html">Lesson 2</a></li>
+				<li><a href="3.html">Lesson 3</a></li>
+                <li><a href="4.html">Lesson 4</a></li>
+				<li><a href="5.html">Lesson 5</a></li>
+				<li><a href="6.html">Lesson 6</a></li>
+                <li><a href="7.html">Lesson 7</a></li>
+                <li><a href="8.html">Lesson 8</a></li>
+
+			</ul>         
+		</li>
+		<li><a href="#">Dreamweaver</a>
+			<ul>
+				<li><a href="d1.html">Lesson 1</a></li>
+				<li><a href="d2.html">Lesson 2</a></li>
+				<li><a href="d3.html">Lesson 3</a></li>
+                <li><a href="d4.html">Lesson 4</a></li>
+				<li><a href="d5.html">Lesson 5</a></li>
+				<li><a href="d6.html">Lesson 6</a></li>  
+			</ul>         
+		</li>
+
+        <li><a href="#">Other</a>
+			<ul>
+				<li><a href="../info/infolinks.html">Useful Links</a></li>
+				<li><a href="../info/infofaq.html">FAQ</a></li>
+                <li><a href="../info/infoassets.html">Assets</a></li>
+				<li><a href="../info/infodocs.html">Documents</a></li>
+                <li><a href="../info/infohomework.html">Homework</a></li>
+			</ul>         
+		</li>
+	</ul>
+</div>
+<!--<iframe id="if1" name="if1" frameborder="0" height="1000" width="750" scrolling="auto" src="info/infohome.html"></iframe> -->
+<h2>DW Lesson 2 - Rollovers, Hot Spots, External Style Sheet</h2>
+
+<p>
+<a href="#rollover">To Create a Rollover</a> | <br />
+<a href="#hotspots">To Create an Image Map (Hotspots)</a> | <br /> 
+<a href="#external">To Convert an Embedded Style to an External Style</a> | <br />
+<a href="#link">To Link an External Style Sheet to a Page</a> | <br>
+<a href="#email-link">To Insert an Email link</a> | <br />
+</p>
+
+<hr>
+
+
+<h3 id="rollover">To Create a Rollover</h3>
+<p>Perform the following steps and save the file as ex10a.html in the classwork/day10 folder.</p> 
+<ol>
+	<li>Launch Dreamweaver.</li>
+	<li>Define your site. See Dreamweaver Lesson 1.</li>
+    <li>File &gt; New &gt; New Document &gt;  HTML &gt; None &gt; Create.</li>
+    <li>In the Insert panel, click on HTML category.</li>
+    <li>Scroll all the way down to Rollover Image. Click on it.</li>
+	<li>For Original Image, click on the Browse button to select your first image.</li>
+	<li>For Rollover Image, click on the Browse button to select your second image, preferably with the same width and height as the Original image.  If not, the second image will be distorted to conform with the first image's dimensions.</li>
+	<li>For Alternate Text, type appropriate text to appear before the image is shown.</li> 
+	<li>For When Clicked, Go to URL, type a link if the user clicks on the rollover (optional).</li>
+	<li>Save the file as ex10a.html in the classwork/day10 folder.</li>
+	<li>Preview in a browser.</li>
+	<li>Close this file.</li>
+</ol>
+
+<a href="#top">↑Top</a>
+
+<h3 id="hotspots">To Create an Image Map (Hotspots)</h3>
+<p>Perform the following steps and save the file as ex10b.html in the classwork/day10 folder.</p>
+<ol>
+    	<li>File &gt; New &gt; Blank Page &gt; HTML &gt; none &gt; Create.</li>
+    	<li>In the Insert panel, click on HTML category.</li>
+        <li>Click on Image.</li>
+        <li> Choose an image to be used for the image map (also known as hot spots).</li> 
+	<li>Save the file as ex10b.html in the classwork/day10 folder.</li>
+	<li>Make sure the image is selected. Your image is selected if you see a thumbnail of the image and the word &quot;Image&quot; in the upper left corner of the Properties inspector.</li>
+	<li>In the Map text box of the Properties inspector, type in a name for the map. This name will appear as the map attribute of the map tag and also as the usemap attribute of the img tag.</li>
+	<li>Select a Hotspot tool (rectangle, oval, or polygon) and drag over a portion of the image to create a &quot;hotspot&quot;.</li>
+	<li>In the Link text box, do any one of the following:
+		<ul class="f">
+			<li>Type the URL for the hotspot.</li>
+			<li>Drag the &quot;Point to File&quot; tool to the file in the Files panel that you want to use as the URL.</li>
+			<li>Click the &quot;Browse for File&quot; button to look for the file that you want to use as the URL.</li>
+		</ul>
+	</li>
+	<li>In the Target text box, select the window that you want to linked file to appear.</li>
+	<li>In the Alt text box, enter the alternative name for the hotspot.</li>
+	<li>Save the file.</li>
+	<li>Preview in a browser.</li>
+</ol>
+
+<a href="#top">↑Top</a>
+
+<h3 id="external">To Convert an Embedded Style to an External Style</h3>
+<p>If you have more than a few pages, it is better to use external style sheets.</p>
+<ol>
+  <li>Open a document that contains an embedded style you want to convert.</li>
+  <li>In Code view highlight all the rules by dragging from the first one (such as body) to the last one, i.e., everything between &lt;style&gt; and &lt;/style&gt;.</li>
+  <li>Right-click any of the selected rules and choose CSS Styles, then click on Move CSS Rules.</li>
+  <li>In the Move To External Style Sheet dialog box, select A New Style Sheet. Then click OK. </li>
+  <li>In the Save Style Sheet File As dialog box, click Site Root, browse to the folder you are using, and save the file as a name your have chosen, such as <strong>styles.css</strong>. Click Save.</li>
+  <li>Notice the rules for the embedded style have been removed and the link to the external style sheet has been added. Click on the CSS Designer panel. </li>
+  <li>The CSS Designer panel shows &lt;style&gt; and styles.css. &lt;style&gt; refers to the previous embedded style sheet, which is now empty, whereas styles.css is the new external style sheet you have created. We no longer need &lt;style&gt; so select it and hit the Delete key.</li>
+</ol>
+
+<a href="#top">↑Top</a>
+
+<h3 id="link">To Link an External Style Sheet to a Page </h3>
+<p>Suppose we want both the rollover html (ex10a.html) and the hotspots html (ex10b.html) to have the same styles as index.html. We need to link the external style sheet to these two pages.</p>
+<ol>
+  <li>Open ex10a.html.</li>
+  <li>Format &gt; CSS Stles &gt; Attach Style Sheet.</li>
+  <li>Select the style sheet you wish to have linked.</li>
+  <li>Save the file.</li>
+  <li>Press F12 to view in a browser.</li>
+  <li>Repeat steps 1 to 5 for ex10b.html.</li>
+  <li>Close all files</li>
+</ol>
+
+<a href="#top">↑Top</a>
+<h3 id="email-link">To Insert an Email Link
+</h3>
+<ol>
+  <li>To insert an email link highlight the word(s) that you want to set as a link to your email.</li>
+  <li>Click on the Insert Panel.</li>
+  <li>Choose the HTML category.</li>
+  <li>Click on Email Link.</li>
+  <li>When you are prompted, type in your email address.</li>
+  </ol>
+<a href="#top">↑Top</a>
+<hr>
+</div>
+</body>
+</html>

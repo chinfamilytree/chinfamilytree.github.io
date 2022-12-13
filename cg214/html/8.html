@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Web Page Construction</title>
+<link href="../mystyles.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<div id="container">
+<h1>Web Page Construction</h1>
+<div id="wrap">
+	<ul class="navbar">
+		<li><a href="../index.html">Home</a></li>
+        <li><a href="../info/infocontact.html">Contact</a>   		</li>
+		<li><a href="#">HTML/CSS</a>
+			<ul>
+				<li><a href="1.html">Lesson 1</a></li>
+				<li><a href="2.html">Lesson 2</a></li>
+				<li><a href="3.html">Lesson 3</a></li>
+                <li><a href="4.html">Lesson 4</a></li>
+				<li><a href="5.html">Lesson 5</a></li>
+				<li><a href="6.html">Lesson 6</a></li>
+                <li><a href="7.html">Lesson 7</a></li>
+                <li><a href="8.html">Lesson 8</a></li>
+
+			</ul>         
+		</li>
+		<li><a href="#">Dreamweaver</a>
+			<ul>
+				<li><a href="d1.html">Lesson 1</a></li>
+				<li><a href="d2.html">Lesson 2</a></li>
+				<li><a href="d6.html">Lesson 3</a></li>
+                <li><a href="d4.html">Lesson 4</a></li>
+				<li><a href="d5.html">Lesson 5</a></li>
+				<li><a href="d3.html">Lesson 6</a></li>  
+			</ul>         
+		</li>
+
+        <li><a href="#">Other</a>
+			<ul>
+				<li><a href="../info/infolinks.html">Useful Links</a></li>
+				<li><a href="../info/infofaq.html">FAQ</a></li>
+                <li><a href="../info/infoassets.html">Assets</a></li>
+				<li><a href="../info/infodocs.html">Documents</a></li>
+                <li><a href="../info/infohomework.html">Homework</a></li>
+			</ul>         
+		</li>
+	</ul>
+</div>
+<!--<iframe id="if1" name="if1" frameborder="0" height="1000" width="750" scrolling="auto" src="info/infohome.html"></iframe> -->
+<h2>HTML/CSS Lesson 8 - Summary of CSS</h2>
+
+<p>
+<a href="#xss">External Style Sheets</a> | 
+<a href="#iss">Internal (Embedded) Style Sheets</a> | 
+<a href="#inline">Inline Styles</a> | 
+<a href="#hier">Hierarchy of Styles</a> |</p>
+<hr />
+
+<p>There are three types of cascading style sheets (CSS): external style sheet, internal style sheet (also called embedded style sheet), and  inline styles. Style sheets are constructed using a simple text processor such as Notepad. Style sheets use braces as delimiters instead of angle brackets, which are used in HTML.</p>
+<h3 id="xss">External Style Sheets</h3>
+<p>HTML was designed to show the content of a web page whereas a style sheet is used to show the presentation or format of a web page. An external style sheet is a separate plain text document with a name, such as css1.css, where css must be the file extension.</p>
+<p>Here is an <a href="../classwork/cw8/css1.css"><strong>example of an external style sheet</strong></a><strong></strong> which must be linked to a page to effect the presentation of that page. The syntax is:</p>
+<pre>
+selector {property: value}      e.g. h1 {font-family: verdana;}
+</pre> 
+If you wish to specify more than one property:value pair, separate them with a semicolon (;).
+<pre>
+h1 {font-family: verdana; color: teal}
+</pre>
+You can also group selectors so that the entire group will have the same properties.
+<pre>
+h1, h2, h3 {font-family: verdana; color: teal}
+</pre>
+You must insert an external style sheet by using the &lt;link&gt; tag in the &lt;head&gt; section of the page. This has the same effect as if the external style sheet is in the &lt;head&gt; section and thus becomes an internal style sheet, explained below. The advantage comes in when you have two or more pages that use the same style sheet. Any change in the style sheet will effectively change every page that is linked to it.
+<pre>
+&lt;head&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css1.css&quot; /&gt;
+&lt;/head&gt;</pre>
+
+<p>See an <strong><a href="../classwork/cw8/ophelia.html">example of a link to a style sheet</a></strong> in line 6 of the code of ophelia.html. Note that the external style sheet has:<br>
+background-color: #FFC;<br>
+background-image: url(bg2.gif);</p>
+<p>
+  <a href="#top">↑Top</a></p>
+<h3 id="iss">Internal (Embedded) Style Sheets</h3>
+<p>An internal style sheet (or embedded style sheet) is used when a single page has a unique style. The internal style sheet is defined in the &lt;head&gt; section of a document using the &lt;style&gt; tag. See an <a href="../classwork/cw8/ophelia.html"><strong>example of an internal style sheet</strong></a> in line 7 through line 27 in the code of ophelia.html</p>
+<p>The external style sheet set the background-color and background-image to #FFC and url(bg2.gif) respectively. But both the background color and image are superceded by the internal style sheet (which physically comes after the link):<br>
+background-color: #C3FFE7;<br>
+background-image: url(bg1.gif);</p>
+<p>If the internal style sheet physically came before the link, the background-color and background-image would not have changed. Note that three link colors have changed to a dark green (#060) and the hover color changed to &quot;white&quot; with &quot;black&quot; as the background color..</p>
+<pre>&lt;head&gt;<br>&lt;meta charset=&quot;utf-8&quot;&gt;<br>&lt;title&gt;John William Waterhouse&lt;/title&gt;<br>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css1.css&quot; /&gt;<br>&lt;style type=&quot;text/css&quot;&gt;<br>body {<br>background-color: #C3FFE7;<br>background-image: url(bg1.gif);<br>background-repeat: repeat-x;<br>}<br>a:link {<br>color: #060;<br>}<br>a:visited {<br>color: #060;<br>}<br>a:hover {<br>color: white;<br>background-color:black;<br>font-size:14px;<br>}<br>a:active {<br>color: #060;<br>}<br>&lt;/style&gt;<br>&lt;/head&gt;</pre>
+<a href="#top">↑Top</a>
+
+<h3 id="inline">Inline Styles</h3>
+<p>The following is an <a href="../classwork/cw8/inline.html"><strong>example of inline styles</strong></a>. The style attribute is used to change the default properties of a tag.</p>
+
+<pre>
+&#60;html&#62;
+&#60;body&#62;
+&#60;h1 style=&quot;font-family:verdana; font-size:500%; color:blue;&quot;&#62;Styles define&#60;/h1&#62;
+&#60;p style=&quot;font-family:book antiqua; font-size:36pt; color:red;&quot;&#62;how to display&#60;/p&#62;
+&#60;p style=&quot;font-family:comic sans ms; font-size:36px; color:green;&quot;&#62;HTML elements.&#60;/p&#62;
+&#60;/body&#62; 
+&#60;/html&#62;
+</pre>
+<p>See other inline style examples in the example illustrating "<a href="../classwork/cw8/hierarchy.html">hierarchy of styles</a>" below.</p>
+<a href="#top">↑Top</a>
+
+<h3 id="hier">Hierarchy of Styles</h3>
+The hierarchical order of precedence is: 
+<ol>
+	<li>browser default - lowest priority</li>
+	<li>external style sheet</li>
+	<li>internal style sheet</li>
+	<li>inline styles - highest priority</li>
+</ol>
+<p>An exception to this rule is the background image which is tiled. The image always takes precedence over a background color.</p>
+<p>Here is an example illustrating the <a href="../classwork/cw8/hierarchy.html"><strong>hierarchy of styles</strong></a>.</p>
+<a href="#top">↑Top</a>
+<hr />
+
+</div>
+</body>
+</html>
