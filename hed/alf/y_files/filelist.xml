@@ -1,8 +1,18 @@
 <xml xmlns:o="urn:schemas-microsoft-com:office:office">
  <o:MainFile HRef="../y.htm"/>
- <o:File HRef="HED-Master-alf-20191010_13405_image001.png"
-  PublicationID="HED-Master-alf-20191010_13405"/>
- <o:File HRef="HED-Master-alf-20191010_13405_image002.gif"
-  PublicationID="HED-Master-alf-20191010_13405"/>
+ <o:File HRef="z-alf_9790_image001.png" PublicationID="z-alf_9790"/>
+ <o:File HRef="z-alf_9790_image002.gif" PublicationID="z-alf_9790"/>
+ <o:File HRef="z-alf_9790_image003.png" PublicationID="z-alf_9790"/>
+ <o:File HRef="z-alf_9790_image004.gif" PublicationID="z-alf_9790"/>
+ <o:File HRef="z-alf_9790_image005.png" PublicationID="z-alf_9790"/>
+ <o:File HRef="z-alf_9790_image006.gif" PublicationID="z-alf_9790"/>
+ <o:File HRef="z-alf_9790_image007.png" PublicationID="z-alf_9790"/>
+ <o:File HRef="z-alf_9790_image008.gif" PublicationID="z-alf_9790"/>
+ <o:File HRef="z-alf_9790_image009.png" PublicationID="z-alf_9790"/>
+ <o:File HRef="z-alf_9790_image010.gif" PublicationID="z-alf_9790"/>
+ <o:File HRef="z-alf_9790_image011.png" PublicationID="z-alf_9790"/>
+ <o:File HRef="z-alf_9790_image012.gif" PublicationID="z-alf_9790"/>
+ <o:File HRef="z-alf_9790_image013.png" PublicationID="z-alf_9790"/>
+ <o:File HRef="z-alf_9790_image014.gif" PublicationID="z-alf_9790"/>
  <o:File HRef="filelist.xml"/>
 </xml>
