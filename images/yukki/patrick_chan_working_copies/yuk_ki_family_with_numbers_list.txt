@@ -1,35 +1,35 @@
-1 仕禎 xù-jëin shìzhēn  
-2 伍彩霞 m̄-tōi-hã wǔ_cǎixiá	
-3 菀昀 vōn-ün wǎnyún
-4 育淵 yùk-yön yùyuān
-5 偉隆 vī-lũng wěilóng
-6 陳美伶 mî-lẽin měilíng
-7 寶儀 bāo-ngĩ bǎoyí
-8 素冰 xü-	bëin sùbīng
-10 司徒永华
-11 慧玲  
-12 仕發 xù- shì
-13 紫揚 dū- zǐ
-14 嘉偉
-15 許巧娥  
-16 李珠花 
-17 Elizabeth   
-18 仕烽 xù- shì
-19 秋金  
-20 家母
-21 俊儀  
-22 仕清 xù- shì
-23 秋琼  
-24 洪紫晴 dū_ zǐ
-25 雅興  
-26 陳珮儀
-27 曾碧玲  
-28 Ryan
-29 洪峇代  
-30 俊傑
-31 仕强  xù- shì
-32 雷甄妮
-33 雅健  
-34 Christine
-35 洪力添
-紫瀅 dū-yëin zǐyíng
+1 仕禎 xù-jëin shìzhēn (#3 son)
+2 伍彩霞 m̄-tōi-hã wǔ_cǎixiá Lisa (#3 son's wife)
+3 菀昀 vōn-ün wǎnyún (#5 son's dtr)
+4 育淵 yùk-yön yùyuān (#5 son's son)
+5 偉隆 vī-lũng wěilóng William (#6 son's son) (have Hs)
+6 陳美伶 chĩn-mî-lẽin chén_měilíng (#6 son's wife) (have Hs)
+7 寶儀 bāo-ngĩ bǎoyí Jenny (son#3's 2nd dtr)
+8 素冰 xü-	bëin sùbīng Jasmine (#6 son's dtr) (have Hs)
+10 司徒永华 Wesley Seto (Nicole's hudband) (have Hs)
+11 慧玲 Nicole (#1 son's 1st dtr) (have Hs)
+12 仕發 xù-fāt shìfā Philip (#6 son) (have Hs)
+13 紫揚 dū-yẽng zǐyáng (2nd dtr's 2nd son's son)
+14 嘉偉 gä-vī jiāwěi Ethan Seto (Nicole's 1st son) (have Hs)
+15 許巧娥 huī-kāo-ngõ xǔ_qiǎo'é Anne (#1 son's wife) (have Hs)
+16 李珠花 lī-jî-fä lǐ_zhūhuā (#2 son's wife)
+17 Elizabeth (Ken's dtr) (have Hs)
+18 仕烽 xù-füng shìfēng Patrick (#1 son) (have already)
+19 秋金 tiü-gïm qiūjīn (#1 dtr) (have already)
+20 家母 李秀環 lī-xiü-vãn lǐ_xiùhuán (have already)
+21 俊儀 dün-ngĩ jùnyí (#2 son's 3rd son)
+22 仕清 xù-tëin shìqīng (#2 son) (have already)
+23 秋琼 tiü-kẽin qiūqióng (#2 dtr) (have already)
+24 洪紫晴 hũng-dū-tẽng hóng_zǐqíng (2nd dtr's 2nd son's 1st dtr)
+25 雅興 ngâ-hëin yǎxìng Michael (Patrick's #2 son) (have already)
+26 陳珮儀 chĩn-pöi-ngĩ  chén_pèiyí Anna (#2 son's 3rd son's wife))
+27 曾碧玲 däng-bēik-lẽin zēng_bìlíng (#4 son's wife)
+28 Ryan (Ken's son) (have already)
+29 洪峇代 hũng-bā-òi	hóng_bādài (#2 dtr's husband: Ang) (have already)
+30 俊傑 dün-gèik jùnjié Jye (#2 son's 2nd son)
+31 仕強 xù-kẽng shìqiáng (#4 son) (have already)
+32 雷甄妮 luĩ-jïn-nãi léi_zhēnnī (#2 dtr's 2nd dtr-in-law)
+33 雅健 ngâ-gèin yǎjiàn Ken (Patrick's #1 son) (have already)
+34 Christine (Ken's wife) (have already)
+35 洪力添 hũng-lèik-hëm hóng_lìtiān (#2 dtr's 2nd son)
+紫瀅 dū-yëin zǐyíng (#2 dtr's 2nd son's 2nd dtr)
