@@ -1,30 +1,56 @@
 <xml xmlns:o="urn:schemas-microsoft-com:office:office">
  <o:MainFile HRef="../j.htm"/>
- <o:File HRef="z-alf_1096_image001.png" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image002.gif" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image003.png" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image004.gif" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image005.png" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image006.gif" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image007.png" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image008.gif" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image009.png" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image010.gif" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image011.png" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image012.gif" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image013.png" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image014.gif" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image015.png" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image016.gif" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image017.png" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image018.gif" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image019.png" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image020.gif" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image021.png" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image022.gif" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image023.png" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image024.gif" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image025.png" PublicationID="z-alf_1096"/>
- <o:File HRef="z-alf_1096_image026.gif" PublicationID="z-alf_1096"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image001.png"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image002.gif"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image003.png"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image004.gif"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image005.png"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image006.gif"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image007.png"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image008.gif"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image009.png"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image010.gif"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image011.png"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image012.gif"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image013.png"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image014.gif"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image015.png"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image016.gif"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image017.png"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image018.gif"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image019.png"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image020.gif"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image021.png"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image022.gif"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image023.png"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image024.gif"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image025.png"
+  PublicationID="HED-Master-alf-20240917_31878"/>
+ <o:File HRef="HED-Master-alf-20240917_31878_image026.gif"
+  PublicationID="HED-Master-alf-20240917_31878"/>
  <o:File HRef="filelist.xml"/>
 </xml>

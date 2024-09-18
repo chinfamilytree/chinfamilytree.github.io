@@ -1,6 +1,8 @@
 <xml xmlns:o="urn:schemas-microsoft-com:office:office">
  <o:MainFile HRef="../a.htm"/>
- <o:File HRef="z-alf_1303_image001.gif" PublicationID="z-alf_1303"/>
- <o:File HRef="z-alf_1303_image002.gif" PublicationID="z-alf_1303"/>
+ <o:File HRef="HED-Master-alf-20240917_24790_image001.gif"
+  PublicationID="HED-Master-alf-20240917_24790"/>
+ <o:File HRef="HED-Master-alf-20240917_24790_image002.gif"
+  PublicationID="HED-Master-alf-20240917_24790"/>
  <o:File HRef="filelist.xml"/>
 </xml>
