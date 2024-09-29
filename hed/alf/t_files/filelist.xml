@@ -1,12 +1,6 @@
 <xml xmlns:o="urn:schemas-microsoft-com:office:office">
  <o:MainFile HRef="../t.htm"/>
- <o:File HRef="HED-Master-alf-20240917_32452_image001.png"
-  PublicationID="HED-Master-alf-20240917_32452"/>
- <o:File HRef="HED-Master-alf-20240917_32452_image002.gif"
-  PublicationID="HED-Master-alf-20240917_32452"/>
- <o:File HRef="HED-Master-alf-20240917_32452_image003.png"
-  PublicationID="HED-Master-alf-20240917_32452"/>
- <o:File HRef="HED-Master-alf-20240917_32452_image004.gif"
-  PublicationID="HED-Master-alf-20240917_32452"/>
+ <o:File HRef="z-alf_18893_image001.png" PublicationID="z-alf_18893"/>
+ <o:File HRef="z-alf_18893_image002.gif" PublicationID="z-alf_18893"/>
  <o:File HRef="filelist.xml"/>
 </xml>

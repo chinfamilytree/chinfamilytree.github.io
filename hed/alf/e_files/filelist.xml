@@ -1,28 +1,16 @@
 <xml xmlns:o="urn:schemas-microsoft-com:office:office">
  <o:MainFile HRef="../e.htm"/>
- <o:File HRef="HED-Master-alf-20240917_15606_image001.png"
-  PublicationID="HED-Master-alf-20240917_15606"/>
- <o:File HRef="HED-Master-alf-20240917_15606_image002.png"
-  PublicationID="HED-Master-alf-20240917_15606"/>
- <o:File HRef="HED-Master-alf-20240917_15606_image003.png"
-  PublicationID="HED-Master-alf-20240917_15606"/>
- <o:File HRef="HED-Master-alf-20240917_15606_image004.gif"
-  PublicationID="HED-Master-alf-20240917_15606"/>
- <o:File HRef="HED-Master-alf-20240917_15606_image005.gif"
-  PublicationID="HED-Master-alf-20240917_15606"/>
- <o:File HRef="HED-Master-alf-20240917_15606_image006.gif"
-  PublicationID="HED-Master-alf-20240917_15606"/>
- <o:File HRef="HED-Master-alf-20240917_15606_image007.png"
-  PublicationID="HED-Master-alf-20240917_15606"/>
- <o:File HRef="HED-Master-alf-20240917_15606_image008.gif"
-  PublicationID="HED-Master-alf-20240917_15606"/>
- <o:File HRef="HED-Master-alf-20240917_15606_image009.png"
-  PublicationID="HED-Master-alf-20240917_15606"/>
- <o:File HRef="HED-Master-alf-20240917_15606_image010.gif"
-  PublicationID="HED-Master-alf-20240917_15606"/>
- <o:File HRef="HED-Master-alf-20240917_15606_image011.png"
-  PublicationID="HED-Master-alf-20240917_15606"/>
- <o:File HRef="HED-Master-alf-20240917_15606_image012.gif"
-  PublicationID="HED-Master-alf-20240917_15606"/>
+ <o:File HRef="z-alf_15421_image001.png" PublicationID="z-alf_15421"/>
+ <o:File HRef="z-alf_15421_image002.png" PublicationID="z-alf_15421"/>
+ <o:File HRef="z-alf_15421_image003.png" PublicationID="z-alf_15421"/>
+ <o:File HRef="z-alf_15421_image004.gif" PublicationID="z-alf_15421"/>
+ <o:File HRef="z-alf_15421_image005.gif" PublicationID="z-alf_15421"/>
+ <o:File HRef="z-alf_15421_image006.gif" PublicationID="z-alf_15421"/>
+ <o:File HRef="z-alf_15421_image007.png" PublicationID="z-alf_15421"/>
+ <o:File HRef="z-alf_15421_image008.gif" PublicationID="z-alf_15421"/>
+ <o:File HRef="z-alf_15421_image009.png" PublicationID="z-alf_15421"/>
+ <o:File HRef="z-alf_15421_image010.gif" PublicationID="z-alf_15421"/>
+ <o:File HRef="z-alf_15421_image011.png" PublicationID="z-alf_15421"/>
+ <o:File HRef="z-alf_15421_image012.gif" PublicationID="z-alf_15421"/>
  <o:File HRef="filelist.xml"/>
 </xml>
