@@ -12,11 +12,35 @@
 </head>
 <body>
 
-<p>
+  <div style="text-align: center;">
+    <input type="text" id="searchBox" placeholder="Search" style="padding: 8px; margin: 10px auto; width: calc(100% - 36px); box-sizing: border-box; display: inline-block; max-width: 500px;">
+  </div>
+
+  <script>
+  document.getElementById('searchBox').addEventListener('keyup', function() {
+    const searchTerm = this.value.toLowerCase();
+    const listContainer = document.getElementById('list_of_names');
+    const links = listContainer.getElementsByTagName('a');
+    console.log('Searching for:', searchTerm);
+    for (let link of links) {
+      const name = link.textContent.toLowerCase();
+      const nextElement = link.nextElementSibling;
+      if (name.includes(searchTerm)) {
+        link.style.display = '';
+        if (nextElement) nextElement.style.display = '';
+      } else {
+        link.style.display = 'none';
+        if (nextElement) nextElement.style.display = 'none';
+      }
+      console.log('Checking:', name, 'Match:', name.includes(searchTerm));
+    }
+  });
+  </script>
+<div id="list_of_names">
 
 <a href="000-0010huangdi.html" target="main">	黄帝  (Huángdì)</a><br>
 <a href="000-0011shundi.html" target="main">	舜帝 (Shùndì)</a><br>
-<a href="000-0012fagong.html" target="main">	發公 (Fāgōng</a><br>
+<a href="000-0012fagong.html" target="main">	發公 (Fāgōng)</a><br>
 <a href="000-0020mangong.html" target="main">	滿公  (Mǎngōng)</a><br>
 <a href="000-0030xuangong.html" target="main">	宣公  (Xuāngōng)</a><br>
 <a href="000-0041yan.html" target="main">	衍公  (Yǎngōng)</a><br>
@@ -282,7 +306,6 @@
 <a href="	25-312yingzhen.html" target="main">	Yue Xiu	</a><br>
 
 <hr>
-<p>
 <a href="	25-317yuk-ki.html" target="main">Âng, 洪峇代	</a><br>
 <a href="	25-312yingzhen.html" target="main">	Alegre,Arlene	</a><br>
   <a href="25-313yingyan.html" target="main">	Bechtel,D.	</a><br>
@@ -663,7 +686,6 @@
   <a href="	25-316moixin.html" target="main">	Zhao,Jasmine	</a><br>
 <a href="	25-063heguang.html" target="main">Zimmerman,Ada</a><br>
 <a href="	25-063heguang.html" target="main">Zimmerman,Devon</a><br>
-</p>
 <hr>
 <a href="24-giungep.html" target="main">	○,Alex	</a><br>
 <a href="26-302jianmin.html" target="main">	○,Carol	</a><br>
@@ -675,6 +697,6 @@
 <a href="24-giungep.html" target="main">	○,Sandra	</a><br>
 
 
-</p>
+</div>
 </body>
 </html>
